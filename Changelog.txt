@@ -1,0 +1,191 @@
+Firmware v0.32
+---------------------------
+- fixed LFO sync in MIDI slave mode
+
+Firmware v0.31
+---------------------------
+- Added 'gate mode' for trigger IO
+
+Firmware v0.30
+---------------------------
+- fixed panning mod problem for snare, cymbal and hihat voice
+
+Firmware v0.29
+---------------------------
+- fixed double trigger bug on clock outs
+
+Firmware v0.28
+---------------------------
+- merged with rudeogs fork
+
+
+- refactoring of internal track length handling -> fixed out of loop/tracklength problem
+- trigger IO clock scalers added
+- fixed start/reset input pin
+- fixed sine OSC offset bug (start is now on zero crossing)
+- ... changelog under construction ... more to come ...
+
+
+Firmware v0.27
+---------------------------
+- trigger IOs init value fixed. (are now zero after power up)
+- detail view exit on sub page change
+- detail view exit when knob is moved
+- added step position reset to zero on pattern change
+- fixed pitch EG mod value influencing final OSC pitch
+
+Firmware v0.26
+---------------------------
+merged with rudeogs changes:
+- Pattern/Kit save will use a proper cursor when editing names
+- Midi Off - Will now send midi note off messages before the next midi note on message and also when the sequencer is stopped. This allows better interaction with external synths.
+- Note names - instead of showing -63 to 64 it will show real note names like C, C# D, etc. This is useful when using the LXR as a sequencer
+- Midi Note. Each voice has an assigned midi note. If this is set to C0 then it will play the note assigned to the sequencer step, otherwise it will play this note. This replaces the standard behavior and allows one to set the note that is played for the drum sound (old behavior was to have the note fixed when in trigger mode).
+- Midi mode has been removed (the above feature allows more flexibility)
+- LFO target fixes - Setting LFO targets is now much easier. The list of targets is straightforward and more descriptive. There are no missing entries or dupes.
+- Velocity target - Same type of fix as LFO target
+- Automation target - Same type of fix as LFO target. Also menu is more descriptive.
+- Separate open and closed hi-hat EG decay onto separate drum buttons to make it clearer which one is being edited.
+- Fix firmware image builder to accept command line parameters, and create new batch file
+- screensaver bug on load/save page fixed
+- encoder works for changing mod destinations in detaled view
+
+Firmware v0.25
+---------------------------
+- added user sample (.wav) import from SD card
+
+Firmware v0.24a
+---------------------------
+- fixed parameter wrap from 255 to 0 with encoder for morph parameter
+- NRPNs for track mute added (NRPN 200 to 206)
+- fixed external MIDI sync bug when starting in external mode
+- internal MIDI Clock is no longer transmitted when running synced to an external clock
+- mute also mutes incoming midi notes
+- nrpn mute led update only when mute leds are visible
+- reorder the perf. params to: shu, Rol, mrp, sr
+- locking a parameter to single step (hold step mode) will not change the global parameter value
+- LFO crash fixed
+
+Firmware v0.23
+---------------------------
+- Fixed inverted trigger outputs
+- added simple trigger clock input code
+- reduced AVR power consumption
+- fixed screensaver timer bug
+- added midi out pitch/note mode
+
+Firmware v0.22
+---------------------------
+- fixed unstable filter with f=127 and high resonance
+- fixed crash with one shot trigger button 8
+- fixed blank screen when switching to performance mode
+- renamed "Sound" to "Kit"
+- more extreme shuffle possible
+- added swing to external clock sync mode
+
+Firmware v0.21
+---------------------------
+- improved volume envelope resolution
+- improved volume envelope reaction times (more clickyness!)
+- improved snap transient mode
+- transients have short names instead of numbers
+- corrected label "Velocity modulation" to "Volume modulation" on the velocity mod page.
+
+
+Firmware v0.20
+---------------------------
+- fixed clear menu missing characters
+- added toggle between 1st/2nd menu page for step parameter menu
+- changed transient wave 0 to 'snap' control (short pitch EG)
+- changed transient wave 1 to wave offset
+- all transient waves shifted by 2 (old wave 0 is now wave 2)
+- transient wave selection limited to available waves
+- optimized overall snappyness of vol EG 
+- changed "Note Volume" to "Note Velocity" on step properties page
+
+Firmware v0.19
+---------------------------
+- multiple step buttons can be pressed simultaniously to add/remove steps
+- fixed double triggering of select buttons in voice mode (introduced in last update)
+- fixed mod target bug in saved morph sounds
+- fixed some buttons functions
+- added menu toggle to settings mennu
+- mod target reselection necessary after target voice change - fixed
+- synth now keeps track of sound,preset and morphsound preset numbers separatrely
+- changed mixer routine to use saturating math (prevent integer overflow clipping)
+- 1st knob selects type (sound, pattern, morph) on load/save page
+- load/save type is not reset anymore (stays on last selected item)
+- fixed roll rate initialisation after power up
+- LED update for recorded notes
+- prevent double notes in midi recording mode (1st substep is cleared on inative main steps)
+
+
+Firmware v0.18
+---------------------------
+- added quick naming scheme 
+- fixed automation parameter edit bug with chained patterns
+- fixed empty menu pages bug (with shift)
+- default setting for pattern repeat changed from 1 to 0
+
+Firmware v0.17
+---------------------------
+- fixed midi sync problems
+- fixed sub step LED update 
+
+
+Firmware v0.16 
+---------------------------
+- increased absolute noise volume on snare voice (voice 4)
+- increased transient volume
+- fixed rapid rotary encoder movement range bug
+- fixed step mode display glitch
+- fixed diappearing chaselight with shift button in perf. mode
+- fixed empty display page when changing modes
+- increased DIN scan rate
+- fixed display error in voice mode when using shift
+
+Firmware v0.15 (5.5.2013)
+---------------------------
+- Mod target pan fixed
+- mod target LFO speed fixed
+- Mod target drum 1-3 FM freq fixed
+- fixed LFO sync times
+- added toggle via select button if menu has 2 pages
+- added some new transient samples
+- added global midi channel to settings menu 
+- fixed flickering display when changing voices
+- added/fixed save morph sound function
+
+
+Firmware v0.14 (27.4.2013)
+---------------------------
+- Fixed LED display in performance mode
+- changed name on splashscreen
+- added status LED for viewed (blinking) and playing (lit) pattern in perf. mode
+- prevent pattern option update while pattern options are edited
+
+Firmware v0.13 (27.4.2013)
+---------------------------
+- Fixed SD card error messages
+- copy operation is now aborted when the copy button is released
+- Fixed faulty sub step LED update (notes would not show up on the last steps of a pattern)
+- Fixed: LEDs stop blinking (probably)
+- Fixed buggy active step LEDs in step edit mode
+- Fixed layout bug on 2 page menu sections
+- EG Repeat count offset fixed (repeat=1 yielded in 2 repeats)
+- Improved preset morph smoothness
+- reduced tempo of blinking LEDs
+- fixed initial preset load on boot
+- fixed inverted panning
+
+Firmware v0.12 (26.4.2013)
+---------------------------
+- Fixed noise problems with output routing
+- Added visual feedback to bootloader
+- added 'additional page available' sign to display
+- fixed 'Firmware error' message in bootloader
+
+
+Firmware v0.1
+---------------------------
+Initial release

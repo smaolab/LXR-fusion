@@ -1,0 +1,1813 @@
+Archive member included because of file (symbol)
+
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodqi4.o)
+                              build/menu.o (__udivmodqi4)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodqi4.o)
+                              build/menu.o (__divmodqi4)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+                              build/ff.o (__udivmodsi4)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+                              /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm644.o (exit)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_tablejump.o)
+                              build/ledHandler.o (__tablejump2__)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+                              build/buttonHandler.o (__do_copy_data)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+                              build/buttonHandler.o (__do_clear_bss)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_muluhisi3.o)
+                              build/ff.o (__muluhisi3)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
+                              /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_muluhisi3.o) (__umulhisi3)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(addsf3.o)
+                              build/ledHandler.o (__addsf3)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(addsf3x.o)
+                              /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(addsf3.o) (__addsf3x)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fixunssfsi.o)
+                              build/ledHandler.o (__fixunssfsi)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(floatsisf.o)
+                              build/ledHandler.o (__floatunsisf)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_inf.o)
+                              /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(addsf3x.o) (__fp_inf)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_nan.o)
+                              /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(addsf3x.o) (__fp_nan)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_pscA.o)
+                              /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(addsf3x.o) (__fp_pscA)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_pscB.o)
+                              /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(addsf3x.o) (__fp_pscB)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_round.o)
+                              /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(addsf3.o) (__fp_round)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_split3.o)
+                              /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(addsf3x.o) (__fp_split3)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_zero.o)
+                              /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(addsf3x.o) (__fp_zero)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(gesf2.o)
+                              build/ledHandler.o (__gtsf2)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(mulsf3.o)
+                              build/menu.o (__mulsf3)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+                              /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(mulsf3.o) (__mulsf3x)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_cmp.o)
+                              /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(gesf2.o) (__fp_cmp)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(tolower.o)
+                              build/menu.o (tolower)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(toupper.o)
+                              build/menu.o (toupper)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(memcpy_P.o)
+                              build/menu.o (memcpy_P)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(strcpy_P.o)
+                              build/menu.o (strcpy_P)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(memset.o)
+                              build/menu.o (memset)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(itoa_ncheck.o)
+                              build/presetManager.o (__itoa_ncheck)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(utoa_ncheck.o)
+                              /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(itoa_ncheck.o) (__utoa_common)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(strrev.o)
+                              /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(utoa_ncheck.o) (strrev)
+
+Allocating common symbols
+Common symbol       size              file
+
+currentDisplayBuffer
+                    0x20              build/menu.o
+frontParser_midiMsg
+                    0x3               build/frontPanelParser.o
+adc_potValues       0x8               build/adcPots.o
+dout_outputData     0x5               build/dout.o
+led_pulsingLeds     0x1               build/ledHandler.o
+buttonValue         0x1               build/encoder.o
+led_pulseLedNumber  0x8               build/ledHandler.o
+preset_Fatfs        0x22e             build/presetManager.o
+led_blinkLedNumber  0x4               build/ledHandler.o
+preset_File         0x20              build/presetManager.o
+frontParser_sysexBuffer
+                    0x7               build/frontPanelParser.o
+editDisplayBuffer   0x22              build/menu.o
+led_pulseEndTime    0x10              build/ledHandler.o
+led_originalLedState
+                    0x5               build/ledHandler.o
+startBlock          0x4               build/diskIo.o
+adc_potAvg          0x8               build/adcPots.o
+parameter_values    0x111             build/menu.o
+uart_txBuffer       0x102             build/uart.o
+preset_currentName  0x8               build/presetManager.o
+buttonHandler_stateMemory
+                    0x1               build/buttonHandler.o
+SDHC_flag           0x1               build/diskIo.o
+totalBlocks         0x4               build/diskIo.o
+frontParser_stepData
+                    0x7               build/frontPanelParser.o
+uart_rxBuffer       0x102             build/uart.o
+enc_delta           0x1               build/encoder.o
+cardType            0x1               build/diskIo.o
+din_inputData       0x5               build/din.o
+parameters2         0xe4              build/menu.o
+led_blinkingLeds    0x1               build/ledHandler.o
+
+Discarded input sections
+
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm644.o
+ .text          0x00000000        0x0 build/buttonHandler.o
+ .bss           0x00000000        0x0 build/buttonHandler.o
+ .text          0x00000000        0x0 build/encoder.o
+ .bss           0x00000000        0x0 build/encoder.o
+ .text.encode_read1
+                0x00000000        0xe build/encoder.o
+ .text.encode_read2
+                0x00000000       0x14 build/encoder.o
+ .text          0x00000000        0x0 build/fifo.o
+ .bss           0x00000000        0x0 build/fifo.o
+ .text          0x00000000        0x0 build/frontPanelParser.o
+ .bss           0x00000000        0x0 build/frontPanelParser.o
+ .text.frontPanel_sendMidiMsg
+                0x00000000       0x40 build/frontPanelParser.o
+ .text          0x00000000        0x0 build/lcd.o
+ .bss           0x00000000        0x0 build/lcd.o
+ .text.lcd_generatechar
+                0x00000000       0x4a build/lcd.o
+ .text          0x00000000        0x0 build/diskIo.o
+ .bss           0x00000000        0x0 build/diskIo.o
+ .text          0x00000000        0x0 build/ff.o
+ .bss           0x00000000        0x0 build/ff.o
+ .text.f_lseek  0x00000000      0x344 build/ff.o
+ .text.f_opendir
+                0x00000000       0xd4 build/ff.o
+ .text.f_readdir
+                0x00000000      0x220 build/ff.o
+ .text          0x00000000        0x0 build/SD_routines.o
+ .bss           0x00000000        0x0 build/SD_routines.o
+ .text.SD_erase
+                0x00000000       0x72 build/SD_routines.o
+ .text          0x00000000        0x0 build/SPI_routines.o
+ .bss           0x00000000        0x0 build/SPI_routines.o
+ .text          0x00000000        0x0 build/timebase.o
+ .bss           0x00000000        0x0 build/timebase.o
+ .text          0x00000000        0x0 build/adcPots.o
+ .bss           0x00000000        0x0 build/adcPots.o
+ .bss.adcCnt    0x00000000        0x1 build/adcPots.o
+ .text          0x00000000        0x0 build/din.o
+ .bss           0x00000000        0x0 build/din.o
+ .text          0x00000000        0x0 build/dout.o
+ .bss           0x00000000        0x0 build/dout.o
+ .text          0x00000000        0x0 build/uart.o
+ .bss           0x00000000        0x0 build/uart.o
+ .text.uart_puts
+                0x00000000       0x18 build/uart.o
+ .text          0x00000000        0x0 build/ledHandler.o
+ .bss           0x00000000        0x0 build/ledHandler.o
+ .text.led_setValueTemp
+                0x00000000       0x34 build/ledHandler.o
+ .text.led_clearAll
+                0x00000000       0x1e build/ledHandler.o
+ .text.led_clearSequencerLeds9_16
+                0x00000000       0x16 build/ledHandler.o
+ .text.led_clearSequencerLeds1_8
+                0x00000000       0x16 build/ledHandler.o
+ .text.led_setMode2Leds
+                0x00000000        0xc build/ledHandler.o
+ .text          0x00000000        0x0 build/main.o
+ .bss           0x00000000        0x0 build/main.o
+ .text          0x00000000        0x0 build/Cc2Text.o
+ .bss           0x00000000        0x0 build/Cc2Text.o
+ .text          0x00000000        0x0 build/copyClearTools.o
+ .bss           0x00000000        0x0 build/copyClearTools.o
+ .text          0x00000000        0x0 build/menu.o
+ .bss           0x00000000        0x0 build/menu.o
+ .text.menu_sendAllParameters
+                0x00000000       0x54 build/menu.o
+ .text.menu_areMuteLedsShown
+                0x00000000        0x6 build/menu.o
+ .text          0x00000000        0x0 build/screensaver.o
+ .bss           0x00000000        0x0 build/screensaver.o
+ .text          0x00000000        0x0 build/presetManager.o
+ .bss           0x00000000        0x0 build/presetManager.o
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodqi4.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodqi4.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodqi4.o)
+ .text.libgcc   0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodqi4.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodqi4.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodqi4.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodqi4.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodqi4.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodqi4.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodqi4.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodqi4.o)
+ .text.libgcc   0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodqi4.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodqi4.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodqi4.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodqi4.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodqi4.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc   0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+ .text.libgcc   0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_tablejump.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_tablejump.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_tablejump.o)
+ .text.libgcc.div
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_tablejump.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_tablejump.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_tablejump.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_tablejump.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_tablejump.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_muluhisi3.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_muluhisi3.o)
+ .text.libgcc.div
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_muluhisi3.o)
+ .text.libgcc   0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_muluhisi3.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_muluhisi3.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_muluhisi3.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_muluhisi3.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_muluhisi3.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc.div
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc   0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(addsf3.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(addsf3.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(addsf3x.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(addsf3x.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fixunssfsi.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fixunssfsi.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(floatsisf.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(floatsisf.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_inf.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_inf.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_nan.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_nan.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_pscA.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_pscA.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_pscB.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_pscB.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_round.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_round.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_split3.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_split3.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_zero.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_zero.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(gesf2.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(gesf2.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(mulsf3.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(mulsf3.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_cmp.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_cmp.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(tolower.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(tolower.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(toupper.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(toupper.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(memcpy_P.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(memcpy_P.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(strcpy_P.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(strcpy_P.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(memset.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(memset.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(itoa_ncheck.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(itoa_ncheck.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(utoa_ncheck.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(utoa_ncheck.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(strrev.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(strrev.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+user_signatures  0x00850000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm644.o
+START GROUP
+LOAD /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a
+END GROUP
+LOAD build/buttonHandler.o
+LOAD build/encoder.o
+LOAD build/fifo.o
+LOAD build/frontPanelParser.o
+LOAD build/lcd.o
+LOAD build/diskIo.o
+LOAD build/ff.o
+LOAD build/SD_routines.o
+LOAD build/SPI_routines.o
+LOAD build/timebase.o
+LOAD build/adcPots.o
+LOAD build/din.o
+LOAD build/dout.o
+LOAD build/uart.o
+LOAD build/ledHandler.o
+LOAD build/main.o
+LOAD build/Cc2Text.o
+LOAD build/copyClearTools.o
+LOAD build/menu.o
+LOAD build/screensaver.o
+LOAD build/presetManager.o
+START GROUP
+LOAD /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a
+LOAD /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a
+LOAD /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a
+END GROUP
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x982e
+ *(.vectors)
+ .vectors       0x00000000       0x70 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm644.o
+                0x00000000                __vectors
+ *(.vectors)
+ *(.progmem.gcc*)
+ .progmem.gcc_sw_table.led_setMode2
+                0x00000070       0x10 build/ledHandler.o
+ .progmem.gcc_sw_table.getMaxEntriesForMenu
+                0x00000080       0x1c build/menu.o
+ .progmem.gcc_sw_table.getMenuItemNameForValue
+                0x0000009c       0x1c build/menu.o
+ .progmem.gcc_sw_table.menu_repaintGeneric
+                0x000000b8       0x2c build/menu.o
+ .progmem.gcc_sw_table.menu_parseKnobValue
+                0x000000e4       0x1e build/menu.o
+ .progmem.gcc_sw_table.menu_parseEncoder
+                0x00000102       0x1e build/menu.o
+                0x00000120                . = ALIGN (0x2)
+                0x00000120                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000120        0x0 linker stubs
+ *(.trampolines*)
+                0x00000120                __trampolines_end = .
+ *(.progmem*)
+ .progmem.data.__c.2033
+                0x00000120        0xb build/diskIo.o
+ .progmem.data.__c.2031
+                0x0000012b        0xe build/diskIo.o
+ .progmem.data.__c.2029
+                0x00000139        0xb build/diskIo.o
+ .progmem.data.__c.2027
+                0x00000144        0xe build/diskIo.o
+ .progmem.data.__c.2025
+                0x00000152        0x8 build/diskIo.o
+ .progmem.data.__c.3367
+                0x0000015a        0xf build/main.o
+ .progmem.data.__c.3365
+                0x00000169        0xc build/main.o
+ .progmem.data.__c.3363
+                0x00000175        0xe build/main.o
+ .progmem.data.modTargetGapMap
+                0x00000183       0x2b build/Cc2Text.o
+                0x00000183                modTargetGapMap
+ .progmem.data.modTargetVoiceOffsets
+                0x000001ae        0xc build/Cc2Text.o
+                0x000001ae                modTargetVoiceOffsets
+ .progmem.data.modTargets
+                0x000001ba      0x267 build/Cc2Text.o
+                0x000001ba                modTargets
+ .progmem.data.__c.3495
+                0x00000421        0x8 build/menu.o
+ .progmem.data.__c.3493
+                0x00000429        0xe build/menu.o
+ .progmem.data.__c.3297
+                0x00000437        0x9 build/menu.o
+ .progmem.data.__c.3294
+                0x00000440        0x9 build/menu.o
+ .progmem.data.__c.3291
+                0x00000449        0x9 build/menu.o
+ .progmem.data.__c.3288
+                0x00000452        0x9 build/menu.o
+ .progmem.data.__c.3285
+                0x0000045b        0x9 build/menu.o
+ .progmem.data.__c.3282
+                0x00000464        0x9 build/menu.o
+ .progmem.data.__c.3278
+                0x0000046d        0x9 build/menu.o
+ .progmem.data.__c.3275
+                0x00000476        0x6 build/menu.o
+ .progmem.data.__c.3273
+                0x0000047c        0x6 build/menu.o
+ .progmem.data.__c.3371
+                0x00000482        0x6 build/menu.o
+ .progmem.data.__c.3366
+                0x00000488        0x7 build/menu.o
+ .progmem.data.parameter_dtypes
+                0x0000048f      0x111 build/menu.o
+                0x0000048f                parameter_dtypes
+ .progmem.data.valueNames
+                0x000005a0       0xf9 build/menu.o
+                0x000005a0                valueNames
+ .progmem.data.longNames
+                0x00000699      0x400 build/menu.o
+                0x00000699                longNames
+ .progmem.data.catNames
+                0x00000a99      0x190 build/menu.o
+                0x00000a99                catNames
+ .progmem.data.shortNames
+                0x00000c29      0x100 build/menu.o
+                0x00000c29                shortNames
+ .progmem.data.midiFilterNames
+                0x00000d29      0x110 build/menu.o
+                0x00000d29                midiFilterNames
+ .progmem.data.midiRoutingNames
+                0x00000e39       0x2a build/menu.o
+                0x00000e39                midiRoutingNames
+ .progmem.data.filterTypes
+                0x00000e63       0x40 build/menu.o
+                0x00000e63                filterTypes
+ .progmem.data.outputNames
+                0x00000ea3       0x31 build/menu.o
+                0x00000ea3                outputNames
+ .progmem.data.waveformNames
+                0x00000ed4       0x1c build/menu.o
+                0x00000ed4                waveformNames
+ .progmem.data.syncRateNames
+                0x00000ef0       0x34 build/menu.o
+                0x00000ef0                syncRateNames
+ .progmem.data.rollRateNames
+                0x00000f24       0x3c build/menu.o
+                0x00000f24                rollRateNames
+ .progmem.data.lfoWaveNames
+                0x00000f60       0x24 build/menu.o
+                0x00000f60                lfoWaveNames
+ .progmem.data.retriggerNames
+                0x00000f84       0x20 build/menu.o
+                0x00000f84                retriggerNames
+ .progmem.data.nextPatternNames
+                0x00000fa4       0x40 build/menu.o
+                0x00000fa4                nextPatternNames
+ .progmem.data.transientNames
+                0x00000fe4       0x3c build/menu.o
+                0x00000fe4                transientNames
+ .progmem.data.quantisationNames
+                0x00001020       0x18 build/menu.o
+                0x00001020                quantisationNames
+ .progmem.data.midiModes
+                0x00001038        0xc build/menu.o
+                0x00001038                midiModes
+ .progmem.data.ppqNames
+                0x00001044       0x18 build/menu.o
+                0x00001044                ppqNames
+ .progmem.data.menuText_any
+                0x0000105c        0x4 build/menu.o
+                0x0000105c                menuText_any
+ .progmem.data.menuText_blank
+                0x00001060        0x4 build/menu.o
+                0x00001060                menuText_blank
+ .progmem.data.menuText_dash
+                0x00001064        0x4 build/menu.o
+                0x00001064                menuText_dash
+ .progmem.data.menuText_fm
+                0x00001068        0x4 build/menu.o
+                0x00001068                menuText_fm
+ .progmem.data.menuText_mix
+                0x0000106c        0x4 build/menu.o
+                0x0000106c                menuText_mix
+ .progmem.data.menuText_on
+                0x00001070        0x4 build/menu.o
+                0x00001070                menuText_on
+ .progmem.data.menuText_off
+                0x00001074        0x4 build/menu.o
+                0x00001074                menuText_off
+ .progmem.data.menuText_ok
+                0x00001078        0x4 build/menu.o
+                0x00001078                menuText_ok
+ .progmem.data.menuPages
+                0x0000107c      0xc00 build/menu.o
+                0x0000107c                menuPages
+ .progmem.data.__c.3336
+                0x00001c7c       0x10 build/presetManager.o
+ .progmem.data.__c.3326
+                0x00001c8c        0xf build/presetManager.o
+ .progmem.data.__c.3252
+                0x00001c9b        0x9 build/presetManager.o
+ .progmem.data.__c.3436
+                0x00001ca4        0x5 build/presetManager.o
+ .progmem.data.__c.3432
+                0x00001ca9        0x5 build/presetManager.o
+ .progmem.data.__c.3429
+                0x00001cae        0x5 build/presetManager.o
+ .progmem.data.__c.3425
+                0x00001cb3        0x5 build/presetManager.o
+                0x00001cb8                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00001cb8                __ctors_start = .
+ *(.ctors)
+                0x00001cb8                __ctors_end = .
+                0x00001cb8                __dtors_start = .
+ *(.dtors)
+                0x00001cb8                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00001cb8        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm644.o
+                0x00001cb8                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00001cb8        0xc /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm644.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00001cc4       0x16 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+                0x00001cc4                __do_copy_data
+ .init4         0x00001cda       0x10 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+                0x00001cda                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00001cea        0x8 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm644.o
+ *(.init9)
+ *(.text)
+ .text          0x00001cf2        0x4 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm644.o
+                0x00001cf2                __vector_18
+                0x00001cf2                __vector_1
+                0x00001cf2                __vector_24
+                0x00001cf2                __vector_12
+                0x00001cf2                __bad_interrupt
+                0x00001cf2                __vector_6
+                0x00001cf2                __vector_3
+                0x00001cf2                __vector_23
+                0x00001cf2                __vector_25
+                0x00001cf2                __vector_13
+                0x00001cf2                __vector_17
+                0x00001cf2                __vector_19
+                0x00001cf2                __vector_7
+                0x00001cf2                __vector_27
+                0x00001cf2                __vector_5
+                0x00001cf2                __vector_4
+                0x00001cf2                __vector_9
+                0x00001cf2                __vector_2
+                0x00001cf2                __vector_15
+                0x00001cf2                __vector_8
+                0x00001cf2                __vector_26
+                0x00001cf2                __vector_14
+                0x00001cf2                __vector_10
+                0x00001cf2                __vector_22
+                0x00001cf6                . = ALIGN (0x2)
+ *(.text.*)
+ .text.buttonHandler_setRemoveStep
+                0x00001cf6       0x56 build/buttonHandler.o
+ .text.buttonHandler_updateSubSteps
+                0x00001d4c       0x28 build/buttonHandler.o
+ .text.buttonHandler_selectActiveStep
+                0x00001d74       0x78 build/buttonHandler.o
+ .text.buttonHandler_enterSeqModeStepMode
+                0x00001dec       0x1a build/buttonHandler.o
+ .text.buttonHandler_TimerActionOccured
+                0x00001e06       0xd4 build/buttonHandler.o
+ .text.buttonHandler_getArmedAutomationStep
+                0x00001eda        0x6 build/buttonHandler.o
+                0x00001eda                buttonHandler_getArmedAutomationStep
+ .text.buttonHandler_tick
+                0x00001ee0       0x58 build/buttonHandler.o
+                0x00001ee0                buttonHandler_tick
+ .text.buttonHandler_getShift
+                0x00001f38       0x10 build/buttonHandler.o
+                0x00001f38                buttonHandler_getShift
+ .text.buttonHandler_handleSelectButton
+                0x00001f48      0x166 build/buttonHandler.o
+ .text.buttonHandler_muteVoice
+                0x000020ae       0x36 build/buttonHandler.o
+                0x000020ae                buttonHandler_muteVoice
+ .text.buttonHandler_showMuteLEDs
+                0x000020e4       0x12 build/buttonHandler.o
+                0x000020e4                buttonHandler_showMuteLEDs
+ .text.buttonHandler_buttonReleased
+                0x000020f6      0x1c6 build/buttonHandler.o
+                0x000020f6                buttonHandler_buttonReleased
+ .text.buttonHandler_getMode
+                0x000022bc        0x8 build/buttonHandler.o
+                0x000022bc                buttonHandler_getMode
+ .text.buttonHandler_setRunStopState
+                0x000022c4       0x1c build/buttonHandler.o
+                0x000022c4                buttonHandler_setRunStopState
+ .text.buttonHandler_buttonPressed
+                0x000022e0      0x55a build/buttonHandler.o
+                0x000022e0                buttonHandler_buttonPressed
+ .text.encode_init
+                0x0000283a       0x48 build/encoder.o
+                0x0000283a                encode_init
+ .text.__vector_16
+                0x00002882       0x7a build/encoder.o
+                0x00002882                __vector_16
+ .text.encode_read4
+                0x000028fc       0x16 build/encoder.o
+                0x000028fc                encode_read4
+ .text.encode_readButton
+                0x00002912        0xc build/encoder.o
+                0x00002912                encode_readButton
+ .text.fifo_init
+                0x0000291e       0x1c build/fifo.o
+                0x0000291e                fifo_init
+ .text.fifo_bufferIn
+                0x0000293a       0x28 build/fifo.o
+                0x0000293a                fifo_bufferIn
+ .text.fifo_BufferOut
+                0x00002962       0x2e build/fifo.o
+                0x00002962                fifo_BufferOut
+ .text.frontPanel_sendData
+                0x00002990       0x3c build/frontPanelParser.o
+                0x00002990                frontPanel_sendData
+ .text.frontParser_parseNrpn
+                0x000029cc       0xa0 build/frontPanelParser.o
+                0x000029cc                frontParser_parseNrpn
+ .text.frontPanel_ccHandler
+                0x00002a6c       0x68 build/frontPanelParser.o
+                0x00002a6c                frontPanel_ccHandler
+ .text.frontPanel_parseData
+                0x00002ad4      0x4da build/frontPanelParser.o
+                0x00002ad4                frontPanel_parseData
+ .text.frontPanel_sendByte
+                0x00002fae       0x12 build/frontPanelParser.o
+                0x00002fae                frontPanel_sendByte
+ .text.lcd_enable
+                0x00002fc0        0xe build/lcd.o
+ .text.lcd_out  0x00002fce       0x14 build/lcd.o
+ .text.lcd_data
+                0x00002fe2       0x24 build/lcd.o
+                0x00002fe2                lcd_data
+ .text.lcd_command
+                0x00003006       0x24 build/lcd.o
+                0x00003006                lcd_command
+ .text.lcd_turnOn
+                0x0000302a        0xe build/lcd.o
+                0x0000302a                lcd_turnOn
+ .text.lcd_clear
+                0x00003038       0x14 build/lcd.o
+                0x00003038                lcd_clear
+ .text.lcd_init
+                0x0000304c       0x84 build/lcd.o
+                0x0000304c                lcd_init
+ .text.lcd_home
+                0x000030d0       0x14 build/lcd.o
+                0x000030d0                lcd_home
+ .text.lcd_setcursor
+                0x000030e4       0x28 build/lcd.o
+                0x000030e4                lcd_setcursor
+ .text.lcd_string
+                0x0000310c       0x18 build/lcd.o
+                0x0000310c                lcd_string
+ .text.lcd_string_F
+                0x00003124       0x22 build/lcd.o
+                0x00003124                lcd_string_F
+ .text.disk_initialize
+                0x00003146       0xa6 build/diskIo.o
+                0x00003146                disk_initialize
+ .text.disk_status
+                0x000031ec        0xe build/diskIo.o
+                0x000031ec                disk_status
+ .text.disk_read
+                0x000031fa       0x64 build/diskIo.o
+                0x000031fa                disk_read
+ .text.disk_write
+                0x0000325e       0x64 build/diskIo.o
+                0x0000325e                disk_write
+ .text.disk_ioctl
+                0x000032c2       0x32 build/diskIo.o
+                0x000032c2                disk_ioctl
+ .text.get_fattime
+                0x000032f4        0x8 build/diskIo.o
+                0x000032f4                get_fattime
+ .text.mem_cpy  0x000032fc       0x18 build/ff.o
+ .text.move_window
+                0x00003314       0xf0 build/ff.o
+ .text.check_fs
+                0x00003404       0xd2 build/ff.o
+ .text.chk_mounted
+                0x000034d6      0x6d0 build/ff.o
+ .text.validate
+                0x00003ba6       0x2c build/ff.o
+ .text.clust2sect
+                0x00003bd2       0x52 build/ff.o
+                0x00003bd2                clust2sect
+ .text.get_fat  0x00003c24      0x1c2 build/ff.o
+                0x00003c24                get_fat
+ .text.dir_sdi.constprop.5
+                0x00003de6       0xf4 build/ff.o
+ .text.put_fat  0x00003eda      0x23c build/ff.o
+                0x00003eda                put_fat
+ .text.create_chain
+                0x00004116      0x1b2 build/ff.o
+ .text.dir_next
+                0x000042c8      0x20c build/ff.o
+ .text.follow_path
+                0x000044d4      0x234 build/ff.o
+ .text.f_mount  0x00004708       0x2c build/ff.o
+                0x00004708                f_mount
+ .text.f_open   0x00004734      0x3f0 build/ff.o
+                0x00004734                f_open
+ .text.f_read   0x00004b24      0x27e build/ff.o
+                0x00004b24                f_read
+ .text.f_write  0x00004da2      0x328 build/ff.o
+                0x00004da2                f_write
+ .text.f_sync   0x000050ca      0x15a build/ff.o
+                0x000050ca                f_sync
+ .text.f_close  0x00005224       0x18 build/ff.o
+                0x00005224                f_close
+ .text.SD_sendCommand
+                0x0000523c       0xdc build/SD_routines.o
+                0x0000523c                SD_sendCommand
+ .text.SD_init  0x00005318       0xe2 build/SD_routines.o
+                0x00005318                SD_init
+ .text.SD_checkCardAvailable
+                0x000053fa       0x20 build/SD_routines.o
+                0x000053fa                SD_checkCardAvailable
+ .text.SD_readSingleBlockCustomBuffer
+                0x0000541a       0x64 build/SD_routines.o
+                0x0000541a                SD_readSingleBlockCustomBuffer
+ .text.SD_writeSingleBlockCustomBuffer
+                0x0000547e       0x98 build/SD_routines.o
+                0x0000547e                SD_writeSingleBlockCustomBuffer
+ .text.spi_init
+                0x00005516       0x12 build/SPI_routines.o
+                0x00005516                spi_init
+ .text.spi_deInit
+                0x00005528       0x14 build/SPI_routines.o
+                0x00005528                spi_deInit
+ .text.SPI_transmit
+                0x0000553c        0xc build/SPI_routines.o
+                0x0000553c                SPI_transmit
+ .text.SPI_receive
+                0x00005548        0xe build/SPI_routines.o
+                0x00005548                SPI_receive
+ .text.__vector_11
+                0x00005556       0x40 build/timebase.o
+                0x00005556                __vector_11
+ .text.time_initTimer
+                0x00005596       0x12 build/timebase.o
+                0x00005596                time_initTimer
+ .text.adc_init
+                0x000055a8       0x4e build/adcPots.o
+                0x000055a8                adc_init
+ .text.adc_read
+                0x000055f6       0x2a build/adcPots.o
+                0x000055f6                adc_read
+ .text.adc_readAvg
+                0x00005620       0x60 build/adcPots.o
+                0x00005620                adc_readAvg
+ .text.adc_checkPots
+                0x00005680       0x58 build/adcPots.o
+                0x00005680                adc_checkPots
+ .text.din_shift
+                0x000056d8        0x6 build/din.o
+                0x000056d8                din_shift
+ .text.din_load
+                0x000056de        0x6 build/din.o
+                0x000056de                din_load
+ .text.din_init
+                0x000056e4       0x22 build/din.o
+                0x000056e4                din_init
+ .text.din_readNextInput
+                0x00005706       0xdc build/din.o
+                0x00005706                din_readNextInput
+ .text.dout_init
+                0x000057e2       0x1c build/dout.o
+                0x000057e2                dout_init
+ .text.dout_shift
+                0x000057fe        0x6 build/dout.o
+                0x000057fe                dout_shift
+ .text.dout_load
+                0x00005804        0x6 build/dout.o
+                0x00005804                dout_load
+ .text.dout_updateOutputs
+                0x0000580a       0x46 build/dout.o
+                0x0000580a                dout_updateOutputs
+ .text.__vector_20
+                0x00005850       0x50 build/uart.o
+                0x00005850                __vector_20
+ .text.__vector_21
+                0x000058a0       0x78 build/uart.o
+                0x000058a0                __vector_21
+ .text.uart_init
+                0x00005918       0x36 build/uart.o
+                0x00005918                uart_init
+ .text.uart_putc
+                0x0000594e       0x16 build/uart.o
+                0x0000594e                uart_putc
+ .text.uart_getc
+                0x00005964       0x16 build/uart.o
+                0x00005964                uart_getc
+ .text.uart_waitAck
+                0x0000597a       0x20 build/uart.o
+                0x0000597a                uart_waitAck
+ .text.uart_checkAndParse
+                0x0000599a       0x24 build/uart.o
+                0x0000599a                uart_checkAndParse
+ .text.led_init
+                0x000059be       0x14 build/ledHandler.o
+                0x000059be                led_init
+ .text.led_clearSelectLeds
+                0x000059d2        0xa build/ledHandler.o
+                0x000059d2                led_clearSelectLeds
+ .text.led_clearVoiceLeds
+                0x000059dc       0x16 build/ledHandler.o
+                0x000059dc                led_clearVoiceLeds
+ .text.led_setActivePage
+                0x000059f2       0x2e build/ledHandler.o
+                0x000059f2                led_setActivePage
+ .text.led_setActiveSelectButton
+                0x00005a20       0x2e build/ledHandler.o
+                0x00005a20                led_setActiveSelectButton
+ .text.led_setActiveVoiceLeds
+                0x00005a4e       0x20 build/ledHandler.o
+                0x00005a4e                led_setActiveVoiceLeds
+ .text.led_setActiveVoice
+                0x00005a6e       0x3e build/ledHandler.o
+                0x00005a6e                led_setActiveVoice
+ .text.led_setValue
+                0x00005aac       0x44 build/ledHandler.o
+                0x00005aac                led_setValue
+ .text.led_toggle
+                0x00005af0       0x44 build/ledHandler.o
+                0x00005af0                led_toggle
+ .text.led_toggleTemp
+                0x00005b34       0x32 build/ledHandler.o
+                0x00005b34                led_toggleTemp
+ .text.led_setBlinkLed.part.0
+                0x00005b66       0x48 build/ledHandler.o
+ .text.led_clearSequencerLeds
+                0x00005bae       0x16 build/ledHandler.o
+                0x00005bae                led_clearSequencerLeds
+ .text.led_pulseLed
+                0x00005bc4       0x8a build/ledHandler.o
+                0x00005bc4                led_pulseLed
+ .text.led_reset
+                0x00005c4e       0x3e build/ledHandler.o
+                0x00005c4e                led_reset
+ .text.led_setActive_step
+                0x00005c8c       0x2c build/ledHandler.o
+                0x00005c8c                led_setActive_step
+ .text.led_clearActive_step
+                0x00005cb8        0x8 build/ledHandler.o
+                0x00005cb8                led_clearActive_step
+ .text.led_clearAllBlinkLeds
+                0x00005cc0       0x46 build/ledHandler.o
+                0x00005cc0                led_clearAllBlinkLeds
+ .text.led_setBlinkLed
+                0x00005d06       0x64 build/ledHandler.o
+                0x00005d06                led_setBlinkLed
+ .text.led_tickHandler
+                0x00005d6a      0x10a build/ledHandler.o
+                0x00005d6a                led_tickHandler
+ .text.led_initPerformanceLeds
+                0x00005e74       0x2a build/ledHandler.o
+                0x00005e74                led_initPerformanceLeds
+ .text.led_setMode2
+                0x00005e9e       0x7e build/ledHandler.o
+                0x00005e9e                led_setMode2
+ .text.__vector_default
+                0x00005f1c       0x14 build/main.o
+                0x00005f1c                __vector_default
+ .text.startup.main
+                0x00005f30      0x10a build/main.o
+                0x00005f30                main
+ .text.getModTargetIdxFromGapIdx
+                0x0000603a       0x6a build/Cc2Text.o
+                0x0000603a                getModTargetIdxFromGapIdx
+ .text.getNumModTargets
+                0x000060a4        0x4 build/Cc2Text.o
+                0x000060a4                getNumModTargets
+ .text.paramToModTargetInit
+                0x000060a8       0x1e build/Cc2Text.o
+                0x000060a8                paramToModTargetInit
+ .text.voiceFromModTargValue
+                0x000060c6       0x62 build/Cc2Text.o
+                0x000060c6                voiceFromModTargValue
+ .text.getModTargetGapIndex
+                0x00006128       0x60 build/Cc2Text.o
+                0x00006128                getModTargetGapIndex
+ .text.copyClear_armClearMenu.part.0
+                0x00006188       0x52 build/copyClearTools.o
+ .text.copyClear_clearTrackAutom
+                0x000061da       0x20 build/copyClearTools.o
+                0x000061da                copyClear_clearTrackAutom
+ .text.copyClear_clearCurrentPattern
+                0x000061fa       0x26 build/copyClearTools.o
+                0x000061fa                copyClear_clearCurrentPattern
+ .text.copyClear_reset
+                0x00006220       0x14 build/copyClearTools.o
+                0x00006220                copyClear_reset
+ .text.copyClear_setSrc
+                0x00006234        0xa build/copyClearTools.o
+                0x00006234                copyClear_setSrc
+ .text.copyClear_setDst
+                0x0000623e        0xa build/copyClearTools.o
+                0x0000623e                copyClear_setDst
+ .text.copyClear_srcSet
+                0x00006248        0xe build/copyClearTools.o
+                0x00006248                copyClear_srcSet
+ .text.copyClear_clearCurrentTrack
+                0x00006256       0x26 build/copyClearTools.o
+                0x00006256                copyClear_clearCurrentTrack
+ .text.copyClear_copyTrack
+                0x0000627c       0x48 build/copyClearTools.o
+                0x0000627c                copyClear_copyTrack
+ .text.copyClear_copyPattern
+                0x000062c4       0x48 build/copyClearTools.o
+                0x000062c4                copyClear_copyPattern
+ .text.copyClear_isClearModeActive
+                0x0000630c        0xe build/copyClearTools.o
+                0x0000630c                copyClear_isClearModeActive
+ .text.copyClear_getClearTarget
+                0x0000631a        0x6 build/copyClearTools.o
+                0x0000631a                copyClear_getClearTarget
+ .text.copyClear_setClearTarget
+                0x00006320       0x12 build/copyClearTools.o
+                0x00006320                copyClear_setClearTarget
+ .text.copyClear_armClearMenu
+                0x00006332       0x12 build/copyClearTools.o
+                0x00006332                copyClear_armClearMenu
+ .text.copyClear_executeClear
+                0x00006344       0x32 build/copyClearTools.o
+                0x00006344                copyClear_executeClear
+ .text.has2ndPage
+                0x00006376       0x26 build/menu.o
+ .text.getMaxEntriesForMenu
+                0x0000639c       0x44 build/menu.o
+ .text.setNoteName
+                0x000063e0       0x58 build/menu.o
+ .text.menu_displayModTargetFull
+                0x00006438       0x88 build/menu.o
+ .text.menu_displayModTargetShort
+                0x000064c0       0x96 build/menu.o
+ .text.menu_setShownPattern
+                0x00006556        0xe build/menu.o
+                0x00006556                menu_setShownPattern
+ .text.menu_getViewedPattern
+                0x00006564        0x6 build/menu.o
+                0x00006564                menu_getViewedPattern
+ .text.lockPotentiometerFetch
+                0x0000656a       0x10 build/menu.o
+                0x0000656a                lockPotentiometerFetch
+ .text.sendDisplayBuffer
+                0x0000657a       0xda build/menu.o
+                0x0000657a                sendDisplayBuffer
+ .text.menu_setNumSamples
+                0x00006654        0x6 build/menu.o
+                0x00006654                menu_setNumSamples
+ .text.menu_switchSubPage
+                0x0000665a       0x92 build/menu.o
+                0x0000665a                menu_switchSubPage
+ .text.menu_resetActiveParameter
+                0x000066ec       0x20 build/menu.o
+                0x000066ec                menu_resetActiveParameter
+ .text.menu_getSubPage
+                0x0000670c        0xc build/menu.o
+                0x0000670c                menu_getSubPage
+ .text.menu_parseGlobalParam
+                0x00006718      0x34e build/menu.o
+                0x00006718                menu_parseGlobalParam
+ .text.menu_sendAllGlobals
+                0x00006a66       0x30 build/menu.o
+                0x00006a66                menu_sendAllGlobals
+ .text.menu_getActivePage
+                0x00006a96        0x6 build/menu.o
+                0x00006a96                menu_getActivePage
+ .text.menu_getActiveVoice
+                0x00006a9c        0x6 build/menu.o
+                0x00006a9c                menu_getActiveVoice
+ .text.menu_setActiveVoice
+                0x00006aa2       0x1e build/menu.o
+                0x00006aa2                menu_setActiveVoice
+ .text.numtostrpu
+                0x00006ac0       0x3e build/menu.o
+                0x00006ac0                numtostrpu
+ .text.numtostrps
+                0x00006afe       0x4c build/menu.o
+                0x00006afe                numtostrps
+ .text.numtostru
+                0x00006b4a       0x4e build/menu.o
+                0x00006b4a                numtostru
+ .text.getMenuItemNameForValue
+                0x00006b98      0x126 build/menu.o
+ .text.menu_repaintGeneric
+                0x00006cbe      0x4e0 build/menu.o
+                0x00006cbe                menu_repaintGeneric
+ .text.menu_repaint
+                0x0000719e      0x1c2 build/menu.o
+                0x0000719e                menu_repaint
+ .text.menu_repaintAll
+                0x00007360       0x24 build/menu.o
+                0x00007360                menu_repaintAll
+ .text.menu_handleSaveScreenKnobValue
+                0x00007384      0x152 build/menu.o
+                0x00007384                menu_handleSaveScreenKnobValue
+ .text.menu_parseKnobValue
+                0x000074d6      0x364 build/menu.o
+                0x000074d6                menu_parseKnobValue
+ .text.menu_resetSaveParameters
+                0x0000783a       0x34 build/menu.o
+                0x0000783a                menu_resetSaveParameters
+ .text.menu_handleLoadSaveMenu
+                0x0000786e      0x372 build/menu.o
+                0x0000786e                menu_handleLoadSaveMenu
+ .text.menu_parseEncoder
+                0x00007be0      0x3d4 build/menu.o
+                0x00007be0                menu_parseEncoder
+ .text.menu_switchPage
+                0x00007fb4       0xf6 build/menu.o
+                0x00007fb4                menu_switchPage
+ .text.menu_init
+                0x000080aa       0x5a build/menu.o
+                0x000080aa                menu_init
+ .text.screensaver_pseudoRng
+                0x00008104       0x28 build/screensaver.o
+                0x00008104                screensaver_pseudoRng
+ .text.screensaver_touch
+                0x0000812c       0x26 build/screensaver.o
+                0x0000812c                screensaver_touch
+ .text.screensaver_process
+                0x00008152       0xf0 build/screensaver.o
+                0x00008152                screensaver_process
+ .text.screensaver_check
+                0x00008242       0x34 build/screensaver.o
+                0x00008242                screensaver_check
+ .text.preset_writeGlobalData
+                0x00008276       0x44 build/presetManager.o
+ .text.preset_makeFileName
+                0x000082ba       0x40 build/presetManager.o
+ .text.preset_readGlobalData
+                0x000082fa       0x5a build/presetManager.o
+ .text.preset_readDrumsetData
+                0x00008354       0x9a build/presetManager.o
+ .text.preset_readPatternData
+                0x000083ee      0x378 build/presetManager.o
+ .text.preset_init
+                0x00008766        0xa build/presetManager.o
+                0x00008766                preset_init
+ .text.preset_saveGlobals
+                0x00008770       0x1a build/presetManager.o
+                0x00008770                preset_saveGlobals
+ .text.preset_loadGlobals
+                0x0000878a       0x24 build/presetManager.o
+                0x0000878a                preset_loadGlobals
+ .text.preset_loadName
+                0x000087ae       0xa2 build/presetManager.o
+                0x000087ae                preset_loadName
+ .text.preset_queryStepDataFromSeq
+                0x00008850       0x74 build/presetManager.o
+                0x00008850                preset_queryStepDataFromSeq
+ .text.preset_queryPatternInfoFromSeq
+                0x000088c4       0x74 build/presetManager.o
+                0x000088c4                preset_queryPatternInfoFromSeq
+ .text.preset_queryMainStepDataFromSeq
+                0x00008938       0xa4 build/presetManager.o
+                0x00008938                preset_queryMainStepDataFromSeq
+ .text.preset_writePatternData
+                0x000089dc      0x252 build/presetManager.o
+ .text.preset_savePattern
+                0x00008c2e       0x7a build/presetManager.o
+                0x00008c2e                preset_savePattern
+ .text.preset_loadPattern
+                0x00008ca8       0x86 build/presetManager.o
+                0x00008ca8                preset_loadPattern
+ .text.preset_morph
+                0x00008d2e       0x94 build/presetManager.o
+                0x00008d2e                preset_morph
+ .text.preset_sendDrumsetParameters
+                0x00008dc2       0xc8 build/presetManager.o
+                0x00008dc2                preset_sendDrumsetParameters
+ .text.preset_loadDrumset
+                0x00008e8a       0x8e build/presetManager.o
+                0x00008e8a                preset_loadDrumset
+ .text.preset_getMorphValue
+                0x00008f18       0x38 build/presetManager.o
+                0x00008f18                preset_getMorphValue
+ .text.preset_writeDrumsetData
+                0x00008f50       0xb6 build/presetManager.o
+ .text.preset_saveDrumset
+                0x00009006       0x6c build/presetManager.o
+                0x00009006                preset_saveDrumset
+ .text.preset_saveAll
+                0x00009072      0x14a build/presetManager.o
+                0x00009072                preset_saveAll
+ .text.preset_loadAll
+                0x000091bc      0x1aa build/presetManager.o
+                0x000091bc                preset_loadAll
+ .text.libgcc.div
+                0x00009366       0x18 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodqi4.o)
+                0x00009366                __udivmodqi4
+ .text.libgcc.div
+                0x0000937e       0x1c /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodqi4.o)
+                0x0000937e                __divmodqi4
+ .text.libgcc.div
+                0x0000939a       0x44 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+                0x0000939a                __udivmodsi4
+ .text.libgcc   0x000093de        0xc /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_tablejump.o)
+                0x000093de                __tablejump2__
+                0x000093e2                __tablejump__
+ .text.libgcc.mul
+                0x000093ea       0x16 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_muluhisi3.o)
+                0x000093ea                __muluhisi3
+ .text.libgcc.mul
+                0x00009400       0x1e /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
+                0x00009400                __umulhisi3
+ .text.avr-libc.fplib
+                0x0000941e        0xa /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(addsf3.o)
+                0x0000941e                __subsf3
+                0x00009420                __addsf3
+ .text.avr-libc.fplib
+                0x00009428       0xc0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(addsf3x.o)
+                0x00009442                __addsf3x
+ .text.avr-libc.fplib
+                0x000094e8       0x58 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fixunssfsi.o)
+                0x000094e8                __fixunssfsi
+ .text.avr-libc.fplib
+                0x00009540       0x7a /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(floatsisf.o)
+                0x00009540                __floatunsisf
+                0x00009544                __floatsisf
+ .text.avr-libc.fplib
+                0x000095ba        0xc /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_inf.o)
+                0x000095ba                __fp_inf
+ .text.avr-libc.fplib
+                0x000095c6        0x6 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_nan.o)
+                0x000095c6                __fp_nan
+ .text.avr-libc.fplib
+                0x000095cc        0xe /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_pscA.o)
+                0x000095cc                __fp_pscA
+ .text.avr-libc.fplib
+                0x000095da        0xe /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_pscB.o)
+                0x000095da                __fp_pscB
+ .text.avr-libc.fplib
+                0x000095e8       0x22 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_round.o)
+                0x000095e8                __fp_round
+ .text.avr-libc.fplib
+                0x0000960a       0x44 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_split3.o)
+                0x0000960a                __fp_split3
+                0x0000961a                __fp_splitA
+ .text.avr-libc.fplib
+                0x0000964e        0xe /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_zero.o)
+                0x0000964e                __fp_zero
+                0x00009650                __fp_szero
+ .text.avr-libc.fplib
+                0x0000965c        0x8 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(gesf2.o)
+                0x0000965c                __gtsf2
+                0x0000965c                __gesf2
+ .text.avr-libc.fplib
+                0x00009664        0x4 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(mulsf3.o)
+                0x00009664                __mulsf3
+ .text.avr-libc.fplib
+                0x00009668       0xc2 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+                0x0000967c                __mulsf3x
+                0x00009680                __mulsf3_pse
+ .text.avr-libc.fplib
+                0x0000972a       0x48 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_cmp.o)
+                0x0000972a                __fp_cmp
+ .text.avr-libc
+                0x00009772       0x10 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(tolower.o)
+                0x00009772                tolower
+ .text.avr-libc
+                0x00009782       0x10 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(toupper.o)
+                0x00009782                toupper
+ .text.avr-libc
+                0x00009792       0x12 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(memcpy_P.o)
+                0x00009792                memcpy_P
+ .text.avr-libc
+                0x000097a4        0xe /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(strcpy_P.o)
+                0x000097a4                strcpy_P
+ .text.avr-libc
+                0x000097b2        0xe /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(memset.o)
+                0x000097b2                memset
+ .text.avr-libc
+                0x000097c0       0x16 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(itoa_ncheck.o)
+                0x000097c0                __itoa_ncheck
+ .text.avr-libc
+                0x000097d6       0x34 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(utoa_ncheck.o)
+                0x000097d6                __utoa_ncheck
+                0x000097d8                __utoa_common
+ .text.avr-libc
+                0x0000980a       0x20 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(strrev.o)
+                0x0000980a                strrev
+                0x0000982a                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x0000982a        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+                0x0000982a                exit
+                0x0000982a                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x0000982a        0x4 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+ *(.fini0)
+                0x0000982e                _etext = .
+
+.data           0x00800100       0xe4 load address 0x0000982e
+                0x00800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800100        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm644.o
+ .data          0x00800100        0x0 build/buttonHandler.o
+ .data          0x00800100        0x0 build/encoder.o
+ .data          0x00800100        0x0 build/fifo.o
+ .data          0x00800100        0x0 build/frontPanelParser.o
+ .data          0x00800100        0x0 build/lcd.o
+ .data          0x00800100        0x0 build/diskIo.o
+ .data          0x00800100        0x0 build/ff.o
+ .data          0x00800100        0x0 build/SD_routines.o
+ .data          0x00800100        0x0 build/SPI_routines.o
+ .data          0x00800100        0x0 build/timebase.o
+ .data          0x00800100        0x0 build/adcPots.o
+ .data          0x00800100        0x0 build/din.o
+ .data          0x00800100        0x0 build/dout.o
+ .data          0x00800100        0x0 build/uart.o
+ .data          0x00800100        0x0 build/ledHandler.o
+ .data          0x00800100        0x0 build/main.o
+ .data          0x00800100        0x0 build/Cc2Text.o
+ .data          0x00800100        0x0 build/copyClearTools.o
+ .data          0x00800100        0x0 build/menu.o
+ .data          0x00800100        0x0 build/screensaver.o
+ .data          0x00800100        0x0 build/presetManager.o
+ .data          0x00800100        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodqi4.o)
+ .data          0x00800100        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodqi4.o)
+ .data          0x00800100        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+ .data          0x00800100        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+ .data          0x00800100        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_tablejump.o)
+ .data          0x00800100        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+ .data          0x00800100        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+ .data          0x00800100        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_muluhisi3.o)
+ .data          0x00800100        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
+ .data          0x00800100        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(addsf3.o)
+ .data          0x00800100        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(addsf3x.o)
+ .data          0x00800100        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fixunssfsi.o)
+ .data          0x00800100        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(floatsisf.o)
+ .data          0x00800100        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_inf.o)
+ .data          0x00800100        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_nan.o)
+ .data          0x00800100        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_pscA.o)
+ .data          0x00800100        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_pscB.o)
+ .data          0x00800100        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_round.o)
+ .data          0x00800100        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_split3.o)
+ .data          0x00800100        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_zero.o)
+ .data          0x00800100        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(gesf2.o)
+ .data          0x00800100        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(mulsf3.o)
+ .data          0x00800100        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+ .data          0x00800100        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_cmp.o)
+ .data          0x00800100        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(tolower.o)
+ .data          0x00800100        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(toupper.o)
+ .data          0x00800100        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(memcpy_P.o)
+ .data          0x00800100        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(strcpy_P.o)
+ .data          0x00800100        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(memset.o)
+ .data          0x00800100        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(itoa_ncheck.o)
+ .data          0x00800100        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(utoa_ncheck.o)
+ .data          0x00800100        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(strrev.o)
+ *(.data*)
+ .data.buttonHandler_armedAutomationStep
+                0x00800100        0x1 build/buttonHandler.o
+ .data.buttonHandler_buttonTimerStepNr
+                0x00800101        0x1 build/buttonHandler.o
+ .data.selectedStepLed
+                0x00800102        0x1 build/buttonHandler.o
+ .data.Stat     0x00800103        0x1 build/diskIo.o
+ .data.inputPos
+                0x00800104        0x1 build/din.o
+ .data.buttonHandler_copyDst
+                0x00800105        0x1 build/copyClearTools.o
+                0x00800105                buttonHandler_copyDst
+ .data.buttonHandler_copySrc
+                0x00800106        0x1 build/copyClearTools.o
+                0x00800106                buttonHandler_copySrc
+ .data.parameterFetch
+                0x00800107        0x1 build/menu.o
+ .data.menu_TargetVoiceGapIndex
+                0x00800108        0x1 build/menu.o
+ .data.screensaver_Timeout
+                0x00800109        0x2 build/screensaver.o
+                0x00800109                screensaver_Timeout
+ *(.rodata)
+ *(.rodata*)
+ .rodata.str1.1
+                0x0080010b        0xf build/ff.o
+ .rodata.excvt.1780
+                0x0080011a       0x80 build/ff.o
+ .rodata.str1.1
+                0x0080019a        0x5 build/main.o
+ .rodata.str1.1
+                0x0080019f       0x29 build/copyClearTools.o
+ .rodata.CSWTCH.135
+                0x008001c8        0xe build/menu.o
+ .rodata.str1.1
+                0x008001d6        0x8 build/presetManager.o
+ .rodata.CSWTCH.29
+                0x008001de        0x6 build/presetManager.o
+ *(.gnu.linkonce.d*)
+                0x008001e4                . = ALIGN (0x2)
+                0x008001e4                _edata = .
+                0x008001e4                PROVIDE (__data_end, .)
+
+.bss            0x008001e4      0x807
+                0x008001e4                PROVIDE (__bss_start, .)
+ *(.bss)
+ *(.bss*)
+ .bss.buttonHandler_mutedVoices
+                0x008001e4        0x1 build/buttonHandler.o
+ .bss.buttonHandler_resetLock
+                0x008001e5        0x1 build/buttonHandler.o
+                0x008001e5                buttonHandler_resetLock
+ .bss.buttonHandler_originalValue
+                0x008001e6        0x1 build/buttonHandler.o
+                0x008001e6                buttonHandler_originalValue
+ .bss.buttonHandler_originalParameter
+                0x008001e7        0x2 build/buttonHandler.o
+                0x008001e7                buttonHandler_originalParameter
+ .bss.buttonHandler_buttonTimer
+                0x008001e9        0x2 build/buttonHandler.o
+ .bss.buttonHandler_selectedStep
+                0x008001eb        0x1 build/buttonHandler.o
+                0x008001eb                buttonHandler_selectedStep
+ .bss.lastActiveSubPage
+                0x008001ec        0x1 build/buttonHandler.o
+ .bss.lastActivePage
+                0x008001ed        0x1 build/buttonHandler.o
+ .bss.lastButton
+                0x008001ee        0x1 build/encoder.o
+ .bss.last      0x008001ef        0x1 build/encoder.o
+ .bss.frontParser_nameIndex
+                0x008001f0        0x1 build/frontPanelParser.o
+                0x008001f0                frontParser_nameIndex
+ .bss.frontParser_newSeqDataAvailable
+                0x008001f1        0x1 build/frontPanelParser.o
+                0x008001f1                frontParser_newSeqDataAvailable
+ .bss.frontPanel_sysexMode
+                0x008001f2        0x1 build/frontPanelParser.o
+                0x008001f2                frontPanel_sysexMode
+ .bss.frontParser_nrpnNr
+                0x008001f3        0x2 build/frontPanelParser.o
+ .bss.frontParser_rxCnt
+                0x008001f5        0x1 build/frontPanelParser.o
+ .bss.Fsid      0x008001f6        0x2 build/ff.o
+ .bss.FatFs     0x008001f8        0x2 build/ff.o
+ .bss.sd_cardAvailable
+                0x008001fa        0x1 build/SD_routines.o
+                0x008001fa                sd_cardAvailable
+ .bss.time_sysTick
+                0x008001fb        0x2 build/timebase.o
+                0x008001fb                time_sysTick
+ .bss.led_nextBlinkTime
+                0x008001fd        0x2 build/ledHandler.o
+                0x008001fd                led_nextBlinkTime
+ .bss.led_currentStepLed
+                0x008001ff        0x1 build/ledHandler.o
+                0x008001ff                led_currentStepLed
+ .bss.paramToModTarget
+                0x00800200       0xe4 build/Cc2Text.o
+                0x00800200                paramToModTarget
+ .bss.copyClear_clearTarget
+                0x008002e4        0x1 build/copyClearTools.o
+ .bss.copyClear_Mode
+                0x008002e5        0x1 build/copyClearTools.o
+                0x008002e5                copyClear_Mode
+ .bss.lastEncoderButton
+                0x008002e6        0x1 build/menu.o
+ .bss.editModeActive
+                0x008002e7        0x1 build/menu.o
+ .bss.menu_playedPattern
+                0x008002e8        0x1 build/menu.o
+                0x008002e8                menu_playedPattern
+ .bss.menu_activeVoice
+                0x008002e9        0x1 build/menu.o
+                0x008002e9                menu_activeVoice
+ .bss.menu_activePage
+                0x008002ea        0x1 build/menu.o
+                0x008002ea                menu_activePage
+ .bss.visibleCursor
+                0x008002eb        0x1 build/menu.o
+                0x008002eb                visibleCursor
+ .bss.menu_muteModeActive
+                0x008002ec        0x1 build/menu.o
+                0x008002ec                menu_muteModeActive
+ .bss.menu_shownPattern
+                0x008002ed        0x1 build/menu.o
+                0x008002ed                menu_shownPattern
+ .bss.menu_currentPresetNr
+                0x008002ee        0x5 build/menu.o
+ .bss.menu_numSamples
+                0x008002f3        0x1 build/menu.o
+                0x008002f3                menu_numSamples
+ .bss.menuIndex
+                0x008002f4        0x1 build/menu.o
+ .bss.menu_saveOptions
+                0x008002f5        0x1 build/menu.o
+ .bss.screensaver_rng
+                0x008002f6        0x2 build/screensaver.o
+                0x008002f6                screensaver_rng
+ .bss.screensaver_cellState
+                0x008002f8        0x1 build/screensaver.o
+                0x008002f8                screensaver_cellState
+ .bss.screensaver_activeCell
+                0x008002f9        0x1 build/screensaver.o
+                0x008002f9                screensaver_activeCell
+ .bss.screensaver_processTime
+                0x008002fa        0x2 build/screensaver.o
+ .bss.screensaver_Active
+                0x008002fc        0x1 build/screensaver.o
+                0x008002fc                screensaver_Active
+ .bss.screensaver_timer
+                0x008002fd        0x2 build/screensaver.o
+                0x008002fd                screensaver_timer
+ *(COMMON)
+ COMMON         0x008002ff        0x1 build/buttonHandler.o
+                0x008002ff                buttonHandler_stateMemory
+ COMMON         0x00800300        0x2 build/encoder.o
+                0x00800300                buttonValue
+                0x00800301                enc_delta
+ COMMON         0x00800302       0x11 build/frontPanelParser.o
+                0x00800302                frontParser_midiMsg
+                0x00800305                frontParser_sysexBuffer
+                0x0080030c                frontParser_stepData
+ COMMON         0x00800313        0xa build/diskIo.o
+                0x00800313                startBlock
+                0x00800317                SDHC_flag
+                0x00800318                totalBlocks
+                0x0080031c                cardType
+ COMMON         0x0080031d       0x10 build/adcPots.o
+                0x0080031d                adc_potValues
+                0x00800325                adc_potAvg
+ COMMON         0x0080032d        0x5 build/din.o
+                0x0080032d                din_inputData
+ COMMON         0x00800332        0x5 build/dout.o
+                0x00800332                dout_outputData
+ COMMON         0x00800337      0x204 build/uart.o
+                0x00800337                uart_txBuffer
+                0x00800439                uart_rxBuffer
+ COMMON         0x0080053b       0x23 build/ledHandler.o
+                0x0080053b                led_pulsingLeds
+                0x0080053c                led_pulseLedNumber
+                0x00800544                led_blinkLedNumber
+                0x00800548                led_pulseEndTime
+                0x00800558                led_originalLedState
+                0x0080055d                led_blinkingLeds
+ COMMON         0x0080055e      0x237 build/menu.o
+                0x0080055e                currentDisplayBuffer
+                0x0080057e                editDisplayBuffer
+                0x008005a0                parameter_values
+                0x008006b1                parameters2
+ COMMON         0x00800795      0x256 build/presetManager.o
+                0x00800795                preset_Fatfs
+                0x008009c3                preset_File
+                0x008009e3                preset_currentName
+                0x008009eb                PROVIDE (__bss_end, .)
+                0x0000982e                __data_load_start = LOADADDR (.data)
+                0x00009912                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x008009eb        0x0
+                0x008009eb                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x008009eb                PROVIDE (__noinit_end, .)
+                0x008009eb                _end = .
+                0x008009eb                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x11
+ *(.comment)
+ .comment       0x00000000       0x11 build/buttonHandler.o
+                                 0x12 (size before relaxing)
+ .comment       0x00000000       0x12 build/encoder.o
+ .comment       0x00000000       0x12 build/fifo.o
+ .comment       0x00000000       0x12 build/frontPanelParser.o
+ .comment       0x00000000       0x12 build/lcd.o
+ .comment       0x00000000       0x12 build/diskIo.o
+ .comment       0x00000000       0x12 build/ff.o
+ .comment       0x00000000       0x12 build/SD_routines.o
+ .comment       0x00000000       0x12 build/SPI_routines.o
+ .comment       0x00000000       0x12 build/timebase.o
+ .comment       0x00000000       0x12 build/adcPots.o
+ .comment       0x00000000       0x12 build/din.o
+ .comment       0x00000000       0x12 build/dout.o
+ .comment       0x00000000       0x12 build/uart.o
+ .comment       0x00000000       0x12 build/ledHandler.o
+ .comment       0x00000000       0x12 build/main.o
+ .comment       0x00000000       0x12 build/Cc2Text.o
+ .comment       0x00000000       0x12 build/copyClearTools.o
+ .comment       0x00000000       0x12 build/menu.o
+ .comment       0x00000000       0x12 build/screensaver.o
+ .comment       0x00000000       0x12 build/presetManager.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x120
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodqi4.o)
+ .debug_aranges
+                0x00000020       0x20 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodqi4.o)
+ .debug_aranges
+                0x00000040       0x20 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+ .debug_aranges
+                0x00000060       0x20 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+ .debug_aranges
+                0x00000080       0x20 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_tablejump.o)
+ .debug_aranges
+                0x000000a0       0x20 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+ .debug_aranges
+                0x000000c0       0x20 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+ .debug_aranges
+                0x000000e0       0x20 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_muluhisi3.o)
+ .debug_aranges
+                0x00000100       0x20 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000      0x6ae
+ *(.debug_info)
+ .debug_info    0x00000000       0xbe /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodqi4.o)
+ .debug_info    0x000000be       0xbe /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodqi4.o)
+ .debug_info    0x0000017c       0xbe /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+ .debug_info    0x0000023a       0xbe /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+ .debug_info    0x000002f8       0xbe /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_tablejump.o)
+ .debug_info    0x000003b6       0xbe /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+ .debug_info    0x00000474       0xbe /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+ .debug_info    0x00000532       0xbe /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_muluhisi3.o)
+ .debug_info    0x000005f0       0xbe /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000       0xb4
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0x14 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodqi4.o)
+ .debug_abbrev  0x00000014       0x14 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodqi4.o)
+ .debug_abbrev  0x00000028       0x14 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+ .debug_abbrev  0x0000003c       0x14 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+ .debug_abbrev  0x00000050       0x14 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_tablejump.o)
+ .debug_abbrev  0x00000064       0x14 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+ .debug_abbrev  0x00000078       0x14 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+ .debug_abbrev  0x0000008c       0x14 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_muluhisi3.o)
+ .debug_abbrev  0x000000a0       0x14 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
+
+.debug_line     0x00000000      0x375
+ *(.debug_line)
+ .debug_line    0x00000000       0x62 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodqi4.o)
+ .debug_line    0x00000062       0x63 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodqi4.o)
+ .debug_line    0x000000c5       0x78 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+ .debug_line    0x0000013d       0x58 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+ .debug_line    0x00000195       0x5c /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_tablejump.o)
+ .debug_line    0x000001f1       0x61 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+ .debug_line    0x00000252       0x5e /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+ .debug_line    0x000002b0       0x60 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_muluhisi3.o)
+ .debug_line    0x00000310       0x65 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(build/AVR.elf elf32-avr)
+LOAD linker stubs
