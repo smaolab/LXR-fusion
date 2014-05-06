@@ -383,6 +383,9 @@ enum
 	CC2_MUTE_5,
 	CC2_MUTE_6,
 	CC2_MUTE_7,
+	
+	// rstephane : RND button :-) for CASE switch in MidiParser.C
+	CC2_RND_VOICE1,
 
 }Param2Enums;
 

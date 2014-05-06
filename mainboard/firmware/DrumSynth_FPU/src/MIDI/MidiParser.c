@@ -248,6 +248,7 @@ void midiParser_ccHandler(MidiMsg msg, uint8_t updateOriginalValue)
 			//set upper nibble
 			voiceArray[1].osc.midiFreq |= msg.data2 << 8;
 			osc_recalcFreq(&voiceArray[1].osc);
+				
 		}
 				break;
 		case F_OSC3_COARSE:
@@ -1046,7 +1047,15 @@ void midiParser_ccHandler(MidiMsg msg, uint8_t updateOriginalValue)
 
 			}
 				break;
-
+			// rstephane : Handle the RND button
+			case CC2_RND_VOICE1:
+				//clear upper nibble
+				voiceArray[0].osc.midiFreq &= 0x00ff;
+				//set upper nibble
+				voiceArray[0].osc.midiFreq |= msg.data2 << 8;
+				osc_recalcFreq(&voiceArray[0].osc);	
+				break;
+							
 			default:
 				break;
 		}
