@@ -296,6 +296,8 @@ enum ParamEnums
 	PAR_MIDI_NOTE5,
 	PAR_MIDI_NOTE6,
 	PAR_MIDI_NOTE7,
+	
+	PAR_RND_VOICE1,					// rstephane: random drum1 
 
 	//#########################################
 	//######## End of sound Parameters ########
@@ -375,7 +377,6 @@ enum ParamEnums
 
 	PAR_BAR_RESET_MODE,					// bool --AS 0 or 1   /*270*/
 	PAR_MIDI_CHAN_GLOBAL,				// --AS global midi channel
-	PAR_RND_VOICE1,					// rstephane: random drum1 //272
 	NUM_PARAMS	
 };
 

@@ -374,6 +374,9 @@ enum
 	CC2_MIDI_NOTE5,
 	CC2_MIDI_NOTE6,
 	CC2_MIDI_NOTE7, // s/b 111 i think
+	
+	// rstephane : RND button :-) for CASE switch in MidiParser.C
+	CC2_RND_VOICE1,
 
 	//Mute Button NRPN messages
 	CC2_MUTE_1 = 200,
@@ -383,9 +386,6 @@ enum
 	CC2_MUTE_5,
 	CC2_MUTE_6,
 	CC2_MUTE_7,
-	
-	// rstephane : RND button :-) for CASE switch in MidiParser.C
-	CC2_RND_VOICE1,
 
 }Param2Enums;
 

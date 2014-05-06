@@ -101,7 +101,7 @@ uart_rxBuffer       0x102             build/uart.o
 enc_delta           0x1               build/encoder.o
 cardType            0x1               build/diskIo.o
 din_inputData       0x5               build/din.o
-parameters2         0xe4              build/menu.o
+parameters2         0xe5              build/menu.o
 led_blinkingLeds    0x1               build/ledHandler.o
 
 Discarded input sections
@@ -1493,7 +1493,7 @@ END GROUP
                 0x008001e4                _edata = .
                 0x008001e4                PROVIDE (__data_end, .)
 
-.bss            0x008001e4      0x808
+.bss            0x008001e4      0x80a
                 0x008001e4                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
@@ -1548,112 +1548,112 @@ END GROUP
                 0x008001ff        0x1 build/ledHandler.o
                 0x008001ff                led_currentStepLed
  .bss.paramToModTarget
-                0x00800200       0xe4 build/Cc2Text.o
+                0x00800200       0xe5 build/Cc2Text.o
                 0x00800200                paramToModTarget
  .bss.copyClear_clearTarget
-                0x008002e4        0x1 build/copyClearTools.o
- .bss.copyClear_Mode
                 0x008002e5        0x1 build/copyClearTools.o
-                0x008002e5                copyClear_Mode
+ .bss.copyClear_Mode
+                0x008002e6        0x1 build/copyClearTools.o
+                0x008002e6                copyClear_Mode
  .bss.lastEncoderButton
-                0x008002e6        0x1 build/menu.o
- .bss.editModeActive
                 0x008002e7        0x1 build/menu.o
- .bss.menu_playedPattern
+ .bss.editModeActive
                 0x008002e8        0x1 build/menu.o
-                0x008002e8                menu_playedPattern
- .bss.menu_activeVoice
+ .bss.menu_playedPattern
                 0x008002e9        0x1 build/menu.o
-                0x008002e9                menu_activeVoice
- .bss.menu_activePage
+                0x008002e9                menu_playedPattern
+ .bss.menu_activeVoice
                 0x008002ea        0x1 build/menu.o
-                0x008002ea                menu_activePage
- .bss.visibleCursor
+                0x008002ea                menu_activeVoice
+ .bss.menu_activePage
                 0x008002eb        0x1 build/menu.o
-                0x008002eb                visibleCursor
- .bss.menu_muteModeActive
+                0x008002eb                menu_activePage
+ .bss.visibleCursor
                 0x008002ec        0x1 build/menu.o
-                0x008002ec                menu_muteModeActive
- .bss.menu_shownPattern
+                0x008002ec                visibleCursor
+ .bss.menu_muteModeActive
                 0x008002ed        0x1 build/menu.o
-                0x008002ed                menu_shownPattern
+                0x008002ed                menu_muteModeActive
+ .bss.menu_shownPattern
+                0x008002ee        0x1 build/menu.o
+                0x008002ee                menu_shownPattern
  .bss.menu_currentPresetNr
-                0x008002ee        0x5 build/menu.o
+                0x008002ef        0x5 build/menu.o
  .bss.menu_numSamples
-                0x008002f3        0x1 build/menu.o
-                0x008002f3                menu_numSamples
- .bss.menuIndex
                 0x008002f4        0x1 build/menu.o
- .bss.menu_saveOptions
+                0x008002f4                menu_numSamples
+ .bss.menuIndex
                 0x008002f5        0x1 build/menu.o
+ .bss.menu_saveOptions
+                0x008002f6        0x1 build/menu.o
  .bss.screensaver_rng
-                0x008002f6        0x2 build/screensaver.o
-                0x008002f6                screensaver_rng
+                0x008002f7        0x2 build/screensaver.o
+                0x008002f7                screensaver_rng
  .bss.screensaver_cellState
-                0x008002f8        0x1 build/screensaver.o
-                0x008002f8                screensaver_cellState
- .bss.screensaver_activeCell
                 0x008002f9        0x1 build/screensaver.o
-                0x008002f9                screensaver_activeCell
+                0x008002f9                screensaver_cellState
+ .bss.screensaver_activeCell
+                0x008002fa        0x1 build/screensaver.o
+                0x008002fa                screensaver_activeCell
  .bss.screensaver_processTime
-                0x008002fa        0x2 build/screensaver.o
+                0x008002fb        0x2 build/screensaver.o
  .bss.screensaver_Active
-                0x008002fc        0x1 build/screensaver.o
-                0x008002fc                screensaver_Active
+                0x008002fd        0x1 build/screensaver.o
+                0x008002fd                screensaver_Active
  .bss.screensaver_timer
-                0x008002fd        0x2 build/screensaver.o
-                0x008002fd                screensaver_timer
+                0x008002fe        0x2 build/screensaver.o
+                0x008002fe                screensaver_timer
  *(COMMON)
- COMMON         0x008002ff        0x1 build/buttonHandler.o
-                0x008002ff                buttonHandler_stateMemory
- COMMON         0x00800300        0x2 build/encoder.o
-                0x00800300                buttonValue
-                0x00800301                enc_delta
- COMMON         0x00800302       0x11 build/frontPanelParser.o
-                0x00800302                frontParser_midiMsg
-                0x00800305                frontParser_sysexBuffer
-                0x0080030c                frontParser_stepData
- COMMON         0x00800313        0xa build/diskIo.o
-                0x00800313                startBlock
-                0x00800317                SDHC_flag
-                0x00800318                totalBlocks
-                0x0080031c                cardType
- COMMON         0x0080031d       0x10 build/adcPots.o
-                0x0080031d                adc_potValues
-                0x00800325                adc_potAvg
- COMMON         0x0080032d        0x5 build/din.o
-                0x0080032d                din_inputData
- COMMON         0x00800332        0x5 build/dout.o
-                0x00800332                dout_outputData
- COMMON         0x00800337      0x204 build/uart.o
-                0x00800337                uart_txBuffer
-                0x00800439                uart_rxBuffer
- COMMON         0x0080053b       0x23 build/ledHandler.o
-                0x0080053b                led_pulsingLeds
-                0x0080053c                led_pulseLedNumber
-                0x00800544                led_blinkLedNumber
-                0x00800548                led_pulseEndTime
-                0x00800558                led_originalLedState
-                0x0080055d                led_blinkingLeds
- COMMON         0x0080055e      0x238 build/menu.o
-                0x0080055e                currentDisplayBuffer
-                0x0080057e                editDisplayBuffer
-                0x008005a0                parameter_values
-                0x008006b2                parameters2
- COMMON         0x00800796      0x256 build/presetManager.o
-                0x00800796                preset_Fatfs
-                0x008009c4                preset_File
-                0x008009e4                preset_currentName
-                0x008009ec                PROVIDE (__bss_end, .)
+ COMMON         0x00800300        0x1 build/buttonHandler.o
+                0x00800300                buttonHandler_stateMemory
+ COMMON         0x00800301        0x2 build/encoder.o
+                0x00800301                buttonValue
+                0x00800302                enc_delta
+ COMMON         0x00800303       0x11 build/frontPanelParser.o
+                0x00800303                frontParser_midiMsg
+                0x00800306                frontParser_sysexBuffer
+                0x0080030d                frontParser_stepData
+ COMMON         0x00800314        0xa build/diskIo.o
+                0x00800314                startBlock
+                0x00800318                SDHC_flag
+                0x00800319                totalBlocks
+                0x0080031d                cardType
+ COMMON         0x0080031e       0x10 build/adcPots.o
+                0x0080031e                adc_potValues
+                0x00800326                adc_potAvg
+ COMMON         0x0080032e        0x5 build/din.o
+                0x0080032e                din_inputData
+ COMMON         0x00800333        0x5 build/dout.o
+                0x00800333                dout_outputData
+ COMMON         0x00800338      0x204 build/uart.o
+                0x00800338                uart_txBuffer
+                0x0080043a                uart_rxBuffer
+ COMMON         0x0080053c       0x23 build/ledHandler.o
+                0x0080053c                led_pulsingLeds
+                0x0080053d                led_pulseLedNumber
+                0x00800545                led_blinkLedNumber
+                0x00800549                led_pulseEndTime
+                0x00800559                led_originalLedState
+                0x0080055e                led_blinkingLeds
+ COMMON         0x0080055f      0x239 build/menu.o
+                0x0080055f                currentDisplayBuffer
+                0x0080057f                editDisplayBuffer
+                0x008005a1                parameter_values
+                0x008006b3                parameters2
+ COMMON         0x00800798      0x256 build/presetManager.o
+                0x00800798                preset_Fatfs
+                0x008009c6                preset_File
+                0x008009e6                preset_currentName
+                0x008009ee                PROVIDE (__bss_end, .)
                 0x0000984a                __data_load_start = LOADADDR (.data)
                 0x0000992e                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x008009ec        0x0
-                0x008009ec                PROVIDE (__noinit_start, .)
+.noinit         0x008009ee        0x0
+                0x008009ee                PROVIDE (__noinit_start, .)
  *(.noinit*)
-                0x008009ec                PROVIDE (__noinit_end, .)
-                0x008009ec                _end = .
-                0x008009ec                PROVIDE (__heap_start, .)
+                0x008009ee                PROVIDE (__noinit_end, .)
+                0x008009ee                _end = .
+                0x008009ee                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
  *(.eeprom*)
