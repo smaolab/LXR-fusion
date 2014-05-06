@@ -296,7 +296,8 @@ enum ParamEnums
 	PAR_MIDI_NOTE5,
 	PAR_MIDI_NOTE6,
 	PAR_MIDI_NOTE7,
-	
+		   
+	// rstephane MY VALUES ADDED FOR RANDOM FUNCTION
 	PAR_RND_VOICE1,					// rstephane: random drum1 
 
 	//#########################################

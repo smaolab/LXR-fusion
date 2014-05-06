@@ -44,6 +44,8 @@
 #include "modulationNode.h"
 #include "TriggerOut.h"
 
+// rstephane : pour random functions
+#include "valueShaper.h"
 
 float ampSmoothValue = 0.1f;
 //---------------------------------------------------
@@ -60,6 +62,7 @@ void drum_setPhase(const uint8_t phase, const uint8_t voiceNr)
 	voiceArray[voiceNr].osc.startPhase = startPhase;
 	voiceArray[voiceNr].modOsc.startPhase = startPhase;
 }
+
 //---------------------------------------------------
 void initDrumVoice()
 {
@@ -267,5 +270,53 @@ void calcDrumVoiceSyncBlock(const uint8_t voiceNr, int16_t* buf, const uint8_t s
 	bufferTool_addGain(buf,voiceArray[voiceNr].vol,size);
 }
 //---------------------------------------------------
+// rstephane : my functions
+//random all the parameters for voice 1 2 and 3
+//---------------------------------------------------
+void randomDrumVoice(const uint8_t voiceNr)
+{
+		uint8_t rndData;
+		// COARSE
+		rndData = (uint8_t) GetRngValue();
+		//clear upper nibble
+		voiceArray[voiceNr].osc.midiFreq &= 0x00ff;
+		//set upper nibble
+		voiceArray[voiceNr].osc.midiFreq |= rndData << 8;
+		osc_recalcFreq(&voiceArray[voiceNr].osc);
+		
+		// FILTER
+		rndData = (uint8_t) GetRngValue();
+		const float f = rndData/127.f;
+		//exponential full range freq
+		SVF_directSetFilterValue(&voiceArray[voiceNr].filter,valueShaperF2F(f,FILTER_SHAPER) );
+		// RESO
+		rndData = (uint8_t) GetRngValue();
+		SVF_setReso(&voiceArray[voiceNr].filter, rndData/127.f);
 
+		//VOL_SLOPE1:
+		rndData = (uint8_t) GetRngValue();
+		slopeEg2_setSlope(&voiceArray[voiceNr].oscVolEg,rndData);
+
+		// PITCH_SLOPE1:
+		rndData = (uint8_t) GetRngValue();
+		DecayEg_setSlope(&voiceArray[voiceNr].oscPitchEg,rndData);
+		
+		//F_OSC1_FINE:
+		rndData = (uint8_t) GetRngValue();
+		//clear lower nibble
+		voiceArray[voiceNr].osc.midiFreq &= 0xff00;
+		//set lower nibble
+		voiceArray[voiceNr].osc.midiFreq |= rndData ;
+		osc_recalcFreq(&voiceArray[voiceNr].osc);
+		
+		//OSC1_DIST:
+		rndData = (uint8_t) GetRngValue();
+#if USE_FILTER_DRIVE
+		voiceArray[voiceNr].filter.drive = 0.5f + (rndData/127.f) *6;
+#else
+		setDistortionShape(&voiceArray[voiceNr].distortion,rndData);
+#endif		
+
+
+}
 

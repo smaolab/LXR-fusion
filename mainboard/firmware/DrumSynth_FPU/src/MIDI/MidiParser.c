@@ -1047,13 +1047,10 @@ void midiParser_ccHandler(MidiMsg msg, uint8_t updateOriginalValue)
 
 			}
 				break;
+			// rstephane MY FUNCTIONS
 			// rstephane : Handle the RND button
 			case CC2_RND_VOICE1:
-				//clear upper nibble
-				voiceArray[0].osc.midiFreq &= 0x00ff;
-				//set upper nibble
-				voiceArray[0].osc.midiFreq |= msg.data2 << 8;
-				osc_recalcFreq(&voiceArray[0].osc);	
+				randomDrumVoice(0);	
 				break;
 							
 			default:

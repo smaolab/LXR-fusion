@@ -433,8 +433,8 @@ const enum Datatypes PROGMEM parameter_dtypes[NUM_PARAMS] = {
 	    /*PAR_MIDI_NOTE6*/		DTYPE_NOTE_NAME,
 	    /*PAR_MIDI_NOTE7*/		DTYPE_NOTE_NAME,
 	    
-	    
-	    /*PAR_RND_VOICE1*/	DTYPE_0B127, // DTYPE_ON_OFF,  // rstephane : random drum1 on/off //273 ????
+	    // rstephane MY VALUES ADDED FOR RANDOM FUNCTION
+	    /*PAR_RND_VOICE1*/	DTYPE_ON_OFF, // DTYPE_ON_OFF,  // rstephane : random drum1 on/off //273 ????
 	    
 	    /*PAR_ROLL*/ 			DTYPE_MENU | (MENU_ROLL_RATES<<4),
 	    /*PAR_MORPH*/ 			DTYPE_0B255,

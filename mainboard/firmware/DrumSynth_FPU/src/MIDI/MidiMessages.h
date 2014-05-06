@@ -375,6 +375,7 @@ enum
 	CC2_MIDI_NOTE6,
 	CC2_MIDI_NOTE7, // s/b 111 i think
 	
+	// rstephane MY VALUES ADDED FOR RANDOM FUNCTION
 	// rstephane : RND button :-) for CASE switch in MidiParser.C
 	CC2_RND_VOICE1,
 

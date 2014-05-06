@@ -41,4 +41,4 @@ build/DrumVoice.o: src/DSPAudio/DrumVoice.c src/DSPAudio/DrumVoice.h \
  src/DSPAudio/transientGenerator.h src/DSPAudio/transientTables.h \
  src/DSPAudio/snapEg.h src/DSPAudio/dither.h src/DSPAudio/random.h \
  src/DSPAudio/squareRootLut.h src/DSPAudio/BufferTools.h \
- src/Hardware/TriggerOut.h
+ src/Hardware/TriggerOut.h src/MIDI/valueShaper.h
