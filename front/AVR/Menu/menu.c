@@ -477,7 +477,7 @@ const enum Datatypes PROGMEM parameter_dtypes[NUM_PARAMS] = {
 		/*PAR_TRIGGER_GATE_MODE*/	DTYPE_ON_OFF,
 	    /*PAR_BAR_RESET_MODE*/  DTYPE_ON_OFF,
 	    /*PAR_MIDI_CHAN_GLOBAL*/DTYPE_1B16,		//--AS global midi channel
-	    /*PAR_RND_VOICE1*/	DTYPE_0B127, // DTYPE_ON_OFF,  // rstephane : random drum1 on/off //273
+	    /*PAR_RND_VOICE1*/	DTYPE_0B127, // DTYPE_ON_OFF,  // rstephane : random drum1 on/off //273 ????
 };
 
 

@@ -88,7 +88,7 @@ led_originalLedState
                     0x5               build/ledHandler.o
 startBlock          0x4               build/diskIo.o
 adc_potAvg          0x8               build/adcPots.o
-parameter_values    0x113             build/menu.o
+parameter_values    0x112             build/menu.o
 uart_txBuffer       0x102             build/uart.o
 preset_currentName  0x8               build/presetManager.o
 buttonHandler_stateMemory
@@ -523,11 +523,11 @@ END GROUP
                 0x00000144        0xe build/diskIo.o
  .progmem.data.__c.2025
                 0x00000152        0x8 build/diskIo.o
- .progmem.data.__c.3372
+ .progmem.data.__c.3371
                 0x0000015a        0xf build/main.o
- .progmem.data.__c.3370
+ .progmem.data.__c.3369
                 0x00000169        0xc build/main.o
- .progmem.data.__c.3368
+ .progmem.data.__c.3367
                 0x00000175        0xe build/main.o
  .progmem.data.modTargetGapMap
                 0x00000183       0x2b build/Cc2Text.o
@@ -538,131 +538,132 @@ END GROUP
  .progmem.data.modTargets
                 0x000001ba      0x26a build/Cc2Text.o
                 0x000001ba                modTargets
- .progmem.data.__c.3500
+ .progmem.data.__c.3499
                 0x00000424        0x8 build/menu.o
- .progmem.data.__c.3498
+ .progmem.data.__c.3497
                 0x0000042c        0xe build/menu.o
- .progmem.data.__c.3302
+ .progmem.data.__c.3301
                 0x0000043a        0x9 build/menu.o
- .progmem.data.__c.3299
+ .progmem.data.__c.3298
                 0x00000443        0x9 build/menu.o
- .progmem.data.__c.3296
+ .progmem.data.__c.3295
                 0x0000044c        0x9 build/menu.o
- .progmem.data.__c.3293
+ .progmem.data.__c.3292
                 0x00000455        0x9 build/menu.o
- .progmem.data.__c.3290
+ .progmem.data.__c.3289
                 0x0000045e        0x9 build/menu.o
- .progmem.data.__c.3287
+ .progmem.data.__c.3286
                 0x00000467        0x9 build/menu.o
- .progmem.data.__c.3283
+ .progmem.data.__c.3282
                 0x00000470        0x9 build/menu.o
- .progmem.data.__c.3280
+ .progmem.data.__c.3279
                 0x00000479        0x6 build/menu.o
- .progmem.data.__c.3278
+ .progmem.data.__c.3277
                 0x0000047f        0x6 build/menu.o
- .progmem.data.__c.3376
+ .progmem.data.__c.3375
                 0x00000485        0x6 build/menu.o
- .progmem.data.__c.3371
+ .progmem.data.__c.3370
                 0x0000048b        0x7 build/menu.o
  .progmem.data.parameter_dtypes
-                0x00000492      0x113 build/menu.o
+                0x00000492      0x112 build/menu.o
                 0x00000492                parameter_dtypes
  .progmem.data.valueNames
-                0x000005a5       0xfc build/menu.o
-                0x000005a5                valueNames
+                0x000005a4       0xfc build/menu.o
+                0x000005a4                valueNames
  .progmem.data.longNames
-                0x000006a1      0x410 build/menu.o
-                0x000006a1                longNames
+                0x000006a0      0x410 build/menu.o
+                0x000006a0                longNames
  .progmem.data.catNames
-                0x00000ab1      0x190 build/menu.o
-                0x00000ab1                catNames
+                0x00000ab0      0x190 build/menu.o
+                0x00000ab0                catNames
  .progmem.data.shortNames
-                0x00000c41      0x104 build/menu.o
-                0x00000c41                shortNames
+                0x00000c40      0x104 build/menu.o
+                0x00000c40                shortNames
  .progmem.data.midiFilterNames
-                0x00000d45      0x110 build/menu.o
-                0x00000d45                midiFilterNames
+                0x00000d44      0x110 build/menu.o
+                0x00000d44                midiFilterNames
  .progmem.data.midiRoutingNames
-                0x00000e55       0x2a build/menu.o
-                0x00000e55                midiRoutingNames
+                0x00000e54       0x2a build/menu.o
+                0x00000e54                midiRoutingNames
  .progmem.data.filterTypes
-                0x00000e7f       0x40 build/menu.o
-                0x00000e7f                filterTypes
+                0x00000e7e       0x40 build/menu.o
+                0x00000e7e                filterTypes
  .progmem.data.outputNames
-                0x00000ebf       0x31 build/menu.o
-                0x00000ebf                outputNames
+                0x00000ebe       0x31 build/menu.o
+                0x00000ebe                outputNames
  .progmem.data.waveformNames
-                0x00000ef0       0x1c build/menu.o
-                0x00000ef0                waveformNames
+                0x00000eef       0x1c build/menu.o
+                0x00000eef                waveformNames
  .progmem.data.syncRateNames
-                0x00000f0c       0x34 build/menu.o
-                0x00000f0c                syncRateNames
+                0x00000f0b       0x34 build/menu.o
+                0x00000f0b                syncRateNames
  .progmem.data.rollRateNames
-                0x00000f40       0x3c build/menu.o
-                0x00000f40                rollRateNames
+                0x00000f3f       0x3c build/menu.o
+                0x00000f3f                rollRateNames
  .progmem.data.lfoWaveNames
-                0x00000f7c       0x24 build/menu.o
-                0x00000f7c                lfoWaveNames
+                0x00000f7b       0x24 build/menu.o
+                0x00000f7b                lfoWaveNames
  .progmem.data.retriggerNames
-                0x00000fa0       0x20 build/menu.o
-                0x00000fa0                retriggerNames
+                0x00000f9f       0x20 build/menu.o
+                0x00000f9f                retriggerNames
  .progmem.data.nextPatternNames
-                0x00000fc0       0x40 build/menu.o
-                0x00000fc0                nextPatternNames
+                0x00000fbf       0x40 build/menu.o
+                0x00000fbf                nextPatternNames
  .progmem.data.transientNames
-                0x00001000       0x3c build/menu.o
-                0x00001000                transientNames
+                0x00000fff       0x3c build/menu.o
+                0x00000fff                transientNames
  .progmem.data.quantisationNames
-                0x0000103c       0x18 build/menu.o
-                0x0000103c                quantisationNames
+                0x0000103b       0x18 build/menu.o
+                0x0000103b                quantisationNames
  .progmem.data.midiModes
-                0x00001054        0xc build/menu.o
-                0x00001054                midiModes
+                0x00001053        0xc build/menu.o
+                0x00001053                midiModes
  .progmem.data.ppqNames
-                0x00001060       0x18 build/menu.o
-                0x00001060                ppqNames
+                0x0000105f       0x18 build/menu.o
+                0x0000105f                ppqNames
  .progmem.data.menuText_any
-                0x00001078        0x4 build/menu.o
-                0x00001078                menuText_any
+                0x00001077        0x4 build/menu.o
+                0x00001077                menuText_any
  .progmem.data.menuText_blank
-                0x0000107c        0x4 build/menu.o
-                0x0000107c                menuText_blank
+                0x0000107b        0x4 build/menu.o
+                0x0000107b                menuText_blank
  .progmem.data.menuText_dash
-                0x00001080        0x4 build/menu.o
-                0x00001080                menuText_dash
+                0x0000107f        0x4 build/menu.o
+                0x0000107f                menuText_dash
  .progmem.data.menuText_fm
-                0x00001084        0x4 build/menu.o
-                0x00001084                menuText_fm
+                0x00001083        0x4 build/menu.o
+                0x00001083                menuText_fm
  .progmem.data.menuText_mix
-                0x00001088        0x4 build/menu.o
-                0x00001088                menuText_mix
+                0x00001087        0x4 build/menu.o
+                0x00001087                menuText_mix
  .progmem.data.menuText_on
-                0x0000108c        0x4 build/menu.o
-                0x0000108c                menuText_on
+                0x0000108b        0x4 build/menu.o
+                0x0000108b                menuText_on
  .progmem.data.menuText_off
-                0x00001090        0x4 build/menu.o
-                0x00001090                menuText_off
+                0x0000108f        0x4 build/menu.o
+                0x0000108f                menuText_off
  .progmem.data.menuText_ok
-                0x00001094        0x4 build/menu.o
-                0x00001094                menuText_ok
+                0x00001093        0x4 build/menu.o
+                0x00001093                menuText_ok
  .progmem.data.menuPages
-                0x00001098      0xc00 build/menu.o
-                0x00001098                menuPages
- .progmem.data.__c.3341
-                0x00001c98       0x10 build/presetManager.o
- .progmem.data.__c.3331
-                0x00001ca8        0xf build/presetManager.o
- .progmem.data.__c.3257
-                0x00001cb7        0x9 build/presetManager.o
- .progmem.data.__c.3441
-                0x00001cc0        0x5 build/presetManager.o
- .progmem.data.__c.3437
-                0x00001cc5        0x5 build/presetManager.o
- .progmem.data.__c.3434
-                0x00001cca        0x5 build/presetManager.o
- .progmem.data.__c.3430
-                0x00001ccf        0x5 build/presetManager.o
+                0x00001097      0xc00 build/menu.o
+                0x00001097                menuPages
+ .progmem.data.__c.3340
+                0x00001c97       0x10 build/presetManager.o
+ .progmem.data.__c.3330
+                0x00001ca7        0xf build/presetManager.o
+ .progmem.data.__c.3256
+                0x00001cb6        0x9 build/presetManager.o
+ .progmem.data.__c.3440
+                0x00001cbf        0x5 build/presetManager.o
+ .progmem.data.__c.3436
+                0x00001cc4        0x5 build/presetManager.o
+ .progmem.data.__c.3433
+                0x00001cc9        0x5 build/presetManager.o
+ .progmem.data.__c.3429
+                0x00001cce        0x5 build/presetManager.o
                 0x00001cd4                . = ALIGN (0x2)
+ *fill*         0x00001cd3        0x1 
  *(.jumptables)
  *(.jumptables*)
  *(.lowtext)
@@ -1492,7 +1493,7 @@ END GROUP
                 0x008001e4                _edata = .
                 0x008001e4                PROVIDE (__data_end, .)
 
-.bss            0x008001e4      0x809
+.bss            0x008001e4      0x808
                 0x008001e4                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
@@ -1634,25 +1635,25 @@ END GROUP
                 0x00800548                led_pulseEndTime
                 0x00800558                led_originalLedState
                 0x0080055d                led_blinkingLeds
- COMMON         0x0080055e      0x239 build/menu.o
+ COMMON         0x0080055e      0x238 build/menu.o
                 0x0080055e                currentDisplayBuffer
                 0x0080057e                editDisplayBuffer
                 0x008005a0                parameter_values
-                0x008006b3                parameters2
- COMMON         0x00800797      0x256 build/presetManager.o
-                0x00800797                preset_Fatfs
-                0x008009c5                preset_File
-                0x008009e5                preset_currentName
-                0x008009ed                PROVIDE (__bss_end, .)
+                0x008006b2                parameters2
+ COMMON         0x00800796      0x256 build/presetManager.o
+                0x00800796                preset_Fatfs
+                0x008009c4                preset_File
+                0x008009e4                preset_currentName
+                0x008009ec                PROVIDE (__bss_end, .)
                 0x0000984a                __data_load_start = LOADADDR (.data)
                 0x0000992e                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x008009ed        0x0
-                0x008009ed                PROVIDE (__noinit_start, .)
+.noinit         0x008009ec        0x0
+                0x008009ec                PROVIDE (__noinit_start, .)
  *(.noinit*)
-                0x008009ed                PROVIDE (__noinit_end, .)
-                0x008009ed                _end = .
-                0x008009ed                PROVIDE (__heap_start, .)
+                0x008009ec                PROVIDE (__noinit_end, .)
+                0x008009ec                _end = .
+                0x008009ec                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
  *(.eeprom*)
