@@ -236,4 +236,10 @@ void seq_recordAutomation(uint8_t voice, uint8_t dest, uint8_t value);
 void seq_midiNoteOff(uint8_t chan);
 void seq_sendMidiNoteOn(const uint8_t channel, const uint8_t note, const uint8_t veloc);
 
+
+// rstephane : add on LOOP/Divide Function
+//------------------------------------------------------------------------------
+void seq_setLoopLength(uint8_t length);
+
+
 #endif /* SEQUENCER_H_ */

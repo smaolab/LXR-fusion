@@ -299,7 +299,7 @@ enum ParamEnums
 		   
 	// rstephane MY VALUES ADDED FOR RANDOM FUNCTION
 	PAR_RND_VOICE1,					// rstephane: random drum1 
-
+	PAR_LOOP,					// rstephane: loop 
 	//#########################################
 	//######## End of sound Parameters ########
 	//#########################################

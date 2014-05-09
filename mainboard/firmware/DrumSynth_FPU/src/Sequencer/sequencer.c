@@ -258,12 +258,12 @@ uint8_t seq_getTrackRotation(uint8_t trackNr)
 static void seq_calcDeltaT(uint16_t bpm)
 {
 	//--- calc deltaT ----
-	// für 4/4tel takt -> 1 beat = 4 main steps = 4*8 = 32 sub steps
+	// f\FCr 4/4tel takt -> 1 beat = 4 main steps = 4*8 = 32 sub steps
 	// 120 bpm 4/4tel = 120 * 1 beat / 60sec = 120 * 32 in 60 sec;
-	seq_deltaT 	= (1000*60)/bpm; 	//bei 12 = 500ms = zeit für einen beat
+	seq_deltaT 	= (1000*60)/bpm; 	//bei 12 = 500ms = zeit f\FCr einen beat
 	seq_deltaT /= 96.f; //we run the internal clock at 96ppq -> seq clock 32 ppq == prescaler 3, midi clock 24 ppq == prescale 4
 	seq_deltaT *= 4;
-	//32.f;					// zeit für einen beat / anzahl steps pro beat
+	//32.f;					// zeit f\FCr einen beat / anzahl steps pro beat
 
 	//--- calc shuffle ---
 	if(seq_shuffle != 0)
@@ -671,7 +671,7 @@ void seq_resetDeltaAndTick()
 	{
 		//seq_deltaT = 0;^
 
-		seq_deltaT 	= (1000*60)/seq_tempo; 	//bei 12 = 500ms = zeit für einen beat
+		seq_deltaT 	= (1000*60)/seq_tempo; 	//bei 12 = 500ms = zeit f\FCr einen beat
 		seq_deltaT /= 96.f; //we run the internal clock at 96ppq -> seq clock 32 ppq == prescaler 3, midi clock 24 ppq == prescale 4
 		seq_deltaT *= 4;
 
@@ -1496,6 +1496,18 @@ static void seq_setStepIndexToStart()
 		// -1 here because we increment it first thing when we start
 		seq_stepIndex[i] = ( 8 * rot) - 1;
 
+	}
+
+}
+
+// rstephane : My LOOP / Divide functions
+void seq_setLoopLength(uint8_t length)
+{
+	uint8_t i;
+	
+	// we set the new Loop Track Lenght
+	for(i=0;i<NUM_TRACKS;i++) {
+		seq_setTrackLength(i, length);	
 	}
 
 }

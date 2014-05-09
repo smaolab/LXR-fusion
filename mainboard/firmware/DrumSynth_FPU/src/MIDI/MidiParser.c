@@ -1050,9 +1050,28 @@ void midiParser_ccHandler(MidiMsg msg, uint8_t updateOriginalValue)
 			// rstephane MY FUNCTIONS
 			// rstephane : Handle the RND button
 			case CC2_RND_VOICE1:
-				randomDrumVoice(0);	
-				break;
-							
+				if(msg.data2 == 1)
+				{
+					// RND is ON
+					randomDrumVoice(0);
+					//lcd_clear();
+					//display new values
+					//menu_repaintAll();	
+				}
+				break;	
+			// rstephane : Handle the LOOP button
+			case CC2_LOOP:
+				if(msg.data2 == 16)  // reset the loop ! 
+				{	// we stop the loop effect and
+					// go back to prevoious track lenght
+					seq_setLoopLength(16);
+				}
+				else
+				{	// we change the tracks lenght
+					seq_setLoopLength(msg.data2);
+				}
+				break;	
+											
 			default:
 				break;
 		}

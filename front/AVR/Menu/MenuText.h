@@ -312,6 +312,7 @@ const char shortNames[][4] PROGMEM  =
 	{"co2"},  // trigger clock out2 ppq
 	{"pcr"}, // pattern change resets bar counter
 	{"RND"}, // rstephane: RND VOice
+	{"LEN"}, // rstephane: loop Lenght
 	
 };
 //-----------------------------------------------------------------
@@ -424,6 +425,7 @@ const char longNames[][16] PROGMEM =
 	{"Gate Mode"},
 	{"PCReset" }, // reset bar counter on manual pattern change
 	{"Random"}, // rstephane: RND VOice LONG text
+	{"Loop"}, // rstephane: LOOP LONG text
 };
 
 

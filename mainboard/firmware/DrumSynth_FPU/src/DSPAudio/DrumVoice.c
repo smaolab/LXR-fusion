@@ -46,6 +46,9 @@
 
 // rstephane : pour random functions
 #include "valueShaper.h"
+//#include <stdio.h>
+//#include <stdlib.h>
+#include <time.h>
 
 float ampSmoothValue = 0.1f;
 //---------------------------------------------------
@@ -269,13 +272,16 @@ void calcDrumVoiceSyncBlock(const uint8_t voiceNr, int16_t* buf, const uint8_t s
 	//channel volume
 	bufferTool_addGain(buf,voiceArray[voiceNr].vol,size);
 }
+
+
 //---------------------------------------------------
 // rstephane : my functions
 //random all the parameters for voice 1 2 and 3
 //---------------------------------------------------
 void randomDrumVoice(const uint8_t voiceNr)
 {
-		uint8_t rndData;
+		uint8_t rndData; // , new_min, new_max;
+		// uint32_t rndDataTemp, old_min, old_max;
 		// COARSE
 		rndData = (uint8_t) GetRngValue();
 		//clear upper nibble
@@ -284,6 +290,27 @@ void randomDrumVoice(const uint8_t voiceNr)
 		voiceArray[voiceNr].osc.midiFreq |= rndData << 8;
 		osc_recalcFreq(&voiceArray[voiceNr].osc);
 		
+		//F_OSCx_FINE: -63 to +63
+		// rndDataTemp = GetRngValue(); // value we want to convert
+		// old_min = 0;
+		// old_max = 4294967294; // 4294967295-1
+		// new_min = -63;
+		// new_max = 63;
+		// rndData =(uint8_t)  (  ( (rndDataTemp - old_min) / (old_max - old_min) ) * (new_max - new_min) + new_min  );
+		//clear lower nibble
+		// voiceArray[voiceNr].osc.midiFreq &= 0xff00;
+		//set lower nibble
+		// voiceArray[voiceNr].osc.midiFreq |= rndData;
+		// osc_recalcFreq(&voiceArray[voiceNr].osc);
+		
+		// OSC_WAVE_DRUM1:
+		rndData = (uint8_t) GetRngValue()%5; // ( GetRngValue()%(6-0) +0 );
+		voiceArray[voiceNr].osc.waveform = rndData;
+  
+		// CC2_FILTER_TYPE_3:
+		rndData = (uint8_t) GetRngValue()%5;
+		voiceArray[voiceNr].filterType = rndData+1;
+				
 		// FILTER
 		rndData = (uint8_t) GetRngValue();
 		const float f = rndData/127.f;
@@ -294,20 +321,14 @@ void randomDrumVoice(const uint8_t voiceNr)
 		SVF_setReso(&voiceArray[voiceNr].filter, rndData/127.f);
 
 		//VOL_SLOPE1:
-		rndData = (uint8_t) GetRngValue();
-		slopeEg2_setSlope(&voiceArray[voiceNr].oscVolEg,rndData);
+		//rndData = (uint8_t) GetRngValue();
+		//slopeEg2_setSlope(&voiceArray[voiceNr].oscVolEg,rndData);
 
 		// PITCH_SLOPE1:
-		rndData = (uint8_t) GetRngValue();
-		DecayEg_setSlope(&voiceArray[voiceNr].oscPitchEg,rndData);
+		//rndData = (uint8_t) GetRngValue();
+		//DecayEg_setSlope(&voiceArray[voiceNr].oscPitchEg,rndData);
 		
-		//F_OSC1_FINE:
-		rndData = (uint8_t) GetRngValue();
-		//clear lower nibble
-		voiceArray[voiceNr].osc.midiFreq &= 0xff00;
-		//set lower nibble
-		voiceArray[voiceNr].osc.midiFreq |= rndData ;
-		osc_recalcFreq(&voiceArray[voiceNr].osc);
+		
 		
 		//OSC1_DIST:
 		rndData = (uint8_t) GetRngValue();
@@ -317,6 +338,7 @@ void randomDrumVoice(const uint8_t voiceNr)
 		setDistortionShape(&voiceArray[voiceNr].distortion,rndData);
 #endif		
 
-
+		
+		
 }
 

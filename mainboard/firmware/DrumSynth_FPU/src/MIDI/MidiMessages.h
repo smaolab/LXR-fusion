@@ -378,7 +378,8 @@ enum
 	// rstephane MY VALUES ADDED FOR RANDOM FUNCTION
 	// rstephane : RND button :-) for CASE switch in MidiParser.C
 	CC2_RND_VOICE1,
-
+	CC2_LOOP, // my funtion LOOP is called 
+	
 	//Mute Button NRPN messages
 	CC2_MUTE_1 = 200,
 	CC2_MUTE_2,

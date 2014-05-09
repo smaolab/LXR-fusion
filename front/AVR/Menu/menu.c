@@ -198,6 +198,7 @@ const Name valueNames[NUM_NAMES] PROGMEM =
 		{SHORT_BAR_RESET_MODE, CAT_SEQUENCER, LONG_BAR_RESET_MODE}, // TEXT_BAR_RESET_MODE
 		{SHORT_CHANNEL, CAT_MIDI, LONG_MIDI_CHANNEL}, // TEXT_MIDI_CHAN_GLOBAL
 		{SHORT_RND, CAT_OSC, LONG_RND_VOICE}, // rstephane: TEXT_RND_VOICE
+		{SHORT_LOOP,	CAT_SEQUENCER,	LONG_LOOP},	// rstephane:  TEXT_LOOP
 };
 
 //---------------------------------------------------------------
@@ -434,7 +435,8 @@ const enum Datatypes PROGMEM parameter_dtypes[NUM_PARAMS] = {
 	    /*PAR_MIDI_NOTE7*/		DTYPE_NOTE_NAME,
 	    
 	    // rstephane MY VALUES ADDED FOR RANDOM FUNCTION
-	    /*PAR_RND_VOICE1*/	DTYPE_ON_OFF, // DTYPE_ON_OFF,  // rstephane : random drum1 on/off //273 ????
+	    /*PAR_RND_VOICE1*/	DTYPE_ON_OFF,  // rstephane : random drum1 on/off
+	    /*PAR_RND_VOICE1*/	DTYPE_1B16,  // rstephane : loop 1 ... 16 steps
 	    
 	    /*PAR_ROLL*/ 			DTYPE_MENU | (MENU_ROLL_RATES<<4),
 	    /*PAR_MORPH*/ 			DTYPE_0B255,
