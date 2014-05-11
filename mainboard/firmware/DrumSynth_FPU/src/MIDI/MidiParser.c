@@ -88,6 +88,11 @@ enum State
 #define NUM_LFO 6
 uint8_t midiParser_selectedLfoVoice[NUM_LFO] = {0,0,0,0,0,0};
 
+
+// rstephane: to save orginal track lenght for the LOOP function
+uint8_t originalTrackLength [NUM_TRACKS];
+uint8_t i,armLoop = 0;
+
 #if 0
 // -- AS for debugging
 void midiDebugSend(uint8_t b1, uint8_t b2)
@@ -1059,17 +1064,62 @@ void midiParser_ccHandler(MidiMsg msg, uint8_t updateOriginalValue)
 					//menu_repaintAll();	
 				}
 				break;	
+			//
 			// rstephane : Handle the LOOP button
+			//
 			case CC2_LOOP:
-				if(msg.data2 == 16)  // reset the loop ! 
-				{	// we stop the loop effect and
-					// go back to prevoious track lenght
-					seq_setLoopLength(16);
+				 // ARM the looping function 
+				if ((msg.data2 >= 125 && msg.data2 <=127) && (armLoop == 0))
+				{	
+					armLoop =1; // we swith on the loopin effects
+					// we backup the tracks lenght
+					for (i=0; i<NUM_TRACKS; i++)
+					 	originalTrackLength [i] = seq_getTrackLength(i);
+					
 				}
 				else
+				// ARM Loop 12 lenght 
+				if ((msg.data2 >= 100  && msg.data2 <= 124)  && (armLoop == 1))
 				{	// we change the tracks lenght
-					seq_setLoopLength(msg.data2);
+					seq_setLoopLength(12);
 				}
+				else
+				// ARM Loop 8 lenght 
+				if ((msg.data2 >= 80  && msg.data2 <= 99)   && (armLoop == 1))
+				{	// we change the tracks lenght
+					seq_setLoopLength(8);
+				}
+				else
+				// ARM Loop 4 lenght 
+				if ((msg.data2 >= 44  && msg.data2 <= 79)   && (armLoop == 1))
+				{	// we change the tracks lenght
+					seq_setLoopLength(4);
+				}
+				else
+				// ARM Loop 2 lenght 
+				if ((msg.data2 >= 17 && msg.data2 <= 43 )   && (armLoop == 1))
+				{	// we change the tracks lenght
+					seq_setLoopLength(2);
+				}
+				else
+				// ARM Loop 1 lenght 
+				if ((msg.data2 >= 1  && msg.data2 <= 16)   && (armLoop == 1))
+				{	// we change the tracks lenght
+					seq_setLoopLength(1);
+				}
+				else
+				// we swith off the loop effects
+				// Restore original lenght 
+				if ((msg.data2 == 0)   && (armLoop == 1))
+				{	
+					armLoop =0; // we swith OFF the loopin effects
+					// we restore the orginal tracks lenght
+					for (i=0; i<NUM_TRACKS; i++)
+					 	seq_setTrackLength(i,originalTrackLength [i]);
+				}
+				
+				
+				
 				break;	
 											
 			default:

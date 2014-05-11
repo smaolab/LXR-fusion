@@ -436,7 +436,7 @@ const enum Datatypes PROGMEM parameter_dtypes[NUM_PARAMS] = {
 	    
 	    // rstephane MY VALUES ADDED FOR RANDOM FUNCTION
 	    /*PAR_RND_VOICE1*/	DTYPE_ON_OFF,  // rstephane : random drum1 on/off
-	    /*PAR_RND_VOICE1*/	DTYPE_1B16,  // rstephane : loop 1 ... 16 steps
+	    /*PAR_LOOP*/	DTYPE_0B127,  // rstephane : loop 127 steps
 	    
 	    /*PAR_ROLL*/ 			DTYPE_MENU | (MENU_ROLL_RATES<<4),
 	    /*PAR_MORPH*/ 			DTYPE_0B255,
