@@ -379,7 +379,15 @@ enum
 	// rstephane : RND button :-) for CASE switch in MidiParser.C
 	CC2_RND_VOICE1,
 	CC2_LOOP, // my funtion LOOP is called 
-	
+	CC2_PREFILLED_PATTERN0, // my funtion PREFILLED is called 
+	CC2_PREFILLED_PATTERN1, // my funtion PREFILLED is called 
+	CC2_PREFILLED_PATTERN2, // my funtion PREFILLED is called 
+	CC2_PREFILLED_PATTERN3, // my funtion PREFILLED is called 
+	CC2_PREFILLED_PATTERN4, // my funtion PREFILLED is called 
+	CC2_PREFILLED_PATTERN5, // my funtion PREFILLED is called 
+	CC2_PREFILLED_PATTERN6, // my funtion PREFILLED is called 
+	CC2_PREFILLED_PATTERN7, // my funtion PREFILLED is called 
+					
 	//Mute Button NRPN messages
 	CC2_MUTE_1 = 200,
 	CC2_MUTE_2,

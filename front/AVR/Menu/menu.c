@@ -199,6 +199,7 @@ const Name valueNames[NUM_NAMES] PROGMEM =
 		{SHORT_CHANNEL, CAT_MIDI, LONG_MIDI_CHANNEL}, // TEXT_MIDI_CHAN_GLOBAL
 		{SHORT_RND, CAT_OSC, LONG_RND_VOICE}, // rstephane: TEXT_RND_VOICE
 		{SHORT_LOOP,	CAT_SEQUENCER,	LONG_LOOP},	// rstephane:  TEXT_LOOP
+		{SHORT_PREFILLED_PATTERN,CAT_PATTERN,	LONG_PREFILLED_PATTERN},	// rstephane:  TEXT_LOOP
 };
 
 //---------------------------------------------------------------
@@ -434,9 +435,19 @@ const enum Datatypes PROGMEM parameter_dtypes[NUM_PARAMS] = {
 	    /*PAR_MIDI_NOTE6*/		DTYPE_NOTE_NAME,
 	    /*PAR_MIDI_NOTE7*/		DTYPE_NOTE_NAME,
 	    
+	    // ------------------------------------------------
 	    // rstephane MY VALUES ADDED FOR RANDOM FUNCTION
 	    /*PAR_RND_VOICE1*/	DTYPE_ON_OFF,  // rstephane : random drum1 on/off
 	    /*PAR_LOOP*/	DTYPE_0B127,  // rstephane : loop 127 steps
+	    /*PAR_PREFILLED_PATTERN0*/	DTYPE_0B127, // rstephane : Prefilled Pattern
+	    /*PAR_PREFILLED_PATTERN1*/	DTYPE_0B127,
+	    /*PAR_PREFILLED_PATTERN2*/	DTYPE_0B127,
+	    /*PAR_PREFILLED_PATTERN3*/	DTYPE_0B127,
+	    /*PAR_PREFILLED_PATTERN4*/	DTYPE_0B127,
+	    /*PAR_PREFILLED_PATTERN5*/	DTYPE_0B127,
+	    /*PAR_PREFILLED_PATTERN6*/	DTYPE_0B127,
+	    /*PAR_PREFILLED_PATTERN7*/	DTYPE_0B127,
+	    // ------------------------------------------------
 	    
 	    /*PAR_ROLL*/ 			DTYPE_MENU | (MENU_ROLL_RATES<<4),
 	    /*PAR_MORPH*/ 			DTYPE_0B255,

@@ -300,6 +300,15 @@ enum ParamEnums
 	// rstephane MY VALUES ADDED FOR RANDOM FUNCTION
 	PAR_RND_VOICE1,					// rstephane: random drum1 
 	PAR_LOOP,					// rstephane: loop 
+	PAR_PREFILLED_PATTERN0, 			// rstephane: Prefilled pattern
+	PAR_PREFILLED_PATTERN1, 
+	PAR_PREFILLED_PATTERN2, 
+	PAR_PREFILLED_PATTERN3, 
+	PAR_PREFILLED_PATTERN4, 
+	PAR_PREFILLED_PATTERN5,
+	PAR_PREFILLED_PATTERN6,
+	PAR_PREFILLED_PATTERN7,   
+	
 	//#########################################
 	//######## End of sound Parameters ########
 	//#########################################

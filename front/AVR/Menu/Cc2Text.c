@@ -27,7 +27,6 @@ const ModTarg modTargets[] PROGMEM ={
 {TEXT_COARSE, PAR_COARSE1},                         //2
 {TEXT_FINE, PAR_FINE1},
 {TEXT_WAVEFORM, PAR_OSC_WAVE_DRUM1},
-// {TEXT_RND_VOICE, PAR_RND_VOICE1}, // rstephane : added random button
 //  2 Amp EG
 {TEXT_ATTACK, PAR_VELOA1},
 {TEXT_DECAY, PAR_VELOD1},

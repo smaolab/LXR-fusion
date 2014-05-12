@@ -54,6 +54,84 @@
 #include "SomGenerator.h"
 #include "TriggerOut.h"
 
+// rstephane:prefilledpattern array
+// uint8_t prefilledPattern [72][16] PROGMEM =
+uint8_t prefilledPatterntest [4] = {1,5,9,13} ;
+uint8_t prefilledPattern [72][16] =
+{
+{1,5,9,13} ,
+{1,7,11,15} ,
+{1,3, 4, 7, 8, 15}  ,
+{5,13 },
+{5,9,11,13,14,15} ,
+{1,9 },
+{1,9,11,14} ,
+{1,9,11},
+{1,7,11},
+{1,3,7,11,15 },
+{3,7,9,11,12} ,
+{1,3,7,9,12} ,
+{2,4,7,9,11,15} ,
+{1,9,15} ,
+{1,3,4,7,9,11,15} ,
+{3,4,7,8,10,12,15} ,
+{1,3,9,11}, 
+{1,3,7,11}, 
+{1,9,15 },
+{3, 7, 9 },
+{1, 7, 8, 9, 11, 15 },
+{3, 4, 7, 9, 11, 15} ,
+{1, 3, 7, 11, 15 },
+{3, 4, 7, 9, 11, 15} ,
+{1, 3, 7, 11, 16} ,
+{3, 9, 11},
+{1, 5, 9, 13 },
+{1, 3, 5, 7, 9, 11, 13, 15} ,
+{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16} ,
+{2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 13, 14, 15, 16} ,
+{2, 4, 5, 6, 7, 8, 10, 12, 13, 15, 16} ,
+{3, 5, 7, 9, 13, 15} ,
+{1, 11}, 
+{3, 5, 9, 13, 15 },
+{3,7,9,11,12 },
+{1,5,9,12,15 },
+{3,7,11,15 },
+{3, 7,13 },
+{1,3,7,9,12,15 },
+{2,3,4,6,7,8,10,11,12,13,14} ,
+{1,5,9,15} ,
+{1,2,3,4,6,7,8,10,12,13,14,15} ,
+{5,9,11,15 },
+{1,3,4,7,9,11, 15} ,
+{3,5,9,11,13} ,
+{1,7,15 },
+{2,3,4,5,6,7,8,10,11,12,13,14,16} ,
+{1,2,3,4,5,6,8,9,10,11,12,13,15,16} ,
+{3,7,14 },
+{1,5,13 },
+{3,4,7,9,11,15} ,
+{11,12,15 },
+{1,3,4,7,11},
+{3,8,10,11,15 },
+{2,4,6,8,10,11,12,15}, 
+{10,11,13},
+{13,15 },
+{2,3,4,6,8,10,11,12, 15}, 
+{5,9,10,13,15,16}, 
+{9,11,13,15 },
+{1,2,3,4,6,7,13,14,15,16}, 
+{3,4 },
+{5,6,10 },
+{7,8,11,12 },
+{5,9,13,14,15 },
+{1,3,5,7,8,11},
+{1,5,7,13 },
+{9,11,12,13,15}, 
+{1,3 },
+{7,9,13},
+{3,9,15},
+{3,5,9,11} // 72 pre filled pattern
+};
 
 #define SEQ_PRESCALER_MASK 	0x03
 #define MIDI_PRESCALER_MASK	0x04
@@ -1510,4 +1588,34 @@ void seq_setLoopLength(uint8_t length)
 		seq_setTrackLength(i, length);	
 	}
 
+}
+
+
+
+// rstephane : My prefilled pattern
+void seq_setPrePatternFill(uint8_t VoiceNr, uint8_t msgdata2)
+{
+	uint8_t i,maxsteps = 16;
+					
+	// clear current pattern
+	// uint8_t VoiceNr, uint8_t pattern
+	seq_clearTrack(VoiceNr, seq_activePattern);
+					
+	for (i=0; i<maxsteps; i++) 
+	{ // we read the pattern steps that are ON: 1, 5, 8, 13 , etc.
+		if (prefilledPattern[msgdata2-1][i]>=1 && prefilledPattern[msgdata2-1][i]<=16)
+			// uint8_t voice, uint8_t stepNr, uint8_t patternNr
+			seq_toggleMainStep(VoiceNr, prefilledPattern[msgdata2-1][i]-1, seq_activePattern);
+		else 
+			return; // we arrived at the end of the steps that are ON so we quit.
+	}
+}
+
+// rstephane : My prefilled pattern a special kind of pattern build on a bug ;-)
+void seq_setPreRythmFill(uint8_t VoiceNr, uint8_t msgdata2)
+{
+	uint8_t i,maxsteps = 16;		
+for (i=0; i<maxsteps; i++) // HEY GOOD FOR TOM, HH !! keep it !
+	seq_toggleMainStep(VoiceNr, (prefilledPattern[msgdata2-1][i]-1), seq_activePattern);
+					
 }

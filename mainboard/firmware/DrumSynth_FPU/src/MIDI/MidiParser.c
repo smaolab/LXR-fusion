@@ -93,6 +93,9 @@ uint8_t midiParser_selectedLfoVoice[NUM_LFO] = {0,0,0,0,0,0};
 uint8_t originalTrackLength [NUM_TRACKS];
 uint8_t i,armLoop = 0;
 
+
+
+
 #if 0
 // -- AS for debugging
 void midiDebugSend(uint8_t b1, uint8_t b2)
@@ -1117,11 +1120,68 @@ void midiParser_ccHandler(MidiMsg msg, uint8_t updateOriginalValue)
 					for (i=0; i<NUM_TRACKS; i++)
 					 	seq_setTrackLength(i,originalTrackLength [i]);
 				}
-				
-				
-				
 				break;	
-											
+			// rstephane : Handle the PRE FILLED PATTERN button
+			case CC2_PREFILLED_PATTERN0:
+				if(msg.data2>0)
+				{
+					// uint8_t VoiceNr, uint8_t msgdata2
+					seq_setPrePatternFill(0, msg.data2);
+				}
+				break;	
+			case CC2_PREFILLED_PATTERN1:
+				if(msg.data2>0)
+				{
+					// uint8_t VoiceNr, uint8_t msgdata2
+					//seq_setPrePatternFill(1, msg.data2);
+					seq_setPreRythmFill(1, msg.data2);
+				}
+				break;	
+			case CC2_PREFILLED_PATTERN2:
+				if(msg.data2>0)
+				{
+					// uint8_t VoiceNr, uint8_t msgdata2
+					//seq_setPrePatternFill(2, msg.data2);
+					seq_setPreRythmFill(2, msg.data2);
+				}
+				break;	
+			case CC2_PREFILLED_PATTERN3:
+				if(msg.data2>0)
+				{
+					// uint8_t VoiceNr, uint8_t msgdata2
+					seq_setPrePatternFill(3, msg.data2);
+				}
+				break;	
+			case CC2_PREFILLED_PATTERN4:
+				if(msg.data2>0)
+				{
+					// uint8_t VoiceNr, uint8_t msgdata2
+					seq_setPrePatternFill(4, msg.data2);
+				}
+				break;	
+			case CC2_PREFILLED_PATTERN5:
+				if(msg.data2>0)
+				{
+					// uint8_t VoiceNr, uint8_t msgdata2
+					//seq_setPrePatternFill(5, msg.data2);
+				}
+				break;	
+			case CC2_PREFILLED_PATTERN6:
+				if(msg.data2>0)
+				{
+					// uint8_t VoiceNr, uint8_t msgdata2
+					//seq_setPrePatternFill(6, msg.data2);
+					seq_setPreRythmFill(6, msg.data2);
+				}
+				break;	
+			case CC2_PREFILLED_PATTERN7:
+				if(msg.data2>0)
+				{
+					// uint8_t VoiceNr, uint8_t msgdata2
+					//seq_setPrePatternFill(7, msg.data2);
+					seq_setPreRythmFill(7, msg.data2);
+				}
+				break;												
 			default:
 				break;
 		}

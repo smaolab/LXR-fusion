@@ -189,7 +189,8 @@ enum NamesEnum
 	TEXT_BAR_RESET_MODE,
 	TEXT_MIDI_CHAN_GLOBAL,
 	TEXT_RND_VOICE,	// rstephane: random text 
-	TEXT_LOOP,	// rstephane: LOOP text 	
+	TEXT_LOOP,	// rstephane: LOOP text 
+	TEXT_PREFILLED_PATTERN, 	// rstephane: Prefilled pattern	
 	NUM_NAMES
 };
 //-----------------------------------------------------------------
@@ -280,7 +281,8 @@ enum shortNamesEnum
 	SHORT_TRIGGER_OUT2,
 	SHORT_BAR_RESET_MODE,
 	SHORT_RND, // rstephane : short text random
-	SHORT_LOOP // rstephane : short text random
+	SHORT_LOOP, // rstephane : short text random
+	SHORT_PREFILLED_PATTERN // rstephane: Prefilled pattern
 
 	
 };
@@ -392,7 +394,9 @@ enum longNamesEnum
 	LONG_TRIGGER_GATE_MODE,
 	LONG_BAR_RESET_MODE,
 	LONG_RND_VOICE, // rstephane: long text random
-	LONG_LOOP // rstephane: long text LOOP
+	LONG_LOOP, // rstephane: long text LOOP
+	LONG_PREFILLED_PATTERN		// rstephane: Prefilled pattern
+
 };
 
 //enum for the save what parameter
