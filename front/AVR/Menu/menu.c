@@ -199,7 +199,8 @@ const Name valueNames[NUM_NAMES] PROGMEM =
 		{SHORT_CHANNEL, CAT_MIDI, LONG_MIDI_CHANNEL}, // TEXT_MIDI_CHAN_GLOBAL
 		{SHORT_RND, CAT_OSC, LONG_RND_VOICE}, // rstephane: TEXT_RND_VOICE
 		{SHORT_LOOP,	CAT_SEQUENCER,	LONG_LOOP},	// rstephane:  TEXT_LOOP
-		{SHORT_PREFILLED_PATTERN,CAT_PATTERN,	LONG_PREFILLED_PATTERN},	// rstephane:  TEXT_LOOP
+		{SHORT_PREFILLED_PATTERN,CAT_PATTERN,	LONG_PREFILLED_PATTERN},// rstephane:  TEXT_PREFILLED_PATTERN
+		{SHORT_RANDOMFILL_PATTERN,CAT_PATTERN,	LONG_RANDOMFILL_PATTERN},// rstephane:  TEXT_RANDOMFILL_PATTERN
 };
 
 //---------------------------------------------------------------
@@ -438,7 +439,15 @@ const enum Datatypes PROGMEM parameter_dtypes[NUM_PARAMS] = {
 	    // ------------------------------------------------
 	    // rstephane MY VALUES ADDED FOR RANDOM FUNCTION
 	    /*PAR_RND_VOICE1*/	DTYPE_ON_OFF,  // rstephane : random drum1 on/off
+	    /*PAR_RND_VOICE2*/	DTYPE_ON_OFF, 
+	    /*PAR_RND_VOICE3*/	DTYPE_ON_OFF, 
+	    /*PAR_RND_VOICE4*/	DTYPE_ON_OFF, 
+	    /*PAR_RND_VOICE5*/	DTYPE_ON_OFF, 
+	    /*PAR_RND_VOICE6*/	DTYPE_ON_OFF, 
+	    /*PAR_RND_VOICE7*/	DTYPE_ON_OFF, 
+	    
 	    /*PAR_LOOP*/	DTYPE_0B127,  // rstephane : loop 127 steps
+	    
 	    /*PAR_PREFILLED_PATTERN0*/	DTYPE_0B127, // rstephane : Prefilled Pattern
 	    /*PAR_PREFILLED_PATTERN1*/	DTYPE_0B127,
 	    /*PAR_PREFILLED_PATTERN2*/	DTYPE_0B127,
@@ -447,6 +456,16 @@ const enum Datatypes PROGMEM parameter_dtypes[NUM_PARAMS] = {
 	    /*PAR_PREFILLED_PATTERN5*/	DTYPE_0B127,
 	    /*PAR_PREFILLED_PATTERN6*/	DTYPE_0B127,
 	    /*PAR_PREFILLED_PATTERN7*/	DTYPE_0B127,
+	    
+	    /*PAR_RANDOMFILL_PATTERN0*/	DTYPE_ON_OFF, // rstephane : RANDOMFILL Pattern
+	    /*PAR_RANDOMFILL_PATTERN1*/	DTYPE_ON_OFF,
+	    /*PAR_RANDOMFILL_PATTERN2*/	DTYPE_ON_OFF,
+	    /*PAR_RANDOMFILL_PATTERN3*/	DTYPE_ON_OFF,
+	    /*PAR_RANDOMFILL_PATTERN4*/	DTYPE_ON_OFF,
+	    /*PAR_RANDOMFILL_PATTERN5*/	DTYPE_ON_OFF,
+	    /*PAR_RANDOMFILL_PATTERN6*/	DTYPE_ON_OFF,
+	    /*PAR_RANDOMFILL_PATTERN7*/	DTYPE_ON_OFF,
+	    
 	    // ------------------------------------------------
 	    
 	    /*PAR_ROLL*/ 			DTYPE_MENU | (MENU_ROLL_RATES<<4),

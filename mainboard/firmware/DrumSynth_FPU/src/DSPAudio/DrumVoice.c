@@ -280,17 +280,57 @@ void calcDrumVoiceSyncBlock(const uint8_t voiceNr, int16_t* buf, const uint8_t s
 //---------------------------------------------------
 void randomDrumVoice(const uint8_t voiceNr)
 {
-		uint8_t rndData; // , new_min, new_max;
-		// uint32_t rndDataTemp, old_min, old_max;
+		uint8_t rndData, new_min, new_max;
+		uint32_t rndDataTemp, old_min, old_max;
+		
+		
 		// COARSE
-		rndData = (uint8_t) GetRngValue();
+		rndData = GetRndValue127();
+		
 		//clear upper nibble
 		voiceArray[voiceNr].osc.midiFreq &= 0x00ff;
 		//set upper nibble
 		voiceArray[voiceNr].osc.midiFreq |= rndData << 8;
 		osc_recalcFreq(&voiceArray[voiceNr].osc);
 		
-		//F_OSCx_FINE: -63 to +63
+		// OSC_WAVE_DRUM1:
+		rndData = GetRndValue6(); // 0-255 -> 0-5
+		voiceArray[voiceNr].osc.waveform = rndData;
+  
+		// CC2_FILTER_TYPE_3:
+		rndData = GetRndValue7();
+		voiceArray[voiceNr].filterType = rndData+1;
+				
+		// FILTER
+		rndData = GetRndValue127();
+		const float f = rndData/127.f;
+		//exponential full range freq
+		SVF_directSetFilterValue(&voiceArray[voiceNr].filter,valueShaperF2F(f,FILTER_SHAPER) );
+		// RESO
+		rndData = GetRndValue127();
+		SVF_setReso(&voiceArray[voiceNr].filter, rndData/127.f);
+
+		//VOL_SLOPE1:
+		rndData = GetRndValue127();
+		slopeEg2_setSlope(&voiceArray[voiceNr].oscVolEg,rndData);
+
+		// PITCH_SLOPE1:
+		rndData = GetRndValue127();
+		DecayEg_setSlope(&voiceArray[voiceNr].oscPitchEg,rndData);
+		
+		//OSC1_DIST:
+		rndData =  GetRndValue127();
+#if USE_FILTER_DRIVE
+		voiceArray[voiceNr].filter.drive = 0.5f + (rndData/127.f) *6;
+#else
+		setDistortionShape(&voiceArray[voiceNr].distortion,rndData);
+#endif		
+
+	// const uint8_t trackNr, uint8_t patternNr		
+	frontParser_updateTrackLeds(voiceNr, seq_activePattern);			
+}
+
+//F_OSCx_FINE: -63 to +63
 		// rndDataTemp = GetRngValue(); // value we want to convert
 		// old_min = 0;
 		// old_max = 4294967294; // 4294967295-1
@@ -303,42 +343,3 @@ void randomDrumVoice(const uint8_t voiceNr)
 		// voiceArray[voiceNr].osc.midiFreq |= rndData;
 		// osc_recalcFreq(&voiceArray[voiceNr].osc);
 		
-		// OSC_WAVE_DRUM1:
-		rndData = (uint8_t) GetRngValue()%5; // ( GetRngValue()%(6-0) +0 );
-		voiceArray[voiceNr].osc.waveform = rndData;
-  
-		// CC2_FILTER_TYPE_3:
-		rndData = (uint8_t) GetRngValue()%5;
-		voiceArray[voiceNr].filterType = rndData+1;
-				
-		// FILTER
-		rndData = (uint8_t) GetRngValue();
-		const float f = rndData/127.f;
-		//exponential full range freq
-		SVF_directSetFilterValue(&voiceArray[voiceNr].filter,valueShaperF2F(f,FILTER_SHAPER) );
-		// RESO
-		rndData = (uint8_t) GetRngValue();
-		SVF_setReso(&voiceArray[voiceNr].filter, rndData/127.f);
-
-		//VOL_SLOPE1:
-		//rndData = (uint8_t) GetRngValue();
-		//slopeEg2_setSlope(&voiceArray[voiceNr].oscVolEg,rndData);
-
-		// PITCH_SLOPE1:
-		//rndData = (uint8_t) GetRngValue();
-		//DecayEg_setSlope(&voiceArray[voiceNr].oscPitchEg,rndData);
-		
-		
-		
-		//OSC1_DIST:
-		rndData = (uint8_t) GetRngValue();
-#if USE_FILTER_DRIVE
-		voiceArray[voiceNr].filter.drive = 0.5f + (rndData/127.f) *6;
-#else
-		setDistortionShape(&voiceArray[voiceNr].distortion,rndData);
-#endif		
-
-		
-		
-}
-

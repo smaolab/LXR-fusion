@@ -52,3 +52,85 @@ __inline uint32_t GetRngValue()
 }
 //-------------------------------------------------------------
 
+// rstephane : get a random number between pre defined two markers
+uint8_t GetRndValue7()
+{
+	uint8_t rndData;
+	initRng();
+	while(RNG_GetFlagStatus(RNG_FLAG_DRDY)== RESET)
+      	{
+      	}
+      	
+      	/* Get a random number between 0 and 7 */
+   	do {
+        	rndData = GetRngValue();
+ 
+        	/* mask off the bottom 3 bits */ 
+       		rndData = rndData & 0x00000007;
+    	} while (rndData == 7);
+    
+      return rndData;
+}
+
+// rstephane : get a random number between pre defined two markers
+uint8_t GetRndValue6()
+{
+	uint8_t rndData;
+	initRng();	
+	while(RNG_GetFlagStatus(RNG_FLAG_DRDY)== RESET)
+      	{
+      	}
+      	
+      	/* Get a random number between 0 and 6 */
+   	do {
+        	rndData = GetRngValue();
+ 
+        	/* mask off the bottom 3 bits */ 
+       		rndData = rndData & 0x00000007;
+    	} while (rndData == 6 || rndData == 7);
+    
+      return rndData;
+}
+
+// rstephane : get a random number between pre defined two markers
+uint8_t GetRndValue16()
+{
+	uint8_t rndData;
+	initRng();	
+	while(RNG_GetFlagStatus(RNG_FLAG_DRDY)== RESET)
+      	{
+      	}
+      	
+      	/* Get a random number between 0 and 15 */
+   	do {
+        	rndData = GetRngValue();
+ 
+        	/* mask off the bottom 3 bits 1 to 6 */ 
+       		//rndData = rndData & 0x00000007;
+         	/* mask off the bottom 5 bits 0 to 15 */ 
+        	rndData = rndData & 0x0000001F;
+    	} while (rndData == 16);
+    
+      return rndData;
+}
+
+// rstephane : get a random number between pre defined two markers
+uint8_t GetRndValue127()
+{
+	uint8_t rndData;
+	initRng();	
+	while(RNG_GetFlagStatus(RNG_FLAG_DRDY)== RESET)
+      	{
+      	}
+      	
+      	/* Get a random number between 0 and 15 */
+   	do {
+        	rndData = GetRngValue();
+ 
+         	/* mask off the bottom 7 bits 0 to 126 */ 
+        	rndData = rndData & 0x0000007F;
+    	} while (rndData == 127);
+    
+      return rndData;
+}
+

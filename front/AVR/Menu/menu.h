@@ -191,6 +191,7 @@ enum NamesEnum
 	TEXT_RND_VOICE,	// rstephane: random text 
 	TEXT_LOOP,	// rstephane: LOOP text 
 	TEXT_PREFILLED_PATTERN, 	// rstephane: Prefilled pattern	
+	TEXT_RANDOMFILL_PATTERN, 	// rstephane: RANDOMfilled pattern	
 	NUM_NAMES
 };
 //-----------------------------------------------------------------
@@ -282,7 +283,8 @@ enum shortNamesEnum
 	SHORT_BAR_RESET_MODE,
 	SHORT_RND, // rstephane : short text random
 	SHORT_LOOP, // rstephane : short text random
-	SHORT_PREFILLED_PATTERN // rstephane: Prefilled pattern
+	SHORT_PREFILLED_PATTERN, // rstephane: Prefilled pattern
+	SHORT_RANDOMFILL_PATTERN  // rstephane : random pattern fill text
 
 	
 };
@@ -395,7 +397,8 @@ enum longNamesEnum
 	LONG_BAR_RESET_MODE,
 	LONG_RND_VOICE, // rstephane: long text random
 	LONG_LOOP, // rstephane: long text LOOP
-	LONG_PREFILLED_PATTERN		// rstephane: Prefilled pattern
+	LONG_PREFILLED_PATTERN,		// rstephane: Prefilled pattern
+	LONG_RANDOMFILL_PATTERN  // rstephane : random pattern fill text
 
 };
 

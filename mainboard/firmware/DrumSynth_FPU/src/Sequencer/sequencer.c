@@ -55,7 +55,6 @@
 #include "TriggerOut.h"
 
 // rstephane:prefilledpattern array
-// uint8_t prefilledPattern [72][16] PROGMEM =
 uint8_t prefilledPatterntest [4] = {1,5,9,13} ;
 uint8_t prefilledPattern [72][16] =
 {
@@ -1583,7 +1582,7 @@ void seq_setLoopLength(uint8_t length)
 {
 	uint8_t i;
 	
-	// we set the new Loop Track Lenght
+	// we set the new Loop Tracks Lenght
 	for(i=0;i<NUM_TRACKS;i++) {
 		seq_setTrackLength(i, length);	
 	}
@@ -1593,29 +1592,73 @@ void seq_setLoopLength(uint8_t length)
 
 
 // rstephane : My prefilled pattern
-void seq_setPrePatternFill(uint8_t VoiceNr, uint8_t msgdata2)
+void seq_setPrePatternFill(uint8_t voiceNr, uint8_t msgdata2)
 {
 	uint8_t i,maxsteps = 16;
-					
-	// clear current pattern
-	// uint8_t VoiceNr, uint8_t pattern
-	seq_clearTrack(VoiceNr, seq_activePattern);
-					
+	
+	// clear current pattern in the memory
+	seq_clearTrack(voiceNr, seq_activePattern);
+	// todo: clear the whole leds ! 
+	//frontParser_clearAllTrackLeds(voiceNr, seq_activePattern);
+			
+	// we fill the track (main steps only, sorry!)
 	for (i=0; i<maxsteps; i++) 
-	{ // we read the pattern steps that are ON: 1, 5, 8, 13 , etc.
+	{ // we read the pattern steps that are ON: step 1, 5, 8, 13 , etc.
 		if (prefilledPattern[msgdata2-1][i]>=1 && prefilledPattern[msgdata2-1][i]<=16)
 			// uint8_t voice, uint8_t stepNr, uint8_t patternNr
-			seq_toggleMainStep(VoiceNr, prefilledPattern[msgdata2-1][i]-1, seq_activePattern);
+			seq_toggleMainStep(voiceNr, prefilledPattern[msgdata2-1][i]-1, seq_activePattern);
 		else 
+		{
+			frontParser_updateTrackLeds(voiceNr, seq_activePattern);
 			return; // we arrived at the end of the steps that are ON so we quit.
+		}
 	}
 }
 
 // rstephane : My prefilled pattern a special kind of pattern build on a bug ;-)
-void seq_setPreRythmFill(uint8_t VoiceNr, uint8_t msgdata2)
+void seq_setPreRythmFill(uint8_t voiceNr, uint8_t msgdata2)
 {
 	uint8_t i,maxsteps = 16;		
-for (i=0; i<maxsteps; i++) // HEY GOOD FOR TOM, HH !! keep it !
-	seq_toggleMainStep(VoiceNr, (prefilledPattern[msgdata2-1][i]-1), seq_activePattern);
-					
+	for (i=0; i<maxsteps; i++) // HEY GOOD FOR TOM, HH !! keep it !
+		seq_toggleMainStep(voiceNr, (prefilledPattern[msgdata2-1][i]-1), seq_activePattern);
+
+	// todo: clear the whole leds before display the new oneshot
+	frontParser_updateTrackLeds(voiceNr, seq_activePattern);
 }
+
+// rstephane : My RANDOM filled pattern
+void seq_setRandomPatternFill(uint8_t voiceNr, uint8_t msgdata2)
+{
+	//uint8_t old_min,old_max,new_min,new_max;
+	uint8_t i;
+	uint8_t randomSteps, numberRandomSteps;
+
+	// clear current pattern
+	seq_clearTrack(voiceNr, seq_activePattern);
+	
+	// todo: clear the whole leds before showing the new random pattern
+	
+	numberRandomSteps = GetRndValue16()+1;
+	
+	for (i=0; i<numberRandomSteps; i++) 
+	{
+		randomSteps = GetRndValue16();
+		seq_toggleMainStep(voiceNr, randomSteps, seq_activePattern);
+		//seq_toggleMainStep(voiceNr, randomSteps+1, seq_activePattern);
+	}
+	
+	
+	// const uint8_t trackNr, uint8_t patternNr		
+	frontParser_updateTrackLeds(voiceNr, seq_activePattern);	
+}
+
+/*old_min = 0;
+	old_max = 255;
+	new_min = 0;
+	new_max = 15;
+	numberRandomSteps = (((numberRandomSteps255-old_min)/(old_max-old_min))*(new_max-new_min)+new_min);
+	//randomSteps = (((randomSteps-old_min)/(old_max-old_min))*(new_max-new_min)+new_min);
+	*/
+		
+
+

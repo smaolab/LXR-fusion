@@ -43,4 +43,10 @@ void initRng();
 
 __inline uint32_t GetRngValue();
 
+// rstephane : get a random number between pre defined markers
+uint8_t GetRndValue16();
+uint8_t GetRndValue127();
+uint8_t GetRndValue6();
+uint8_t GetRndValue7();
+
 #endif /* RANDOM_H_ */

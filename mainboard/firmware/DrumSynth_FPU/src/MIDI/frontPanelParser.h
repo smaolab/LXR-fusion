@@ -51,4 +51,8 @@ void frontParser_parseUartData(unsigned char data);
 
 void frontParser_updateTrackLeds(const uint8_t trackNr, uint8_t patternNr);
 
+// rstephane
+/**send all active/inactive step numbers to frontpanel to light up corresponding LEDs*/
+void frontParser_clearAllTrackLeds(const uint8_t trackNr, uint8_t patternNr);
+
 #endif /* FRONTPANELPARSER_H_ */

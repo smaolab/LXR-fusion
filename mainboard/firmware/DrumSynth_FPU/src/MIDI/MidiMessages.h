@@ -378,7 +378,15 @@ enum
 	// rstephane MY VALUES ADDED FOR RANDOM FUNCTION
 	// rstephane : RND button :-) for CASE switch in MidiParser.C
 	CC2_RND_VOICE1,
+	CC2_RND_VOICE2,
+	CC2_RND_VOICE3,
+	CC2_RND_VOICE4,
+	CC2_RND_VOICE5,
+	CC2_RND_VOICE6,
+	CC2_RND_VOICE7,
+	
 	CC2_LOOP, // my funtion LOOP is called 
+	
 	CC2_PREFILLED_PATTERN0, // my funtion PREFILLED is called 
 	CC2_PREFILLED_PATTERN1, // my funtion PREFILLED is called 
 	CC2_PREFILLED_PATTERN2, // my funtion PREFILLED is called 
@@ -387,7 +395,16 @@ enum
 	CC2_PREFILLED_PATTERN5, // my funtion PREFILLED is called 
 	CC2_PREFILLED_PATTERN6, // my funtion PREFILLED is called 
 	CC2_PREFILLED_PATTERN7, // my funtion PREFILLED is called 
-					
+	
+	CC2_RANDOMFILL_PATTERN0, // my funtion RANDOMFILL is called 
+	CC2_RANDOMFILL_PATTERN1, // my funtion RANDOMFILL is called 
+	CC2_RANDOMFILL_PATTERN2, // my funtion RANDOMFILL is called 
+	CC2_RANDOMFILL_PATTERN3, 
+	CC2_RANDOMFILL_PATTERN4, 
+	CC2_RANDOMFILL_PATTERN5, 
+	CC2_RANDOMFILL_PATTERN6, 
+	CC2_RANDOMFILL_PATTERN7,
+	 			
 	//Mute Button NRPN messages
 	CC2_MUTE_1 = 200,
 	CC2_MUTE_2,

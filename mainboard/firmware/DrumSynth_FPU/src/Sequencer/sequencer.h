@@ -241,6 +241,7 @@ void seq_sendMidiNoteOn(const uint8_t channel, const uint8_t note, const uint8_t
 //------------------------------------------------------------------------------
 void seq_setLoopLength(uint8_t length);
 // rstephane : My prefilled pattern
-void seq_setPrePatternFill(uint8_t VoiceNr, uint8_t msgdata2);
-void seq_setPreRythmFill(uint8_t VoiceNr, uint8_t msgdata2);
+void seq_setPrePatternFill(uint8_t voiceNr, uint8_t msgdata2);
+void seq_setPreRythmFill(uint8_t voiceNr, uint8_t msgdata2);
+void seq_setRandomPatternFill(uint8_t voiceNr, uint8_t msgdata2);
 #endif /* SEQUENCER_H_ */

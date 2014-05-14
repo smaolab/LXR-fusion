@@ -980,3 +980,25 @@ static void frontParser_handleSeqCC()
 		break;
 	}
 }
+
+//------------------------------------------------------
+/**rstephane : clear all active/inactive step numbers to frontpanel to light up/down corresponding LEDs*/
+void frontParser_clearAllTrackLeds(const uint8_t trackNr, uint8_t patternNr)
+{
+	if(trackNr<=6)
+	{
+
+		frontParser_activeFrontTrack = trackNr;
+
+		int i=0;
+		
+		for(;i<16;i++)
+		{
+			uart_sendFrontpanelByte(0);
+			uart_sendFrontpanelByte(FRONT_LED_SEQ_BUTTON);
+			uart_sendFrontpanelByte(i);
+		}
+
+	}
+}
+
