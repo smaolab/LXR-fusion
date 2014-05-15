@@ -2,7 +2,7 @@ LXR-fusion Drumsynth Firmware
 ====================================
 The LXR is a digital drum synthesizer based on the 32-bit Cortex-M4 processor and an Atmega644 8-bit CPU. Developed by Julian Schmidt.
 
-This version is a fork from PLD/RUDEOG that contains all original code and many new features:
+This version is a fork from PLD/RUDEOG that contains all original code and many new features (I called this version FUSION ! ):
 ### 1. You can select among 72 pre filled patterns for each voice
 Select a track (1-7), then click on the button VOICE, then click twice on the OSC menu to access the extra features :-)
 ### 2. You can randomzie steps/patterns for each voice, creating surprising drum lines !
