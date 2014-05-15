@@ -1,17 +1,17 @@
 LXR-fusion Drumsynth Firmware
 ====================================
-The LXR is a digital drum synthesizer based on the 32-bit Cortex-M4 processor and an Atmega644 8-bit CPU. Developed by Julian Schmidt.
-
 This version is a fork from PLD/RUDEOG that contains all original code and many new features (I called this version FUSION ! ):
-### 1. You can select among 72 pre filled patterns for each voice
-Select a track (1-7), then click on the button VOICE, then click twice on the OSC menu to access the extra features :-)
-### 2. You can randomzie steps/patterns for each voice, creating surprising drum lines !
 
-Select a track (1-7), then click on the button VOICE, then click twice on the OSC menu to access the extra features :-)
- 
+### 1. You can select among 72 pre filled patterns for each voice
+
+Select a track (1-7), then click on the button VOICE, then click on the OSC menu to access the extra features :-)
+### 2. You can randomize steps/patterns for each voice, creating surprising drum lines !
+
+Select a track (1-7), then click on the button VOICE, then click on the OSC menu to access the extra features :-)
 ### 3. You can make a LOOP/DIVIDE effect like on the Arturia Spark machine
 
-Select the PERF button, then click again the PERF button to access the extra features :-) You will see a menu called LEN, to arm the looping effects, go t0 127 and go down until you reset at value ZERO. 
+Select the PERF button, then click again the PERF button to access the sub menu:  You will see a menu called LEN, to arm the looping effects, turn the knob until you reach 127 and then turn down little by little the knob (until ZERO) to listen to the effect!
+
 
 Enjoy!
 
