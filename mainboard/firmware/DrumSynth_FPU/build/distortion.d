@@ -26,4 +26,4 @@ build/distortion.o: src/DSPAudio/distortion.c src/DSPAudio/distortion.h \
  Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_tim.h \
  Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_usart.h \
  Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_wwdg.h \
- Libraries/STM32F4xx_StdPeriph_Driver/inc/misc.h
+ Libraries/STM32F4xx_StdPeriph_Driver/inc/misc.h src/config.h

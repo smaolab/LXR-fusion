@@ -35,6 +35,10 @@
 
 #include "distortion.h"
 #include "math.h"
+
+#include "config.h"
+
+
 //--------------------------------------------------
 __inline void setDistortionShape(Distortion *dist, uint8_t shape)
 {
@@ -57,3 +61,24 @@ float distortion_calcSampleFloat(const Distortion *dist, float x)
 {
 	return (1+dist->shape)*x/(1+dist->shape*fabsf(x));
 }
+
+// rstephane : DELAY
+void calcDelayBlock(uint8_t delay, int16_t* buf, const uint8_t size)
+{
+
+	uint8_t j,i;
+	int16_t SampleRate=44000;
+	int16_t* DlyBuffer[size];
+	
+	for(i=0;i<size;i++)
+	{
+		DlyBuffer[ i ] = buf;
+		j = i - (delay * SampleRate);
+
+		if( j < 0 )
+		    j = SampleRate + j;
+		
+		buf[i] += DlyBuffer[ j ];
+	}
+}
+

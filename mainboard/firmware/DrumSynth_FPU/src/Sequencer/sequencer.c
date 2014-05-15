@@ -54,6 +54,8 @@
 #include "SomGenerator.h"
 #include "TriggerOut.h"
 
+
+
 // rstephane:prefilledpattern array
 uint8_t prefilledPatterntest [4] = {1,5,9,13} ;
 uint8_t prefilledPattern [72][16] =
@@ -1632,6 +1634,7 @@ void seq_setRandomPatternFill(uint8_t voiceNr, uint8_t msgdata2)
 	//uint8_t old_min,old_max,new_min,new_max;
 	uint8_t i;
 	uint8_t randomSteps, numberRandomSteps;
+
 
 	// clear current pattern
 	seq_clearTrack(voiceNr, seq_activePattern);

@@ -313,8 +313,8 @@ const char shortNames[][4] PROGMEM  =
 	{"pcr"}, // pattern change resets bar counter
 	{"RND"}, // rstephane: RND VOice
 	{"LEN"}, // rstephane: loop Lenght
-	{"PAT"}, // rstephane: loop Lenght
-	
+	{"PAT"}, // rstephane: PAT number 
+	{"RPF"}, // rstephane: RANDOM Pattern steps Fill
 	
 };
 //-----------------------------------------------------------------
@@ -429,6 +429,7 @@ const char longNames[][16] PROGMEM =
 	{"Random"}, // rstephane: RND VOice LONG text
 	{"Loop"}, // rstephane: LOOP LONG text
 	{"FillPat"}, // rstephane: PRE Filled Pattern
+	{"RandPattFill"}, // rstephane: RANDOM Pattern steps Fill
 };
 
 
