@@ -274,7 +274,7 @@ void calcDrumVoiceSyncBlock(const uint8_t voiceNr, int16_t* buf, const uint8_t s
 
 	// rstephane : DELAY
 	//calcDelayBlock(0.167, buf, size);
-
+  
 }
 
 
