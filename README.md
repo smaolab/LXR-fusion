@@ -1,4 +1,22 @@
-Sonic Potions LXR Drumsynth Firmware
+LXR-fusion Drumsynth Firmware
+====================================
+The LXR is a digital drum synthesizer based on the 32-bit Cortex-M4 processor and an Atmega644 8-bit CPU. Developed by Julian Schmidt.
+
+This version is a fork from PLD/RUDEOG that contains all original code and many new features:
+### 1. You can select among 72 pre filled patterns for each voice
+Select a track (1-7), then click on the button VOICE, then click twice on the OSC menu to access the extra features :-)
+### 2. You can randomzie steps/patterns for each voice, creating surprising drum lines !
+
+Select a track (1-7), then click on the button VOICE, then click twice on the OSC menu to access the extra features :-)
+ 
+### 3. You can make a LOOP/DIVDIE effect like on the Arturia Spark machine
+
+Select the PERF button, then click again the PERF button to access the extra features :-) You will see a menu called LEN, to arm the looping effects, go t0 127 and go down until you reset at value ZERO. 
+
+Enjoy!
+
+
+Sonic Potions LXR Drumsynth
 ====================================
 The LXR is a digital drum synthesizer based on the 32-bit Cortex-M4 processor and an Atmega644 8-bit CPU. Developed by Julian Schmidt.
 
@@ -15,7 +33,6 @@ Please note that there are libraries from ST and ARM used in the mainboard code 
     ST STM32_USB_OTG_Driver
     ST STM32F4xx_StdPeriph_Driver
 
-This version is a fork from PLD and I changed the Back slashes to be UNIX/LINUX compliant.
 
 Here are the instructions for MAC OS Build (MAC OS 10.8 and above):
 -------------------------------------------------------------------
