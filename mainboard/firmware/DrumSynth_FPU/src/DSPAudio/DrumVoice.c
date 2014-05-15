@@ -273,7 +273,7 @@ void calcDrumVoiceSyncBlock(const uint8_t voiceNr, int16_t* buf, const uint8_t s
 	bufferTool_addGain(buf,voiceArray[voiceNr].vol,size);
 
 	// rstephane : DELAY
-	//calcDelayBlock(1, buf, size);
+	//calcDelayBlock(0.167, buf, size);
 
 }
 
