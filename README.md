@@ -9,7 +9,7 @@ Select a track (1-7), then click on the button VOICE, then click twice on the OS
 
 Select a track (1-7), then click on the button VOICE, then click twice on the OSC menu to access the extra features :-)
  
-### 3. You can make a LOOP/DIVDIE effect like on the Arturia Spark machine
+### 3. You can make a LOOP/DIVIDE effect like on the Arturia Spark machine
 
 Select the PERF button, then click again the PERF button to access the extra features :-) You will see a menu called LEN, to arm the looping effects, go t0 127 and go down until you reset at value ZERO. 
 
