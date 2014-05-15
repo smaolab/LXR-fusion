@@ -311,10 +311,10 @@ const char shortNames[][4] PROGMEM  =
 	{"co1"},  // trigger clock out1 ppq
 	{"co2"},  // trigger clock out2 ppq
 	{"pcr"}, // pattern change resets bar counter
-	{"RND"}, // rstephane: RND VOice
-	{"LEN"}, // rstephane: loop Lenght
-	{"PAT"}, // rstephane: PAT number 
-	{"RPF"}, // rstephane: RANDOM Pattern steps Fill
+	{"rnd"}, // rstephane: RND VOice
+	{"len"}, // rstephane: loop Lenght
+	{"pat"}, // rstephane: PAT number 
+	{"rpf"}, // rstephane: RANDOM Pattern steps Fill
 	
 };
 //-----------------------------------------------------------------
