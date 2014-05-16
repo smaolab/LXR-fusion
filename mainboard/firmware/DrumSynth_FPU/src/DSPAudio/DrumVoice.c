@@ -334,7 +334,7 @@ void randomDrumVoice(const uint8_t voiceNr)
 	frontParser_updateTrackLeds(voiceNr, seq_activePattern);			
 }
 
-//F_OSCx_FINE: -63 to +63
+		//F_OSCx_FINE: -63 to +63
 		// rndDataTemp = GetRngValue(); // value we want to convert
 		// old_min = 0;
 		// old_max = 4294967294; // 4294967295-1

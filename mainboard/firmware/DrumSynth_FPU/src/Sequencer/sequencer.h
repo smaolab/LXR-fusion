@@ -240,6 +240,7 @@ void seq_sendMidiNoteOn(const uint8_t channel, const uint8_t note, const uint8_t
 // rstephane : add on LOOP/Divide Function
 //------------------------------------------------------------------------------
 extern uint8_t armDivide;
+extern uint8_t armDivideOnOff;
 
 void seq_setLoopLength(uint8_t length);
 // rstephane : My prefilled pattern

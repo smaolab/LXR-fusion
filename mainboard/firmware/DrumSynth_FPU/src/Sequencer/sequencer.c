@@ -240,7 +240,8 @@ static void seq_setStepIndexToStart();
 
 //----------------
 //rstephane: armDivide initialized
-uint8_t armDivide = 0;
+uint8_t armDivide;
+uint8_t armDivideOnOff;
 
 //------------------------------------------------------------------------------
 void seq_init()
@@ -600,7 +601,7 @@ static void seq_nextStep()
 			//------ DIVIDE effect
 			// rstephane
 			//if end is reached reset track to step ARMDIVIDE * 8
-			if (armDivide>0 && armDivide<17)
+			if (armDivideOnOff)
 				seq_stepIndex[i] = armDivide*8;						
 			else
 				//if end is reached reset track to step 0

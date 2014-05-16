@@ -91,8 +91,8 @@ uint8_t midiParser_selectedLfoVoice[NUM_LFO] = {0,0,0,0,0,0};
 //-----------------------------------------
 // rstephane: to save orginal track lenght for the LOOP function
 uint8_t originalTrackLength [NUM_TRACKS];
-uint8_t i,armLoop = 0;
-uint8_t armDivideOnOff = 0;
+uint8_t i,armLoop;
+uint8_t armDivideOnOff;
 
 
 #if 0
@@ -1065,12 +1065,27 @@ void midiParser_ccHandler(MidiMsg msg, uint8_t updateOriginalValue)
 					randomDrumVoice(0);
 				}
 				break;	
+			case CC2_RND_VOICE2:
+				if(msg.data2 == 1)
+				{
+					// RND is ON
+					randomDrumVoice(1);
+				}
+				break;	
+			case CC2_RND_VOICE3:
+				if(msg.data2 == 1)
+				{
+					// RND is ON
+					randomDrumVoice(2);
+				}
+				break;	
+				
 			//
 			// rstephane : Handle the LOOP button
 			//
 			case CC2_LOOP:
 				 // ARM the looping function 
-				if ((msg.data2 >= 121 && msg.data2 <=127) && (armLoop == 0))
+				if ((msg.data2 > 121 && msg.data2 <=127) && (armLoop == 0))
 				{	
 					armLoop =1; // we swith on the loopin effects
 					// we backup the tracks lenght
@@ -1080,31 +1095,31 @@ void midiParser_ccHandler(MidiMsg msg, uint8_t updateOriginalValue)
 				}
 				else
 				// ARM Loop 12 lenght 
-				if ((msg.data2 >= 100  && msg.data2 <= 120)  && (armLoop == 1))
+				if ((msg.data2 > 100  && msg.data2 <= 121)  && (armLoop == 1))
 				{	// we change the tracks lenght
 					seq_setLoopLength(12);
 				}
 				else
 				// ARM Loop 8 lenght 
-				if ((msg.data2 >= 80  && msg.data2 <= 99)   && (armLoop == 1))
+				if ((msg.data2 > 80  && msg.data2 <= 100)   && (armLoop == 1))
 				{	// we change the tracks lenght
 					seq_setLoopLength(8);
 				}
 				else
 				// ARM Loop 4 lenght 
-				if ((msg.data2 >= 44  && msg.data2 <= 79)   && (armLoop == 1))
+				if ((msg.data2 > 44  && msg.data2 <= 80)   && (armLoop == 1))
 				{	// we change the tracks lenght
 					seq_setLoopLength(4);
 				}
 				else
 				// ARM Loop 2 lenght 
-				if ((msg.data2 >= 17 && msg.data2 <= 43 )   && (armLoop == 1))
+				if ((msg.data2 > 17 && msg.data2 <= 44 )   && (armLoop == 1))
 				{	// we change the tracks lenght
 					seq_setLoopLength(2);
 				}
 				else
 				// ARM Loop 1 lenght 
-				if ((msg.data2 >= 1  && msg.data2 <= 16)   && (armLoop == 1))
+				if ((msg.data2 > 0  && msg.data2 <= 17)   && (armLoop == 1))
 				{	// we change the tracks lenght
 					seq_setLoopLength(1);
 				}
@@ -1124,38 +1139,38 @@ void midiParser_ccHandler(MidiMsg msg, uint8_t updateOriginalValue)
 			//
 			case CC2_DIVIDE:
 				 // STOP the DIVIDE function 
-				if ((msg.data2 >= 121 && msg.data2 <=127) && (armDivideOnOff == 1))
+				if ((msg.data2 > 121 && msg.data2 <=127) && (armDivideOnOff == 1))
 				{	
 					armDivide = 0; // we swith on the start / divide effects
 					armDivideOnOff == 0;
 				}
 				else
 				// DIVIDE Loop 16 lenght 
-				if ((msg.data2 >= 100  && msg.data2 <= 120)  && (armDivideOnOff == 1))
+				if ((msg.data2 > 99  && msg.data2 <= 121)  && (armDivideOnOff == 1))
 				{	// we change the tracks start
 					armDivide=15;
 				}
 				else
 				// DIVIDE Loop 14 lenght 
-				if ((msg.data2 >= 80  && msg.data2 <= 99)   && (armDivideOnOff == 1))
+				if ((msg.data2 > 80  && msg.data2 <= 99)   && (armDivideOnOff == 1))
 				{	// we change the tracks start
 					armDivide=14;
 				}
 				else
 				// DIVIDE Loop 12 lenght 
-				if ((msg.data2 >= 44  && msg.data2 <= 79)   && (armDivideOnOff == 1))
+				if ((msg.data2 > 44  && msg.data2 <= 80)   && (armDivideOnOff == 1))
 				{	// we change the tracks start
 					armDivide=12;
 				}
 				else
 				// DIVIDE Loop 8 lenght 
-				if ((msg.data2 >= 17 && msg.data2 <= 43 )   && (armDivideOnOff == 1))
+				if ((msg.data2 > 17 && msg.data2 <= 44 )   && (armDivideOnOff == 1))
 				{	// we change the tracks start
 					armDivide=8;
 				}
 				else
 				// DIVIDE Loop 4 lenght and we arm the DIVIDE function
-				if ((msg.data2 >0  && msg.data2 <= 16) && (armDivideOnOff == 1))
+				if ((msg.data2 >0  && msg.data2 <= 17) && (armDivideOnOff == 1))
 				{	// we change the tracks start
 					armDivide=4;
 				}

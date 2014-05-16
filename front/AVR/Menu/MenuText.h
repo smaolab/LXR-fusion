@@ -312,8 +312,8 @@ const char shortNames[][4] PROGMEM  =
 	{"co2"},  // trigger clock out2 ppq
 	{"pcr"}, // pattern change resets bar counter
 	{"rnd"}, // rstephane: RND VOice
-	{"len"}, // rstephane: loop Lenght
-	{"div"}, // rstephane: loop Lenght
+	{"end"}, // rstephane: loop Lenght
+	{"sta"}, // rstephane: start (divide effect) loop index
 	{"pat"}, // rstephane: PAT number 
 	{"rpf"}, // rstephane: RANDOM Pattern steps Fill
 	
@@ -428,8 +428,8 @@ const char longNames[][16] PROGMEM =
 	{"Gate Mode"},
 	{"PCReset" }, // reset bar counter on manual pattern change
 	{"Random"}, // rstephane: RND VOice LONG text
-	{"Loop"}, // rstephane: LOOP LONG text
-	{"Divide"}, // rstephane: DIVIDE LONG text
+	{"EndLoop"}, // rstephane: LOOP LONG text
+	{"StartLoop"}, // rstephane: DIVIDE LONG text
 	{"FillPat"}, // rstephane: PRE Filled Pattern
 	{"RandPattFill"}, // rstephane: RANDOM Pattern steps Fill
 };
