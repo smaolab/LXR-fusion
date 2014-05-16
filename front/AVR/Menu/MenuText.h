@@ -115,7 +115,7 @@ const char retriggerNames[][4] PROGMEM  =
 	{"v2"},
 	{"v3"},
 	{"v4"},
-	{"v5"},
+	{"v5"}, 
 	{"v6"},
 };
 //-----------------------------------------------------------------
@@ -313,6 +313,7 @@ const char shortNames[][4] PROGMEM  =
 	{"pcr"}, // pattern change resets bar counter
 	{"rnd"}, // rstephane: RND VOice
 	{"len"}, // rstephane: loop Lenght
+	{"div"}, // rstephane: loop Lenght
 	{"pat"}, // rstephane: PAT number 
 	{"rpf"}, // rstephane: RANDOM Pattern steps Fill
 	
@@ -428,6 +429,7 @@ const char longNames[][16] PROGMEM =
 	{"PCReset" }, // reset bar counter on manual pattern change
 	{"Random"}, // rstephane: RND VOice LONG text
 	{"Loop"}, // rstephane: LOOP LONG text
+	{"Divide"}, // rstephane: DIVIDE LONG text
 	{"FillPat"}, // rstephane: PRE Filled Pattern
 	{"RandPattFill"}, // rstephane: RANDOM Pattern steps Fill
 };

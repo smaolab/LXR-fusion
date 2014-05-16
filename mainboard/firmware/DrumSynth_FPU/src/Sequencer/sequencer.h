@@ -239,9 +239,12 @@ void seq_sendMidiNoteOn(const uint8_t channel, const uint8_t note, const uint8_t
 
 // rstephane : add on LOOP/Divide Function
 //------------------------------------------------------------------------------
+extern uint8_t armDivide;
+
 void seq_setLoopLength(uint8_t length);
 // rstephane : My prefilled pattern
 void seq_setPrePatternFill(uint8_t voiceNr, uint8_t msgdata2);
 void seq_setPreRythmFill(uint8_t voiceNr, uint8_t msgdata2);
 void seq_setRandomPatternFill(uint8_t voiceNr, uint8_t msgdata2);
+void seq_setLoopStartChaos(uint8_t start); // a enlever plus tard mais garder le principe pour faire un effet chaos
 #endif /* SEQUENCER_H_ */

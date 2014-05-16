@@ -237,6 +237,11 @@ static uint8_t seq_intIsStepActive(uint8_t voice, uint8_t stepNr, uint8_t patter
 static uint8_t seq_intIsMainStepActive(uint8_t voice, uint8_t mainStepNr, uint8_t pattern);
 static void seq_resetNote(Step *step);
 static void seq_setStepIndexToStart();
+
+//----------------
+//rstephane: armDivide initialized
+uint8_t armDivide = 0;
+
 //------------------------------------------------------------------------------
 void seq_init()
 {
@@ -589,11 +594,17 @@ static void seq_nextStep()
 		seqlen=seq_patternSet.seq_patternLengthRotate[seq_activePattern][i].length;
 		if(!seqlen)
 			seqlen=16;
-
+	
 		if((seq_stepIndex[i] / 8) == seqlen || (seq_stepIndex[i] & 0x7f) == 0)
 		{
-			//if end is reached reset track to step 0
-			seq_stepIndex[i] = 0;
+			//------ DIVIDE effect
+			// rstephane
+			//if end is reached reset track to step ARMDIVIDE * 8
+			if (armDivide>0 && armDivide<17)
+				seq_stepIndex[i] = armDivide*8;						
+			else
+				//if end is reached reset track to step 0
+				seq_stepIndex[i] = 0;
 		}
 
 
@@ -1591,7 +1602,30 @@ void seq_setLoopLength(uint8_t length)
 
 }
 
+void seq_setLoopStartChaos(uint8_t start) 
+{
+	uint8_t i;
+	uint8_t seqlen;
+	
+	for(i=0;i<NUM_TRACKS;i++)
+	{
+		//increment the step index
+		//seq_stepIndex[i]++;
+		//check if track end is reached
 
+		// --AS **PATROT we now use this for length
+		seqlen=seq_patternSet.seq_patternLengthRotate[seq_activePattern][i].length;
+		if(!seqlen)
+			seqlen=16;
+
+		if((seq_stepIndex[i] / 8) == seqlen || (seq_stepIndex[i] & 0x7f) == 0)
+		{
+			//if end is reached reset track to step 'START'
+			seq_stepIndex[i] = start;
+		}		
+	}	// attention dans cet methode on va reseter remettre le START à zero 
+		//alors que d'autres track n'ont pas fini de jouer, bonjour le chaos !			
+}
 
 // rstephane : My prefilled pattern
 void seq_setPrePatternFill(uint8_t voiceNr, uint8_t msgdata2)

@@ -307,7 +307,8 @@ enum ParamEnums
 	PAR_RND_VOICE7,
 		
 	PAR_LOOP,					// rstephane: loop 
-	
+	PAR_DIVIDE,					// rstephane: DIVIDE 
+		
 	PAR_PREFILLED_PATTERN0, 			// rstephane: Prefilled pattern
 	PAR_PREFILLED_PATTERN1, 
 	PAR_PREFILLED_PATTERN2, 
