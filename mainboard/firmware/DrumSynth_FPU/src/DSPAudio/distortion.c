@@ -73,12 +73,14 @@ void calcDelayBlock(uint8_t delay, int16_t* buf, const uint8_t size)
 	for(i=0;i<size;i++)
 	{
 		DlyBuffer[ i ] = buf[ i ];
-		j = i - (delay * SampleRate);
+		j = i - ((delay/10) * SampleRate);
 
 		if( j < 0 )
 		    j = SampleRate + j;
-		
-		buf[i] = DlyBuffer[ j ];
+		    
+		bufferTool_addBuffersSaturating(buf[i], DlyBuffer[ j ], size);
+		//buf[i] += DlyBuffer[ j ];
+		//bufferTool_addBuffersReverseBit(buf[i], size);
 	}
 }
 

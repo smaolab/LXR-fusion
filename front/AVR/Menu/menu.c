@@ -447,8 +447,8 @@ const enum Datatypes PROGMEM parameter_dtypes[NUM_PARAMS] = {
 	    /*PAR_RND_VOICE6*/	DTYPE_ON_OFF, 
 	    /*PAR_RND_VOICE7*/	DTYPE_ON_OFF, 
 	    
-	    /*PAR_LOOP*/	DTYPE_0B127,  // rstephane : loop 127 steps
-	    /*PAR_DIVIDE*/	DTYPE_0B127,  // rstephane : Starts 127 steps
+	    /*PAR_LOOP*/	DTYPE_1B16,  // rstephane : loop 16 to 1 steps
+	    /*PAR_DIVIDE*/	DTYPE_1B16,  // rstephane : Starts 1 to 16 steps
 	    
 	    /*PAR_PREFILLED_PATTERN0*/	DTYPE_0B127, // rstephane : Prefilled Pattern
 	    /*PAR_PREFILLED_PATTERN1*/	DTYPE_0B127,
