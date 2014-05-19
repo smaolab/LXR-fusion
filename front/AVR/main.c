@@ -31,6 +31,9 @@
 #define FIRMWARE_VERSION "0.32"
 #define CORTEX_RESET_PIN	PB0
 //-----------------------------------------------
+
+extern uint8_t maskTypebis; // 0-16 for OTO effects 
+
 //code
 //-----------------------------------------------
 

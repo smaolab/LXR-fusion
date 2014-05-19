@@ -40,6 +40,9 @@
 #include "modulationNode.h"
 #include "TriggerOut.h"
 
+// rstephane  ---------
+extern uint8_t maskType; // 0-16 for OTO effects
+extern uint8_t otoAmount; // 0-16 for OTO effects
 
 //instance of the snare voice
 SnareVoice snareVoice;
@@ -165,7 +168,11 @@ void Snare_calcSyncBlock(int16_t* buf, const uint8_t size)
 	calcNextOscSampleBlock(&snareVoice.osc,transBuf,size,(1.f-snareVoice.mix));
 	//--AS apply filter to synthesized sound as well here if desired, or combine code for more efficiency
 	//SVF_calcBlockZDF(&snareVoice.filter,snareVoice.filterType,transBuf,size);
-
+	
+	//rstephane: OTO effect alike ;-)
+  	if (maskType>0)
+  		calcOTOFxBlock(maskType,buf, size, otoAmount);
+ 
 	uint8_t j;
 	if(snareVoice.volumeMod)
 	{

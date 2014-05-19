@@ -158,18 +158,3 @@ inline void bufferTool_moveBuffer(int16_t* dst, int16_t* src, const uint8_t size
 }
 //---------------------------------------------------
 
-//---------------------------------------------------
-inline void bufferTool_addBuffersReverseBit(int16_t* buf1, const uint8_t size)
-{
-	uint8_t i;
-	int16_t j;
-	
-	for(i=0;i<size;i++)
-	{
-		j = (__REV(buf1[i]));
-		buf1[i] =j;
-	}
-}
-
-
-

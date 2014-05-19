@@ -50,6 +50,11 @@
 //#include <stdlib.h>
 #include <time.h>
 
+
+// rstephane  ---------
+extern uint8_t maskType; // 0-16 for OTO effects
+extern uint8_t otoAmount; // 0-16 for OTO effects
+
 float ampSmoothValue = 0.1f;
 //---------------------------------------------------
 DrumVoice voiceArray[NUM_VOICES];
@@ -269,12 +274,18 @@ void calcDrumVoiceSyncBlock(const uint8_t voiceNr, int16_t* buf, const uint8_t s
 #if (USE_FILTER_DRIVE == 0)
 	calcDistBlock(&voiceArray[voiceNr].distortion,buf,size);
 #endif
-	//channel volume
-	bufferTool_addGain(buf,voiceArray[voiceNr].vol,size);
-
+	
+	
 	// rstephane : DELAY
 	//calcDelayBlock(20, buf, size);
-  
+  	//rstephane: OTO effect alike ;-)
+  	if (maskType>0)
+		//(uint8_t maskType, int16_t* buf,const uint8_t size, uint8_t otoAmount)
+  		calcOTOFxBlock(maskType,buf, size, otoAmount);
+  	//channel volume
+	bufferTool_addGain(buf,voiceArray[voiceNr].vol,size);
+
+	
 }
 
 
@@ -284,8 +295,8 @@ void calcDrumVoiceSyncBlock(const uint8_t voiceNr, int16_t* buf, const uint8_t s
 //---------------------------------------------------
 void randomDrumVoice(const uint8_t voiceNr)
 {
-		uint8_t rndData, new_min, new_max;
-		uint32_t rndDataTemp, old_min, old_max;
+		uint8_t rndData;
+		//uint32_t rndDataTemp;
 		
 		
 		// COARSE

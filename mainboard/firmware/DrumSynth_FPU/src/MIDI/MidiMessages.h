@@ -387,6 +387,8 @@ enum
 	
 	CC2_LOOP, // my funtion LOOP is called 
 	CC2_DIVIDE, // my funtion DIVIDE is called 
+	CC2_OTO, // my funtion OTO is called 
+	CC2_OTO_AMOUNT, // AMOUNT
 	
 	CC2_PREFILLED_PATTERN0, // my funtion PREFILLED is called 
 	CC2_PREFILLED_PATTERN1, // my funtion PREFILLED is called 

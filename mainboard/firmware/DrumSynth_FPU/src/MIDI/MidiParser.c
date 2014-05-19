@@ -93,7 +93,10 @@ uint8_t midiParser_selectedLfoVoice[NUM_LFO] = {0,0,0,0,0,0};
 uint8_t originalTrackLength [NUM_TRACKS];
 uint8_t i,armLoop=0;
 uint8_t armDivideOnOff=0;
+uint8_t maskType=0; // 0-16 for OTO effects
+uint8_t otoAmount; // amount OTO effects
 
+extern uint8_t maskTypebis=0; // 0-16 for OTO effects comes from FRONT AVR ! used to catch a Forced Repaint all :-)
 
 #if 0
 // -- AS for debugging
@@ -1071,6 +1074,21 @@ void midiParser_ccHandler(MidiMsg msg, uint8_t updateOriginalValue)
 					randomDrumVoice(2);
 				break;	
 				
+			//
+			//
+			// rstephane : Handle the OTO EFFECT button
+			case CC2_OTO:
+				if(msg.data2>0)
+				{
+					// ------ TEST OTO effects
+					maskType=msg.data2;
+				}
+				break;	
+			case CC2_OTO_AMOUNT:
+					// ------ Set OTO effects amount (0 to 127, Dry to Wet)
+					otoAmount = msg.data2;
+
+				break;	
 			//
 			// rstephane : Handle the LOOP button
 			//

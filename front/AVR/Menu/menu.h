@@ -189,10 +189,12 @@ enum NamesEnum
 	TEXT_BAR_RESET_MODE,
 	TEXT_MIDI_CHAN_GLOBAL,
 	TEXT_RND_VOICE,	// rstephane: random text 
-	TEXT_LOOP,	// rstephane: LOOP text 
-	TEXT_DIVIDE,	// rstephane: DIVIDE text 
 	TEXT_PREFILLED_PATTERN, 	// rstephane: Prefilled pattern	
 	TEXT_RANDOMFILL_PATTERN, 	// rstephane: RANDOMfilled pattern	
+	TEXT_DIVIDE,	// rstephane: DIVIDE text 
+	TEXT_LOOP,	// rstephane: LOOP text
+	TEXT_OTO,	// rstephane : OTO
+	TEXT_OTO_AMOUNT,  // rstephane : Amount
 	NUM_NAMES
 };
 //-----------------------------------------------------------------
@@ -283,12 +285,12 @@ enum shortNamesEnum
 	SHORT_TRIGGER_OUT2,
 	SHORT_BAR_RESET_MODE,
 	SHORT_RND, // rstephane : short text random
-	SHORT_LOOP, // rstephane : short text LOOP
-	SHORT_DIVIDE, // rstephane : short text DIVIDE
 	SHORT_PREFILLED_PATTERN, // rstephane: Prefilled pattern
-	SHORT_RANDOMFILL_PATTERN  // rstephane : random pattern fill text
-
-	
+	SHORT_RANDOMFILL_PATTERN,  // rstephane : random pattern fill text
+	SHORT_DIVIDE, // rstephane : short text DIVIDE
+	SHORT_LOOP, // rstephane : short text LOOP
+	SHORT_OTO,
+	SHORT_OTO_AMOUNT,
 };
 //-----------------------------------------------------------------
 // These correspond with catNames in MenuText.h
@@ -398,11 +400,12 @@ enum longNamesEnum
 	LONG_TRIGGER_GATE_MODE,
 	LONG_BAR_RESET_MODE,
 	LONG_RND_VOICE, // rstephane: long text random
-	LONG_LOOP, // rstephane: long text LOOP
-	LONG_DIVIDE, // rstephane: long text DIVIDE
 	LONG_PREFILLED_PATTERN,		// rstephane: Prefilled pattern
-	LONG_RANDOMFILL_PATTERN  // rstephane : random pattern fill text
-
+	LONG_RANDOMFILL_PATTERN , // rstephane : random pattern fill text
+	LONG_DIVIDE, // rstephane: long text DIVIDE
+	LONG_LOOP, // rstephane: long text LOOP
+	LONG_OTO,
+	LONG_OTO_AMOUNT,
 };
 
 //enum for the save what parameter

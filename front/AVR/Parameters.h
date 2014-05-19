@@ -308,6 +308,8 @@ enum ParamEnums
 		
 	PAR_LOOP,					// rstephane: loop 
 	PAR_DIVIDE,					// rstephane: DIVIDE 
+	PAR_OTO,					// rstephane: OTO FX mode 
+	PAR_OTO_AMOUNT,					// rstephane: AMOUNT 
 		
 	PAR_PREFILLED_PATTERN0, 			// rstephane: Prefilled pattern
 	PAR_PREFILLED_PATTERN1, 

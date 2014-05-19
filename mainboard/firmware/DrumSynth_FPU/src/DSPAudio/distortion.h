@@ -53,6 +53,7 @@ float distortion_calcSampleFloat(const Distortion *dist, float x);
 
 // rstephane : DELAY
 void calcDelayBlock(uint8_t delay, int16_t* buf, const uint8_t size);
-
+void calcOTOFxBlockOLD(uint8_t maskType, int16_t* buf,const uint8_t size);
+void calcOTOFxBlock(uint8_t maskType, int16_t* buf,const uint8_t size,uint8_t otoAmount);
 //--------------------------------------------------
 #endif /* DISTORTION_H_ */

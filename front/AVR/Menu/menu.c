@@ -198,10 +198,12 @@ const Name valueNames[NUM_NAMES] PROGMEM =
 		{SHORT_BAR_RESET_MODE, CAT_SEQUENCER, LONG_BAR_RESET_MODE}, // TEXT_BAR_RESET_MODE
 		{SHORT_CHANNEL, CAT_MIDI, LONG_MIDI_CHANNEL}, // TEXT_MIDI_CHAN_GLOBAL
 		{SHORT_RND, CAT_OSC, LONG_RND_VOICE}, // rstephane: TEXT_RND_VOICE
-		{SHORT_LOOP,	CAT_SEQUENCER,	LONG_LOOP},	// rstephane:  TEXT_LOOP
-		{SHORT_DIVIDE,	CAT_SEQUENCER,	LONG_DIVIDE},	// rstephane:  TEXT_DIVIDE
 		{SHORT_PREFILLED_PATTERN,CAT_PATTERN,	LONG_PREFILLED_PATTERN},// rstephane:  TEXT_PREFILLED_PATTERN
 		{SHORT_RANDOMFILL_PATTERN,CAT_PATTERN,	LONG_RANDOMFILL_PATTERN},// rstephane:  TEXT_RANDOMFILL_PATTERN
+		{SHORT_DIVIDE,	CAT_SEQUENCER,	LONG_DIVIDE},	// rstephane:  TEXT_DIVIDE
+		{SHORT_LOOP,	CAT_SEQUENCER,	LONG_LOOP},	// rstephane:  TEXT_LOOP
+		{SHORT_OTO,CAT_SEQUENCER,LONG_OTO},// rstephane:  TEXT_OTO
+		{SHORT_OTO_AMOUNT,CAT_SEQUENCER,LONG_OTO_AMOUNT},// rstephane:  TEXT_OTO		
 };
 
 //---------------------------------------------------------------
@@ -449,6 +451,9 @@ const enum Datatypes PROGMEM parameter_dtypes[NUM_PARAMS] = {
 	    
 	    /*PAR_LOOP*/	DTYPE_1B16,  // rstephane : loop 16 to 1 steps
 	    /*PAR_DIVIDE*/	DTYPE_1B16,  // rstephane : Starts 1 to 16 steps
+	   
+	    /*PAR_OTO*/		DTYPE_1B16,  // rstephane : OTO MODE
+	    /*PAR_OTO_AMOUNT*/	DTYPE_0B127,// rstephane : amount
 	    
 	    /*PAR_PREFILLED_PATTERN0*/	DTYPE_0B127, // rstephane : Prefilled Pattern
 	    /*PAR_PREFILLED_PATTERN1*/	DTYPE_0B127,

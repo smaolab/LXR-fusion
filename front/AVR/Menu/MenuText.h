@@ -312,10 +312,12 @@ const char shortNames[][4] PROGMEM  =
 	{"co2"},  // trigger clock out2 ppq
 	{"pcr"}, // pattern change resets bar counter
 	{"rnd"}, // rstephane: RND VOice
-	{"end"}, // rstephane: loop Lenght
-	{"sta"}, // rstephane: start (divide effect) loop index
 	{"pat"}, // rstephane: PAT number 
 	{"rpf"}, // rstephane: RANDOM Pattern steps Fill
+	{"sta"}, // rstephane: start (divide effect) loop index
+	{"end"}, // rstephane: loop Lenght
+	{"oto"}, // rstephane: OTO mode
+	{"amt"}, // rstephane: OTO amount	
 	
 };
 //-----------------------------------------------------------------
@@ -428,10 +430,12 @@ const char longNames[][16] PROGMEM =
 	{"Gate Mode"},
 	{"PCReset" }, // reset bar counter on manual pattern change
 	{"Random"}, // rstephane: RND VOice LONG text
-	{"EndLoop"}, // rstephane: LOOP LONG text
-	{"StartLoop"}, // rstephane: DIVIDE LONG text
 	{"FillPat"}, // rstephane: PRE Filled Pattern
 	{"RandPattFill"}, // rstephane: RANDOM Pattern steps Fill
+	{"StartLoop"}, // rstephane: DIVIDE LONG text
+	{"EndLoop"}, // rstephane: LOOP LONG text
+	
+	
 };
 
 
