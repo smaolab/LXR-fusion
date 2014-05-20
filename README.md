@@ -12,6 +12,11 @@ Select a track (1-7), then click on the button VOICE, then click on the OSC menu
 
 Select the PERF button, then click again the PERF button to access the sub menu:  You will see a menu called LEN, to arm the looping effects, turn the knob until you reach 127 and then turn down little by little the knob (until ZERO) to listen to the effect!
 
+### 4. OTO Biscuit Sounds effect
+
+Select the PERF button, then click again the PERF button to access the sub
+menu:  You will see a menu called OTO and AMT.
+Turn the OTO knob between 1 and 15 (15 different swapping bits mode) and then turn the AMT button to hear the FX
 
 Enjoy!
 

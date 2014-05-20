@@ -275,9 +275,9 @@ void calcDrumVoiceSyncBlock(const uint8_t voiceNr, int16_t* buf, const uint8_t s
 	calcDistBlock(&voiceArray[voiceNr].distortion,buf,size);
 #endif
 	
-	
 	// rstephane : DELAY
-	//calcDelayBlock(20, buf, size);
+	//if (maskType>0)
+	//calcDelayBlock(1500, buf, size);
   	//rstephane: OTO effect alike ;-)
   	if (maskType>0)
 		//(uint8_t maskType, int16_t* buf,const uint8_t size, uint8_t otoAmount)
