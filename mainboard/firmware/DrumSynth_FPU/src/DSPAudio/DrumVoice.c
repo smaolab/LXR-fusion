@@ -278,10 +278,18 @@ void calcDrumVoiceSyncBlock(const uint8_t voiceNr, int16_t* buf, const uint8_t s
 	// rstephane : DELAY
 	//if (maskType>0)
 	//calcDelayBlock(1500, buf, size);
+
   	//rstephane: OTO effect alike ;-)
   	if (maskType>0)
 		//(uint8_t maskType, int16_t* buf,const uint8_t size, uint8_t otoAmount)
   		calcOTOFxBlock(maskType,buf, size, otoAmount);
+  		
+  	// rstephane: Alien Wah effect, to put it one day as very nice, with four parameters
+  	//calcAlienWahFxBlock(maskType, buf, size);
+  	  	
+  	// rstephane : Moog Filter
+  	//moog_perform(0,0.8,0.4, buf,size);
+  	
   	//channel volume
 	bufferTool_addGain(buf,voiceArray[voiceNr].vol,size);
 
