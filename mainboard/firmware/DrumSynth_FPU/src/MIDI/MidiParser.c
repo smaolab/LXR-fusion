@@ -1070,15 +1070,24 @@ void midiParser_ccHandler(MidiMsg msg, uint8_t updateOriginalValue)
 			// rstephane : Handle the RND button
 			case CC2_RND_VOICE1:
 				if(msg.data2 == 1)
-					randomDrumVoice(0);
+				{
+					randomDrumVoiceOSC(0);
+					randomDrumVoiceFILTER(0);
+				 }
 				break;	
 			case CC2_RND_VOICE2:
 				if(msg.data2 == 1)
-					randomDrumVoice(1);
+				{
+					randomDrumVoiceOSC(1);
+					randomDrumVoiceADSR(1);
+				 }
 				break;	
 			case CC2_RND_VOICE3:
 				if(msg.data2 == 1)
-					randomDrumVoice(2);
+				{
+					randomDrumVoiceCLICK(2);
+					randomDrumVoiceFM(2);
+				 }
 				break;	
 				
 			//

@@ -202,8 +202,11 @@ void calcOTOFxBlock(uint8_t maskType, int16_t* buf,const uint8_t size, uint8_t o
 			break;
 		case 3 : 
 			for(i=0;i<size;i++)
-				bufTemp[i] &= 0x000007FF; // remove 8 TOP BIts 16 bits to 8 bitmap 
+				bufTemp[i] = bufTemp[i] << 14 ;	
 			break;
+			/*for(i=0;i<size;i++)
+				bufTemp[i] &= 0x000007FF; // remove 8 TOP BIts 16 bits to 8 bitmap 
+			break;*/ 
 		case 4 : 
 			for(i=0;i<size;i++)
 				bufTemp[i] = bufTemp[i] << 1 ;	
