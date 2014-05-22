@@ -120,6 +120,7 @@ float distortion_calcSampleFloat(const Distortion *dist, float x)
 }
 
 // rstephane : DELAY
+// difficult rto make it work due to the way sound is calaculated (by one shot single blocks).
 void calcDelayBlock(float delay, int16_t* buf, const uint8_t size)
 {
 
@@ -142,7 +143,15 @@ void calcDelayBlock(float delay, int16_t* buf, const uint8_t size)
 
 }
 
-// rstephane : OTO biscuit
+// rstephane : Range funciton 
+float calcRange(uint8_t valueAmount, float old_min ,float old_max,float new_min,float new_max )
+{
+	float knobValue;
+	knobValue = (  ( (valueAmount - old_min) / (old_max - old_min) ) * (new_max - new_min) + new_min  );
+	return knobValue;
+}
+
+// rstephane : OTO biscuit FX 
 void calcOTOFxBlock(uint8_t maskType, int16_t* buf,const uint8_t size, uint8_t otoAmount)
 {
 	
@@ -150,6 +159,11 @@ void calcOTOFxBlock(uint8_t maskType, int16_t* buf,const uint8_t size, uint8_t o
 	uint8_t i,j;
 	uint16_t temp;
 	int16_t bufTemp[size];
+	
+	// for ALien Wah
+	float lfo,out;
+	_Complex outc;
+
 	
 	// for a strange effect derived from moog filter from musicdsp.org
 	float c , r ,v0,v1;
@@ -165,8 +179,10 @@ void calcOTOFxBlock(uint8_t maskType, int16_t* buf,const uint8_t size, uint8_t o
 	float dryFloatTemp;
 	float wetFloatTemp;
 	
-	// knob Value (0 to 1 <--> 0 to 127) 
-	knobValue = (  ( (otoAmount - old_min) / (old_max - old_min) ) * (new_max - new_min) + new_min  );
+	// knob Value (0 to 127 <--> 0 to 1) 
+	// knobValue = (  ( (otoAmount - old_min) / (old_max - old_min) ) * (new_max - new_min) + new_min  );
+	knobValue = calcRange(otoAmount, old_min , old_max, new_min, new_max );
+	
 	dry = (1-knobValue);
 	wet = fabs((1-knobValue)-1);
 	
@@ -218,11 +234,14 @@ void calcOTOFxBlock(uint8_t maskType, int16_t* buf,const uint8_t size, uint8_t o
 			for(i=0;i<size;i++)
 				bufTemp[i] = bufTemp[i] << 5 ;		
 			break;
-		 case 8 : // Trash !!!
-			 
+		
+		
+		
+		case 8 : 
 			for(i=0;i<size;i++)
-				bufTemp[i] = bufTemp[i] << 7 ;		
+				bufTemp[i] = bufTemp[i] << 6 ;		
 			break;
+		
 		case 9 : // reverse all bit 1 becomes 0 :-)
 			for(i=0;i<size;i++)
 			{
@@ -357,8 +376,11 @@ void init_phase(float freq,float startphase,float fb,int delay)
 
 //-----------------
 // rstephane : ALien Wah from Musicdsp.org
+// working fine, but not yet shown on the menu
+// we should also map four parameters of this effect e:-)
 
-void calcAlienWahFxBlock(uint8_t maskType, int16_t* buf,const uint8_t size)
+
+void calcAlienWahFxBlock(uint8_t freq,uint8_t startphase,uint8_t fb,uint8_t delay, int16_t* buf,const uint8_t size)
 {
   
 	uint16_t i;
@@ -370,9 +392,22 @@ void calcAlienWahFxBlock(uint8_t maskType, int16_t* buf,const uint8_t size)
 	for(i=0;i<size;i++)
 		bufTemp[i] = buf[i] ;
 	
-	//init_phase(0.6,0,0.5,20);  //effects parameters
-	init_phase(0.4,0,0.8,40);  //effects parameters
 	
+	// we transform the value into another range
+	// TO change the range from 0 to 127 to 0.0 to 1.0
+	float old_min = 0;
+	float old_max = 127;
+	float new_min = 0.0;
+	float new_max = 1.0;
+	
+	// knob Value (0 to 127 <--> 0 to 1) 
+	float knobValueFreq= calcRange(freq, old_min , old_max, new_min, new_max );
+	float knobValueStartphase= calcRange(startphase, old_min , old_max, new_min, new_max );
+	float knobValueFb= calcRange(fb, old_min , old_max, new_min, new_max );
+	
+	//set effects parameters
+	init_phase( knobValueFreq, knobValueStartphase, knobValueFb, delay); 
+ 	
  	for(i=0;i<size;i++)
  	{
    		if (awint.t++%lfoskipsamples==0)
@@ -392,7 +427,7 @@ void calcAlienWahFxBlock(uint8_t maskType, int16_t* buf,const uint8_t size)
    
    		bufTemp[i]=out;
 	}; 
-	
+
 	for(i=0;i<size;i++)
 		buf[i] = bufTemp[i] ;
 	
@@ -401,6 +436,7 @@ void calcAlienWahFxBlock(uint8_t maskType, int16_t* buf,const uint8_t size)
 
 // -------------------
 // Moog filter 4poles
+// issues with the STATE, POle, etc :-((((((
 
  float saturate( float input ) { 
 //clamp without branching
@@ -430,7 +466,7 @@ void moog_perform(uint8_t moogFilterType,int8_t cutOff,int8_t resonance, int16_t
           input = (buf[i]/((float)0x7fff));
           output = 0.25 * ( input - output ); //negative feedback
           
-         /* for( pole = 0; pole < 4; pole++) {
+          for( pole = 0; pole < 4; pole++) {
                   temp = state[pole];
                   output = saturate( output + x->p * (output - temp));
                   state[pole] = output;
@@ -439,10 +475,10 @@ void moog_perform(uint8_t moogFilterType,int8_t cutOff,int8_t resonance, int16_t
           float lowpass = output;
           float highpass = input - output;
           float bandpass = 3 * state[2] - x->lowpass; //got this one from paul kellet
-          */
+          
           //*output++ = lowpass;
 	  //*output = lowpass;
-          output *= x->Q;  //scale the feedback
+          //output *= x->Q;  //scale the feedback
           buf[i] = output * FILTER_GAIN; // Low pass
 	}
 

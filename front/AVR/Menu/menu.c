@@ -203,7 +203,14 @@ const Name valueNames[NUM_NAMES] PROGMEM =
 		{SHORT_DIVIDE,	CAT_SEQUENCER,	LONG_DIVIDE},	// rstephane:  TEXT_DIVIDE
 		{SHORT_LOOP,	CAT_SEQUENCER,	LONG_LOOP},	// rstephane:  TEXT_LOOP
 		{SHORT_OTO,CAT_SEQUENCER,LONG_OTO},// rstephane:  TEXT_OTO
-		{SHORT_OTO_AMOUNT,CAT_SEQUENCER,LONG_OTO_AMOUNT},// rstephane:  TEXT_OTO		
+		{SHORT_OTO_AMOUNT,CAT_SEQUENCER,LONG_OTO_AMOUNT},// rstephane:  TEXT_OTO	
+		
+		// rstephane : Alien Wah
+		{SHORT_ALIEN_DELAY,CAT_SEQUENCER,LONG_ALIEN_DELAY},
+		{SHORT_ALIEN_FREQ,CAT_SEQUENCER,LONG_ALIEN_FREQ},
+		{SHORT_ALIEN_STARTPHASE,CAT_SEQUENCER,LONG_ALIEN_STARTPHASE},
+		{SHORT_ALIEN_FB,CAT_SEQUENCER,LONG_ALIEN_FB},	
+		
 };
 
 //---------------------------------------------------------------
@@ -473,6 +480,12 @@ const enum Datatypes PROGMEM parameter_dtypes[NUM_PARAMS] = {
 	    /*PAR_RANDOMFILL_PATTERN6*/	DTYPE_ON_OFF,
 	    /*PAR_RANDOMFILL_PATTERN7*/	DTYPE_ON_OFF,
 	    
+	    // rstephane : Alien Wah 
+	/* PAR_ALIEN_DELAY*/		DTYPE_0B127,
+	/* PAR_ALIEN_FREQ*/		DTYPE_0B127,
+	/* PAR_ALIEN_STARTPHASE*/	DTYPE_0B127,
+	/* PAR_ALIEN_FB*/		DTYPE_0B127,
+
 	    // ------------------------------------------------
 	    
 	    /*PAR_ROLL*/ 			DTYPE_MENU | (MENU_ROLL_RATES<<4),

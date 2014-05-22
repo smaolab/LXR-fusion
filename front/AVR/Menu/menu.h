@@ -195,6 +195,11 @@ enum NamesEnum
 	TEXT_LOOP,	// rstephane: LOOP text
 	TEXT_OTO,	// rstephane : OTO
 	TEXT_OTO_AMOUNT,  // rstephane : Amount
+	// rstephane : Alien Wah
+	TEXT_ALIEN_DELAY,
+	TEXT_ALIEN_FREQ,
+	TEXT_ALIEN_STARTPHASE,
+	TEXT_ALIEN_FB,
 	NUM_NAMES
 };
 //-----------------------------------------------------------------
@@ -291,6 +296,12 @@ enum shortNamesEnum
 	SHORT_LOOP, // rstephane : short text LOOP
 	SHORT_OTO,
 	SHORT_OTO_AMOUNT,
+	// rstephane : Alien Wah
+	SHORT_ALIEN_DELAY,
+	SHORT_ALIEN_FREQ,
+	SHORT_ALIEN_STARTPHASE,
+	SHORT_ALIEN_FB,
+	
 };
 //-----------------------------------------------------------------
 // These correspond with catNames in MenuText.h
@@ -406,6 +417,11 @@ enum longNamesEnum
 	LONG_LOOP, // rstephane: long text LOOP
 	LONG_OTO,
 	LONG_OTO_AMOUNT,
+	// rstephane : Alien Wah
+	LONG_ALIEN_DELAY,
+	LONG_ALIEN_FREQ,
+	LONG_ALIEN_STARTPHASE,
+	LONG_ALIEN_FB,
 };
 
 //enum for the save what parameter

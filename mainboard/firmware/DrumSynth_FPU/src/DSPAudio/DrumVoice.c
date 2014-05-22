@@ -53,7 +53,13 @@
 
 // rstephane  ---------
 extern uint8_t maskType; // 0-16 for OTO effects
-extern uint8_t otoAmount; // 0-16 for OTO effects
+extern uint8_t otoAmount; // 0-127 for OTO effects
+
+extern uint8_t freq; // for Alien Wah effect 0 - 127 -> 0.0 to 1.0
+extern uint8_t startphase; // 0.0 to 1.0
+extern uint8_t fb; // 0.0 1.0
+extern uint8_t delay; // 5 to 50 if possible!
+extern uint8_t AlienWahOnOff; // Set ALien FX ON or OFF 
 
 float ampSmoothValue = 0.1f;
 //---------------------------------------------------
@@ -280,15 +286,24 @@ void calcDrumVoiceSyncBlock(const uint8_t voiceNr, int16_t* buf, const uint8_t s
 	//calcDelayBlock(1500, buf, size);
 
   	//rstephane: OTO effect alike ;-)
+  	// works fine!
   	if (maskType>0)
 		//(uint8_t maskType, int16_t* buf,const uint8_t size, uint8_t otoAmount)
   		calcOTOFxBlock(maskType,buf, size, otoAmount);
   		
   	// rstephane: Alien Wah effect, to put it one day as very nice, with four parameters
-  	//calcAlienWahFxBlock(maskType, buf, size);
+  	// works fine!
+  	//if (AlienWahOnOff>0)
+	//	calcAlienWahFxBlock(freq,startphase,fb,delay, buf,size);
   	  	
-  	// rstephane : Moog Filter
-  	//moog_perform(0,0.8,0.4, buf,size);
+  	// rstephane : Moog Filter (not working correctly yet :-(
+  	// moog_perform(0,0.8,0.4, buf,size);
+  	
+  	// rstephane : 3 band EQ 
+  	//-----------------
+  	//calc3BandEqBlock(lowFreq, midFreq, highFreq, buf, size);
+  	//calc3BandEqBlock(880,5000, 24000, buf, size);
+  	  
   	
   	//channel volume
 	bufferTool_addGain(buf,voiceArray[voiceNr].vol,size);

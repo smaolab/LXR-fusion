@@ -96,7 +96,14 @@ uint8_t armDivideOnOff=0;
 uint8_t maskType=0; // 0-16 for OTO effects
 uint8_t otoAmount; // amount OTO effects
 
+
+ float freq; // for Alien Wah effect
+ float startphase;
+ float fb;
+ int delay;
+
 extern uint8_t maskTypebis=0; // 0-16 for OTO effects comes from FRONT AVR ! used to catch a Forced Repaint all :-)
+extern uint8_t AlienWahOnOff=0; // ALien Wah ON/OFF based on the Feedback Value (fb), if = 0 then ALien is OFF
 
 #if 0
 // -- AS for debugging
@@ -1088,6 +1095,36 @@ void midiParser_ccHandler(MidiMsg msg, uint8_t updateOriginalValue)
 					// ------ Set OTO effects amount (0 to 127, Dry to Wet)
 					otoAmount = msg.data2;
 
+				break;	
+			//
+			// 
+			// rstephane : Handle the Alien Wah EFFECT button
+			case CC2_ALIEN_FB:
+				if(msg.data2>0)
+				{
+					AlienWahOnOff=1;
+					fb=msg.data2; // for Alien Wah effect
+				}
+				else if(msg.data2==0)
+					AlienWahOnOff=0; 
+				break;	
+			case CC2_ALIEN_DELAY:
+				if(msg.data2>0)
+				{
+					delay=msg.data2; // for Alien Wah effect
+				}
+				break;	
+			case CC2_ALIEN_FREQ:
+				if(msg.data2>0)
+				{
+					freq=msg.data2; // for Alien Wah effect
+				}
+				break;	
+			case CC2_ALIEN_STARTPHASE:
+				if(msg.data2>0)
+				{
+					startphase=msg.data2; // for Alien Wah effect
+				}
 				break;	
 			//
 			// rstephane : Handle the LOOP button

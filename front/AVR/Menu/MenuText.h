@@ -317,7 +317,12 @@ const char shortNames[][4] PROGMEM  =
 	{"sta"}, // rstephane: start (divide effect) loop index
 	{"end"}, // rstephane: loop Lenght
 	{"oto"}, // rstephane: OTO mode
-	{"amt"}, // rstephane: OTO amount	
+	{"amt"}, // rstephane: OTO amount
+	
+	{"dly"}, // rstephane: Alien Wah
+	{"frq"},
+	{"phs"},
+	{"amt"}, // Alien Wah Feedback, used to swith On. Off the effect
 	
 };
 //-----------------------------------------------------------------

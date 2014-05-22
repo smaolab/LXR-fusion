@@ -55,7 +55,7 @@ float distortion_calcSampleFloat(const Distortion *dist, float x);
 void calcDelayBlock(float delay, int16_t* buf, const uint8_t size);
 void calcOTOFxBlockOLD(uint8_t maskType, int16_t* buf,const uint8_t size);
 void calcOTOFxBlock(uint8_t maskType, int16_t* buf,const uint8_t size,uint8_t otoAmount);
-void calcAlienWahFxBlock(uint8_t maskType, int16_t* buf,const uint8_t size);
+void calcAlienWahFxBlock(uint8_t freq,uint8_t startphase,uint8_t fb,uint8_t delay, int16_t* buf,const uint8_t size);
 
 #define FILTER_GAIN 					0x70ff
 void moog_perform(uint8_t moogFilterType,int8_t cutOff,int8_t resonance, int16_t* buf,const uint8_t size);

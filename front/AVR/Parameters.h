@@ -326,7 +326,13 @@ enum ParamEnums
 	PAR_RANDOMFILL_PATTERN4, 
 	PAR_RANDOMFILL_PATTERN5,
 	PAR_RANDOMFILL_PATTERN6,
-	PAR_RANDOMFILL_PATTERN7,   
+	PAR_RANDOMFILL_PATTERN7,  
+	
+	// rstephane : Alien Wah 
+	PAR_ALIEN_DELAY,
+	PAR_ALIEN_FREQ,
+	PAR_ALIEN_STARTPHASE,
+	PAR_ALIEN_FB,
 	
 	//#########################################
 	//######## End of sound Parameters ########
